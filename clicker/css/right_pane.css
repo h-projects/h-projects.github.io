@@ -1,0 +1,23 @@
+.shop-item {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	background: #172b3f;
+	border-radius: 5px;
+	margin: 5px;
+	min-height: 100px;
+	height: max-content;
+}
+.selected-item {
+	background: #0e1c2a;
+}
+.name {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.purchased {
+	color: #0f0;
+}
+.not-purchased {
+	color: #f00;
+}
