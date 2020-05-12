@@ -3,7 +3,9 @@ function updateHCount() {
 	document.getElementById("h-count").innerText = localStorage.clickCount;
 }
 
-
+function actionNo() {
+	window.alert('You cannot do that action, or you didn\'t want to do that action.');
+}
 
 // Click (relies on updateHCount)
 function clicked() {
@@ -11,33 +13,30 @@ function clicked() {
 	updateHCount();
 }
 
-// Remove (relies on updateHCount)
-function remove() {
-	localStorage.clickCount = 0;
-	updateHCount();
+function destroy() {
+	localStorage.removeItem("clickCount");
+	localStorage.removeItem("itemsPurchased");
+	window.location.reload();
 }
-
-// destroy
 
 // reset h count and upgrades purchased (relies on confirmVar)
 function reset() {
 	if(localStorage.clickCount === 'NaN' && confirmVar()){
-		localStorage.removeItem("clickCount");
-		localStorage.removeItem("itemsPurchased");
-		window.location.reload();
+		destroy();
 	} else {
 		actionNo();
 	}
 }
 
 while(localStorage.clickCount === 9007199254740992) {
-	destroy();
+	destriy();
 }
 
 // Rebirth (relies on remove and confirmVar)
 function rebirth() {
 	if(parseInt(localStorage.clickCount) >= 200000000 && confirmVar()) {
-		remove();
+		localStorage.clickCount = 0;
+		updateHCount();
 	} else {
 		actionNo();
 	}
@@ -74,9 +73,7 @@ addEventListener("keydown", function(event) {
 				// g spy alert
 				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
 				// remove the h
-				localStorage.removeItem("clickCount");
-				localStorage.removeItem("itemsPurchased");
-				window.location.reload();
+					destroy();
 				break;
 			}
 		}
