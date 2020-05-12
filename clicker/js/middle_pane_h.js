@@ -77,7 +77,7 @@ addEventListener("keydown", function(event) {
 				// g spy alert
 				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
 				// remove the h
-				remove();
+				destroy();
 				break;
 			}
 		}
