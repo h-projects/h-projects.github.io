@@ -3,14 +3,7 @@ function updateHCount() {
 	document.getElementById("h-count").innerText = localStorage.clickCount;
 }
 
-// Some window alerts
-function confirmVar() {
-	return confirm("Are you sure you want to do that?");
-}
 
-function actionNo() {
-	window.alert('You cannot do that right now.');
-}
 
 // Click (relies on updateHCount)
 function clicked() {

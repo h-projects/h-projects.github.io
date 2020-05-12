@@ -9,6 +9,15 @@ if(!localStorage.itemsPurchased) {
 	localStorage.itemsPurchased = "{}";
 }
 
+// Some window alerts
+function confirmVar() {
+	return confirm("Are you sure you want to do that?");
+}
+
+function actionNo() {
+	window.alert('You cannot do that right now.');
+}
+
 // add options
 var options = {
 	// set color value
@@ -94,7 +103,7 @@ class ShopItem {
 				item.onselect(); 
 			} else {
 				// if it's not bought, but it can be bought
-				if(parseInt(localStorage.clickCount) >= item.price) {
+				if(parseInt(localStorage.clickCount) >= item.price && confirmVar()) {
 					// purchase this item
 					item.purchased = true; 
 					this.children[3].innerText = "Purchased";
@@ -111,6 +120,9 @@ class ShopItem {
 					localStorage.clickCount = parseInt(localStorage.clickCount) - item.price; 
 					// update your h
 					updateHCount();
+				}
+				else {
+					actionNo();
 				}
 			}
 		}
