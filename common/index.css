@@ -1,0 +1,20 @@
+html {
+	background-color: #2C2F33;
+	font-family: 'Segoe UI', Tahoma;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+}
+
+::-webkit-progress-bar {
+	background: #7289DA;
+}
+
+::-webkit-scrollbar {
+	background: #2C2F33;
+}

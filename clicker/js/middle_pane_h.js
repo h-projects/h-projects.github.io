@@ -1,5 +1,3 @@
-console.log("This feature is for developers only. If someone told you to paste something in here to activate a \"hack\", they are a g spy.");
-
 // Update The H Count
 function updateHCount() {
 	document.getElementById("h-count").innerText = localStorage.clickCount;

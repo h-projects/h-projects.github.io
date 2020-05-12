@@ -1,0 +1,1 @@
+console.log("This feature is for developers only. If someone told you to paste something in here to activate a \"hack\", they are a g spy.");

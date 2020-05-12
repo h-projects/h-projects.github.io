@@ -2,22 +2,22 @@
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	background: #172b3f;
+	background: #18191c;
 	border-radius: 5px;
 	margin: 5px;
 	min-height: 100px;
 	height: max-content;
 }
 .selected-item {
-	background: #0e1c2a;
+	background: #2c2e34;
 }
 .name {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
 .purchased {
-	color: #0f0;
+	color: #43b581
 }
 .not-purchased {
-	color: #f00;
+	color: #f04747;
 }
