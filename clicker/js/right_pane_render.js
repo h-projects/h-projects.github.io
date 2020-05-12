@@ -175,6 +175,10 @@ addEventListener("load", function() {
 	new ShopItem("1discH", ["color"], "Blurple H", "The discordiest of H", 12500, function() {
 		options.color.value = "#7289DA";
 	});
+	new ShopItem("mathClassH", ["text", "fontSize"], "H Squared", "E S C L A D E D", 15000, function() {
+		options.text.value = "h²";
+		options.fontSize.value = 250;
+	});
 	// set loaded shop items to true
 	loadedShopItems = true;
 	// set names to a map of the shop item ids
