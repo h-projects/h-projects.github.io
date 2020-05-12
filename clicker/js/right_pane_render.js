@@ -161,26 +161,26 @@ addEventListener("load", function() {
 		options.text.value = "<img src=\"https://media1.tenor.com/images/b251279ed54ed48dc45021890f7cd96a/tenor.gif\" alt=\"h_hif\" />";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("fancyFancyH", ["text", "fontSize"], "Fancier H", "The Fanciestiest Of H", 5000, function() {
+	new ShopItem("2discH", ["color"], "Qreyple H", "The discordiest of H", 5000, function() {
+		options.color.value = "#99AAB5";
+	});
+	new ShopItem("fancyFancyH", ["text", "fontSize"], "Fancier H", "The Fanciestiest Of H", 7500, function() {
 		options.text.value = "██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝";
 		options.fontSize.value = 150;
 	});
-	new ShopItem("greenH", ["color"], "Green H", "The 4chaniest of H", 7500, function() {
+	new ShopItem("greenH", ["color"], "Green H", "The 4chaniest of H", 10000, function() {
 		options.color.value = "#00ff00";
 	});
-	new ShopItem("dinnerbone", ["text", "fontSize"], "Y", "Ai mate, welcome to Aussy, you cunt", 10000, function() {
+	new ShopItem("dinnerbone", ["text", "fontSize"], "Y", "Ai mate, welcome to Aussy, you cunt", 12500, function() {
 		options.text.value = "ɥ";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("1discH", ["color"], "Blurple H", "The discordier of H", 12500, function() {
+	new ShopItem("1discH", ["color"], "Blurple H", "The discordier of H", 15000, function() {
 		options.color.value = "#7289DA";
 	});
-	new ShopItem("mathClassH", ["text", "fontSize"], "H Squared", "E S C L A D E D", 15000, function() {
+	new ShopItem("mathClassH", ["text", "fontSize"], "H Squared", "E S C L A D E D", 50000, function() {
 		options.text.value = "h²";
 		options.fontSize.value = 250;
-	});
-	new ShopItem("2discH", ["color"], "Qreyple H", "The discordiest of H", 20000, function() {
-		options.color.value = "#99AAB5";
 	});
 	// set loaded shop items to true
 	loadedShopItems = true;
