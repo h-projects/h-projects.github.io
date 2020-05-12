@@ -14,9 +14,6 @@ function confirmVar() {
 	return confirm("Are you sure you want to do that?");
 }
 
-function actionNo() {
-	window.alert('You cannot do that right now.');
-}
 
 // add options
 var options = {
@@ -122,7 +119,7 @@ class ShopItem {
 					updateHCount();
 				}
 				else {
-					actionNo();
+					window.alert('You didn\'t buy that item.');
 				}
 			}
 		}
