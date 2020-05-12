@@ -134,7 +134,7 @@ addEventListener("load", function() {
 		options.fontSize.value = 250;
 	});
 	new ShopItem("lightMode", ["color"], "Liqht H (Default Color)", "My eyes", 0, function() {
-		options.color.value = "#99AAB5";
+		options.color.value = "#FFFFFF";
 	});
 	new ShopItem("capitalH", ["text", "fontSize"], "Capital H", "The biqqest of H", 125, function() {
 		options.text.value = "H";
@@ -172,12 +172,15 @@ addEventListener("load", function() {
 		options.text.value = "ɥ";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("1discH", ["color"], "Blurple H", "The discordiest of H", 12500, function() {
+	new ShopItem("1discH", ["color"], "Blurple H", "The discordier of H", 12500, function() {
 		options.color.value = "#7289DA";
 	});
 	new ShopItem("mathClassH", ["text", "fontSize"], "H Squared", "E S C L A D E D", 15000, function() {
 		options.text.value = "h²";
 		options.fontSize.value = 250;
+	});
+	new ShopItem("2discH", ["color"], "Qreyple H", "The discordiest of H", 20000, function() {
+		options.color.value = "#99AAB5";
 	});
 	// set loaded shop items to true
 	loadedShopItems = true;
