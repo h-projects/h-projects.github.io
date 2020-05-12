@@ -3,9 +3,13 @@ function updateHCount() {
 	document.getElementById("h-count").innerText = localStorage.clickCount;
 }
 
-// USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS USELESS 
+// Some window alerts
 function confirmVar() {
 	return confirm("Are you sure you want to do that?");
+}
+
+function actionNo() {
+	window.alert('You cannot do that right now.');
 }
 
 // Click (relies on updateHCount)
@@ -22,17 +26,21 @@ function remove() {
 
 // reset h count and upgrades purchased (relies on confirmVar)
 function reset() {
-	if(confirmVar()) {
+	if(localStorage.clickCount === 'NaN' && confirmVar()){
 		localStorage.removeItem("clickCount");
 		localStorage.removeItem("itemsPurchased");
 		window.location.reload();
+	} else {
+		actionNo();
 	}
 }
 
-// Rebirth (relies on remove)
+// Rebirth (relies on remove and confirmVar)
 function rebirth() {
-	if(parseInt(localStorage.clickCount) >= 200000000 && confirmVar() === true) {
+	if(parseInt(localStorage.clickCount) >= 200000000 && confirmVar()) {
 		remove();
+	} else {
+		actionNo();
 	}
 }
 
@@ -50,7 +58,7 @@ addEventListener("load", function() { // when the window has loaded
 		// set clickCount To 0
 		localStorage.clickCount = 0;
 		// alert no g
-		window.alert("Welcome to H Clicker. To begin, click the H button, or press the H key. Do not press G.");
+		window.alert("Welcome to H Clicker. To beqin, click the H button, or press the H key. Do not press the forbidden letter.");
 	}// user has played before
 	 else { 
 		//  update h count
@@ -65,7 +73,7 @@ addEventListener("keydown", function(event) {
 		// ban g
 		case "g": {
 				// g spy alert
-				window.alert("G is very cringe and not good. Evil Aden Is Proud Of You.");
+				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
 				// remove the h
 				remove();
 				break;

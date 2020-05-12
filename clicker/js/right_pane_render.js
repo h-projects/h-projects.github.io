@@ -117,46 +117,54 @@ class ShopItem {
 	}
 }
 
+// items begin now
 addEventListener("load", function() {
 	//  locaLStorageName, typesOfChanges, displayName, desc, hPrice
 	new ShopItem("lowercaseH", ["text", "fontSize"], "Lowercase h (Default Skin)", "The smallest of h.", 0, function() {
 		options.text.value = "h";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("lightMode", ["color"], "Lihht H (Default Color)", "My Eyes", 0, function() {
-		options.color.value = "#ffffff";
+	new ShopItem("lightMode", ["color"], "Liqht H (Default Color)", "My eyes", 0, function() {
+		options.color.value = "#99AAB5";
 	});
-	new ShopItem("darkMode", ["color"], "Dark H", "My Soul", 1500, function() {
-		options.color.value = "#000000";
-	});
-	new ShopItem("redH", ["color"], "Red H", "The Youtubiest Of H", 1500, function() {
-		options.color.value = "#ff0000";
-	});
-	new ShopItem("greenH", ["color"], "Green H", "${punchline.green}", 1500, function() {
-		options.color.value = "#00ff00";
-	});
-	new ShopItem("blueH", ["color"], "Blue H", "The Facebookiest Of H", 1500, function() {
-		options.color.value = "#0000ff";
-	});
-	new ShopItem("capitalH", ["text", "fontSize"], "Capital H", "The bihhest of H", 100, function() {
+	new ShopItem("capitalH", ["text", "fontSize"], "Capital H", "The biqqest of H", 125, function() {
 		options.text.value = "H";
 		options.fontSize.value = 250;
+	});
+	new ShopItem("darkMode", ["color"], "Dark H", "My Soul", 250, function() {
+		options.color.value = "#000000";
 	});
 	new ShopItem("fancyH", ["text", "fontSize"], "Fancy H", "The fanciest of H", 500, function() {
 		options.text.value = "𝒽";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("dancingH", ["text", "fontSize"], "Dancinh H", "it vibes", 2000, function() {
+	new ShopItem("redH", ["color"], "Red H", "The youtubiest of H", 750, function() {
+		options.color.value = "#ff0000";
+	});
+	new ShopItem("dancingH", ["text", "fontSize"], "Dancinq H", "It vibes", 1000, function() {
 		options.text.value = "<img src=\"https://media1.tenor.com/images/e8d115d3b5a47a5f659e8a79ecf61764/tenor.gif?itemid=9063752\" alt=\"h\">";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("fortniteH", ["text", "fontSize"], "Ninja H", "The phrase “it’s just a hame” is such a weak mindset. You are ok with what happened, losinh, imperfection of a craft. When you stop hettinh anhry after losinh, you’ve lost twice. There’s always somethinh to learn, and always room for improvement, never settle." , 2500, function() {
+	new ShopItem("blueH", ["color"], "Blue H", "The facebookiest of H", 1250, function() {
+		options.color.value = "#0000ff";
+	});
+	new ShopItem("fortniteH", ["text", "fontSize"], "Ninja H", "The phrase “it’s just a qame” is such a weak mindset. You are ok with what happened, losinq, imperfection of a craft. When you stop qettinq anqry after losinq, you’ve lost twice. There’s always somethinq to learn, and always room for improvement, never settle." , 1500, function() {
 		options.text.value = "<img src=\"https://media1.tenor.com/images/b251279ed54ed48dc45021890f7cd96a/tenor.gif\" alt=\"h_hif\" />";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("fancyFancyH", ["text", "fontSize"], "Fancier H", "The Fanciestiest Of H", 3000, function() {
+	new ShopItem("fancyFancyH", ["text", "fontSize"], "Fancier H", "The Fanciestiest Of H", 5000, function() {
 		options.text.value = "██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝";
-		options.fontSize.value = 50;
+		options.fontSize.value = 150;
+	});
+	new ShopItem("greenH", ["color"], "Green H", "The 4chaniest of H", 7500, function() {
+		options.color.value = "#00ff00";
+	});
+	new ShopItem("dinnerbone", ["text", "fontSize"], "Y", "Ai mate, welcome to Aussy, you cunt", 10000, function() {
+		options.text.value = "ɥ";
+		options.fontSize.value = 250;
+	});
+	new ShopItem("1discH", ["color"], "Blurple H", "The discordiest of H", 12500, function() {
+		options.color.value = "#7289DA";
 	});
 	// set loaded shop items to true
 	loadedShopItems = true;
@@ -166,6 +174,7 @@ addEventListener("load", function() {
 	setInterval(updateClasses, 1000 / 60);
 	setInterval(updateHButton, 1000 / 60);
 });
+// items end now
 
 // set names
 var names;

@@ -1,7 +1,7 @@
 html {
 	background-color: #2C2F33;
 	font-family: 'Segoe UI', Tahoma;
-	color: white;
+	color: #99AAB5;
 	align-items: center;
 	justify-content: center;
 	border-radius: 20px;
@@ -11,10 +11,10 @@ html {
 	border-radius: 10px;
 }
 
-::-webkit-progress-bar {
+::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
 	background: #7289DA;
 }
 
 ::-webkit-scrollbar {
-	background: #2C2F33;
+	background: #23272A;
 }
