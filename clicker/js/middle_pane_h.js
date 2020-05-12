@@ -17,15 +17,24 @@ function remove() {
 	updateHCount();
 }
 
+// destroy
+function destroy() {
+	localStorage.removeItem("clickCount");
+	localStorage.removeItem("itemsPurchased");
+	window.location.reload();
+}
+
 // reset h count and upgrades purchased (relies on confirmVar)
 function reset() {
 	if(localStorage.clickCount === 'NaN' && confirmVar()){
-		localStorage.removeItem("clickCount");
-		localStorage.removeItem("itemsPurchased");
-		window.location.reload();
+		destory();
 	} else {
 		actionNo();
 	}
+}
+
+while(localStorage.clickCount === 9007199254740992) {
+	destroy();
 }
 
 // Rebirth (relies on remove and confirmVar)
