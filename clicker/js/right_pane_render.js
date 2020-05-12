@@ -11,7 +11,7 @@ if(!localStorage.itemsPurchased) {
 
 // Some window alerts
 function confirmVar() {
-	return confirm("Are you sure you want to do that?");
+	return confirm("Are you sure you want to buy that item?");
 }
 
 

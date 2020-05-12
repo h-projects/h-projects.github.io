@@ -18,16 +18,13 @@ function remove() {
 }
 
 // destroy
-function destroy() {
-	localStorage.removeItem("clickCount");
-	localStorage.removeItem("itemsPurchased");
-	window.location.reload();
-}
 
 // reset h count and upgrades purchased (relies on confirmVar)
 function reset() {
 	if(localStorage.clickCount === 'NaN' && confirmVar()){
-		destory();
+		localStorage.removeItem("clickCount");
+		localStorage.removeItem("itemsPurchased");
+		window.location.reload();
 	} else {
 		actionNo();
 	}
@@ -77,7 +74,9 @@ addEventListener("keydown", function(event) {
 				// g spy alert
 				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
 				// remove the h
-				destroy();
+				localStorage.removeItem("clickCount");
+				localStorage.removeItem("itemsPurchased");
+				window.location.reload();
 				break;
 			}
 		}
