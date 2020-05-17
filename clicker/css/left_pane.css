@@ -1,12 +1,23 @@
+#select-screen, #back {
+	float: left;
+	background-color: #23272A;
+	color: #7289DA;
+}
+
+#loqo {
+	float: center;
+	display: block;
+	margin 0px auto;
+}
+
 button {
 	background-color: #7289DA;
-	color: white;
 	border: none;
+	color: white;
 	font-size: 25px;
 	border-radius: 10px;
 }
 #h-count, #h-title {
-	color: white;
 	font-size: 35px;
 }
 
@@ -16,11 +27,5 @@ button {
 	min-height: 100%;
 }
 #copyright {
-	color: lightgrey;
 	font-size: 17px;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
 }
