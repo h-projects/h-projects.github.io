@@ -7,6 +7,10 @@ function actionNo() {
 	window.alert('You cannot do that action, or you didn\'t want to do that action.');
 }
 
+function confirmVar() {
+	return confirm("Are you sure you want to do that?");
+}
+
 // Click (relies on updateHCount)
 function clicked() {
 	localStorage.clickCount = parseInt(localStorage.clickCount) + 1;
@@ -29,7 +33,7 @@ function reset() {
 }
 
 while(localStorage.clickCount === 9007199254740992) {
-	destriy();
+	destroy();
 }
 
 // Rebirth (relies on remove and confirmVar)
@@ -50,15 +54,15 @@ addEventListener("load", function() { // when the window has loaded
 	document.getElementById("hehirth").onclick = rebirth;
 	// Get the reset button element and run the reset function on click
 	document.getElementById("reset").onclick = reset;
-	
+
 	// user has never played before (checks if the click count doesn't exist (undefined))
 	if(localStorage.clickCount === undefined) {
 		// set clickCount To 0
 		localStorage.clickCount = 0;
 		// alert no g
-		window.alert("Welcome to H Clicker. To beqin, click the H button, or press the H key. Do not press the forbidden letter.");
+		window.alert("Welcome to H Clicker. To beqin, click the H button. Do not press the forbidden letter.");
 	}// user has played before
-	 else { 
+	 else {
 		//  update h count
 		updateHCount();
 	}

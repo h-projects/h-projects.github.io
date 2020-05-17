@@ -44,11 +44,11 @@ class ShopItem {
 		// function called on select
 		this.onselect = function() {
 			// map options and id
-			this.types.map(n => options[n] = options[n] ? {value: options[n].value, recent: this.id} : {value: "", recent: this.id}); 
+			this.types.map(n => options[n] = options[n] ? {value: options[n].value, recent: this.id} : {value: "", recent: this.id});
 			onselect();
 		};
 		// whether this item is purchased or not
-		this.purchased = false; 
+		this.purchased = false;
 		// is this selected
 		this.selected = false;
 		// the id
@@ -61,10 +61,10 @@ class ShopItem {
 
 		if(x[this.name] !== undefined) {
 			// get whether or not this item has been purchased
-			this.purchased = x[this.name]; 
+			this.purchased = x[this.name];
 		}
 		// the element that is displayed in the shop
-		this.element = document.createElement("DIV"); 
+		this.element = document.createElement("DIV");
 		 // change the element's class to .shopItem
 		this.element.className = "shop-item";
 		// set element id to this id
@@ -72,49 +72,49 @@ class ShopItem {
 		// what is this garbage
 		for(let i = 0; i < 4; i++) {
 			// make new child for this parent
-			this.element.appendChild(document.createElement("DIV")); 
+			this.element.appendChild(document.createElement("DIV"));
 				// set class name of each child
 				this.element.children[i].className = [
 				"name",
 				"desc",
 				"price",
 				["not-purchased", "purchased"][+this.purchased]
-			][i]; 
+			][i];
 			this.element.children[i].innerText = [
 				// set text of each child
 				this.displayName,
 				this.desc,
 				"Costs " + this.price + " h",
 				["Not Purchased", "Purchased"][+this.purchased]
-			][i]; 
+			][i];
 		}
 
 		document.getElementById("shop-items").appendChild(this.element); // display this element in the #shop-items div
-		
+
 		// when this parent is clicked
-		this.element.onclick = function() { 
+		this.element.onclick = function() {
 			// parse integer of the shop item id
 			let item = shopItems[parseInt(this.id)];
 			// if the parent is purchased, call the onselect function
 			if(item.purchased) {
-				item.onselect(); 
+				item.onselect();
 			} else {
 				// if it's not bought, but it can be bought
 				if(parseInt(localStorage.clickCount) >= item.price && confirmVar()) {
 					// purchase this item
-					item.purchased = true; 
+					item.purchased = true;
 					this.children[3].innerText = "Purchased";
 					this.children[3].className = "purchased";
-					
+
 					// save that the parent item is purchased
 					let x = JSON.parse(localStorage.itemsPurchased);
 					x[item.name] = true;
 					localStorage.itemsPurchased = JSON.stringify(x);
 
 					// select this item
-					item.onselect(); 
+					item.onselect();
 					// take away the price of this item
-					localStorage.clickCount = parseInt(localStorage.clickCount) - item.price; 
+					localStorage.clickCount = parseInt(localStorage.clickCount) - item.price;
 					// update your h
 					updateHCount();
 				}
@@ -168,7 +168,7 @@ addEventListener("load", function() {
 		options.text.value = "██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝";
 		options.fontSize.value = 150;
 	});
-	new ShopItem("greenH", ["color"], "Green H", "The 4chaniest of H", 10000, function() {
+	new ShopItem("greenH", ["color"], "Qreen H", "The 4chaniest of H", 10000, function() {
 		options.color.value = "#00ff00";
 	});
 	new ShopItem("dinnerbone", ["text", "fontSize"], "Y", "Ai mate, welcome to Aussy, you cunt", 12500, function() {
@@ -206,18 +206,18 @@ function updateClasses() {
 	// map a function with n passed to x
 	Object.keys(options).map(function(n) {
 		// get the most recent shop items for each category, and set that they are selected
-		eachItemSelected[options[n].recent] = true; 
+		eachItemSelected[options[n].recent] = true;
 	});
 	// n is whether or not the item is selected, a is index of shop item
-	eachItemSelected.map(function(n, a) { 
+	eachItemSelected.map(function(n, a) {
 		shopItems[a].selected = n;
 		// if the item is supposed to be selected but isn't
-		if(n && !shopItems[a].element.classList.contains("selected-item")) { 
+		if(n && !shopItems[a].element.classList.contains("selected-item")) {
 			 // add the .selected-item class to the element
 			shopItems[a].element.classList.add("selected-item");
 		}
 		// if the shop item isn't supposed to be selected but is
-		if(!n && shopItems[a].element.classList.contains("selected-item")) { 
+		if(!n && shopItems[a].element.classList.contains("selected-item")) {
 			 // remove the .selected-item class from the element
 			shopItems[a].element.classList.remove("selected-item");
 		}
@@ -226,7 +226,7 @@ function updateClasses() {
 function updateHButton() {
 	let h = document.getElementById("h");
 	// without this if statement, flickering occurs
-	if(h.innerHTML !== options.text.value) {h.innerHTML = options.text.value}; 
+	if(h.innerHTML !== options.text.value) {h.innerHTML = options.text.value};
 	if(h.style.color !== options.color.value) {h.style.color = options.color.value};
 	if(h.style.fontSize !== options.fontSize.value + "px") {h.style.fontSize = options.fontSize.value + "px"};
 }
