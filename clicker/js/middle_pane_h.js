@@ -1,5 +1,5 @@
 // Update The H Count
-function updateHCount() {
+function updateHCount(){
 	document.getElementById("h-count").innerText = localStorage.clickCount;
 }
 
@@ -9,7 +9,7 @@ function actionNo() {
 
 // Click (relies on updateHCount)
 function clicked() {
-	localStorage.clickCount = parseInt(localStorage.clickCount) + 1;
+	localStorage.clickCount++;
 	updateHCount();
 }
 
@@ -27,14 +27,9 @@ function reset() {
 		actionNo();
 	}
 }
-
-while(localStorage.clickCount === 9007199254740992) {
-	destriy();
-}
-
 // Rebirth (relies on remove and confirmVar)
 function rebirth() {
-	if(parseInt(localStorage.clickCount) >= 200000000 && confirmVar()) {
+	if((+localStorage.clickCount) >= 200000000 && confirmVar()) {
 		localStorage.clickCount = 0;
 		updateHCount();
 	} else {
@@ -67,13 +62,17 @@ addEventListener("load", function() { // when the window has loaded
 // listen for keystrokes
 addEventListener("keydown", function(event) {
 	// switch event
-	switch(event.key) {
-		// ban g
-		case "g": {
+		switch(event.key) {
+			// ban g
+			case "g": {
 				// g spy alert
 				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
 				// remove the h
 					destroy();
+				break;
+			}
+			case "h": {
+				clicked();
 				break;
 			}
 		}
