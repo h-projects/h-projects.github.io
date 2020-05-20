@@ -28,15 +28,27 @@ button {
 
 }
 
-#buttons {
+#buttons button {
 	color: black;
 }
 
-#clicker, #links{
+#clicker{
 	font-size: 17px;
 	height: max-content;
 	position: absolute;
 	top: 75%;
+	width: ;
+	box-shadow: inherit;
+	background-color: #2C3E50;
+	margin: inherit;
+	border-radius: inherit;
+}
+
+#links{
+	font-size: 17px;
+	height: max-content;
+	position: absolute;
+	top: 100%;
 	box-shadow: inherit;
 	background-color: #2C3E50;
 	margin: inherit;
