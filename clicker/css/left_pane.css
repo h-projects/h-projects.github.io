@@ -1,13 +1,4 @@
-#select-screen, #back {
-	float: left;
-	background-color: #283747;
-	color: #D5DBDB;
-	color:inherit;
-	border-style:solid;
-	border-width: 0px 0px 1px 0px;
-	padding:2px;
-	font-size: 25px;
-}
+
 
 #loqo {
 	float: center;
@@ -35,6 +26,10 @@ button {
 	margin: inherit;
 	border-radius: inherit;
 
+}
+
+#buttons {
+	color: black;
 }
 
 #clicker, #links{
