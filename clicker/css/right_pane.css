@@ -2,22 +2,31 @@
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	background: #18191c;
+	background: #2C3E50;
 	border-radius: 5px;
 	margin: 5px;
-	min-height: 100px;
 	height: max-content;
+	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
 }
 .selected-item {
-	background: #2c2e34;
+	background: #34495E;
 }
 .name {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
 .purchased {
-	color: #43b581;
+	color: #2ECC71;
 }
 .not-purchased {
-	color: #f04747;
+	color: #E74C3C;
+}
+
+#not_items {
+	background: #2C3E50;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	background: inherit;
+	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
 }

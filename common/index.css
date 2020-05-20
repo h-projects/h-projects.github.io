@@ -1,22 +1,25 @@
 html {
-	background-color: #2C2F33;
+	background-color: #1c2833;
 	font-family: 'Segoe UI', Tahoma;
-	color: #99AAB5;
+	color: #FDFEFE;
 	align-items: center;
 	justify-content: center;
 	border-radius: 20px;
+	
 }
+
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
+	margin: 10px;
 }
 
 ::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
-	background: #7289DA;
+	background: #D5DBDB;
 }
 
 ::-webkit-scrollbar {
-	background: #23272A;
+	background: #1C2833;
 }
 
 a {
@@ -26,10 +29,15 @@ a {
 
 #select-screen, #back {
 	float: left;
-	color: #7289DA;
-	color:inherit;
+	color: #D5DBDB;
+	background: #2C3E50;
 	border-style:solid;
 	border-width: 0px 0px 1px 0px;
 	padding:2px;
 	font-size: 25px;
+}
+
+hr {
+	border-color:  #B3B6B7;
+
 }

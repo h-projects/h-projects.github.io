@@ -7,7 +7,10 @@
 	text-align: center;
 }
 #left-area, #right-area {
-	background: #23272A;
+	background: #1c2833;
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
+	border-radius: 10px;
 }
 #left-area {
 	left: 0%;

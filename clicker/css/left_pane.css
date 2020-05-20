@@ -1,7 +1,7 @@
 #select-screen, #back {
 	float: left;
-	background-color: #23272A;
-	color: #7289DA;
+	background-color: #283747;
+	color: #D5DBDB;
 	color:inherit;
 	border-style:solid;
 	border-width: 0px 0px 1px 0px;
@@ -12,25 +12,38 @@
 #loqo {
 	float: center;
 	display: block;
-	margin 0px auto;
+	margin: 0px auto;
 }
 
 button {
-	background-color: #7289DA;
+	background-color: #D5DBDB;
 	border: none;
 	color: white;
 	font-size: 25px;
 	border-radius: 10px;
+	cursor: pointer;
+	padding: 5px;
+	margin: 5px;
 }
 #h-count, #h-title {
 	font-size: 35px;
 }
 
-#main-left-section {
-	width: 100%;
-	height: max-content;
-	min-height: 100%;
+#text, #buttons	{
+	box-shadow: inherit;
+	background-color: #2C3E50;
+	margin: inherit;
+	border-radius: inherit;
+
 }
-#copyright {
+
+#clicker, #links{
 	font-size: 17px;
+	height: max-content;
+	position: absolute;
+	top: 75%;
+	box-shadow: inherit;
+	background-color: #2C3E50;
+	margin: inherit;
+	border-radius: inherit;
 }
