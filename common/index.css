@@ -29,13 +29,15 @@ a {
 
 #select-screen, #back {
 	float: left;
-	background-color: #283747;
+	background-color: transparent;
 	color: #D5DBDB;
-	color:inherit;
-	border-style:solid;
-	border-width: 0px 0px 1px 0px;
-	padding:2px;
+	color:inherit;	
+	padding: 3.5px;
 	font-size: 25px;
+	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 20px;
 }
 
 hr {
