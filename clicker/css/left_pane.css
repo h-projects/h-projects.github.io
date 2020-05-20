@@ -36,8 +36,9 @@ button {
 	font-size: 17px;
 	height: max-content;
 	position: absolute;
-	top: 75%;
-	width: ;
+	top: 83%;
+	padding-left: 125px;
+	padding-right: 130px;
 	box-shadow: inherit;
 	background-color: #2C3E50;
 	margin: inherit;
