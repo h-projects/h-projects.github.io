@@ -1,4 +1,4 @@
-// Update The H Count
+ww// Update The H Count
 function updateHCount() {
 	document.getElementById("h-count").innerText = localStorage.clickCount;
 }

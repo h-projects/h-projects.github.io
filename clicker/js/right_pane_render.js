@@ -151,7 +151,7 @@ addEventListener("load", function() {
 		options.color.value = "#ff0000";
 	});
 	new ShopItem("dancingH", ["text", "fontSize"], "Dancinq H", "It vibes", 1000, function() {
-		options.text.value = "<img src=\"https://media1.tenor.com/images/e8d115d3b5a47a5f659e8a79ecf61764/tenor.gif?itemid=9063752\" alt=\"h\">";
+		options.text.value = "<img src=\"https://cdn.discordapp.com/emojis/699995508810317895.gif?v=1\" alt=\"h\">";
 		options.fontSize.value = 250;
 	});
 	new ShopItem("blueH", ["color"], "Blue H", "The facebookiest of H", 1250, function() {

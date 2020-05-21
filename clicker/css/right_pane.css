@@ -1,19 +1,30 @@
 .shop-item {
 	display: flex;
 	flex-direction: column;
-	text-align: left;
+	text-align: center;
 	background: #2C3E50;
-	border-radius: 5px;
-	margin: 5px;
+	border-radius: 20px;
+	margin: 15px;
 	height: max-content;
-	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
+	padding: 5px;
+	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	cursor: pointer;
 }
+
+.name, .desc, .price, .not-purchased, .purchased {
+	padding: 5px
+}
+
 .selected-item {
 	background: #34495E;
 }
 .name {
 	font-size: 1.25rem;
 	font-weight: bold;
+}
+
+.desc, .price {
+	color: #BFC9CA;
 }
 .purchased {
 	color: #2ECC71;
@@ -22,7 +33,3 @@
 	color: #E74C3C;
 }
 
-#not_items {
-	background: #2C3E50;	
-	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
-}

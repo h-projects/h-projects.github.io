@@ -34,13 +34,10 @@ a {
 	color:inherit;	
 	padding: 3.5px;
 	font-size: 25px;
-	box-shadow: 0 4px 8px 0 #283747, 0 6px 20px 0 #283747;
+	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
 	margin-top: 10px;
 	margin-left: 10px;
 	border-radius: 20px;
 }
 
-hr {
-	border-color:  #B3B6B7;
 
-}

@@ -4,9 +4,10 @@
 	float: center;
 	display: block;
 	margin: 0px auto;
+	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
 }
 
-button {
+#buttons button {
 	background-color: #D5DBDB;
 	border: none;
 	color: white;
@@ -15,6 +16,7 @@ button {
 	cursor: pointer;
 	padding: 5px;
 	margin: 5px;
+	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
 }
 #h-count, #h-title {
 	font-size: 35px;
@@ -43,6 +45,7 @@ button {
 	background-color: #2C3E50;
 	margin: inherit;
 	border-radius: inherit;
+	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
 }
 
 #links{
