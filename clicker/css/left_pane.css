@@ -22,6 +22,7 @@
 	font-size: 35px;
 }
 
+
 #text, #buttons	{
 	box-shadow: inherit;
 	background-color: #2C3E50;
@@ -30,7 +31,9 @@
 
 }
 
-
+#buttons, #links, #clicker {
+	padding: 10px;
+}
 
 #buttons button {
 	color: black;
