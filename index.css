@@ -3,10 +3,11 @@
 	display: flex;
 	flex-grow: 4; 
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-content: space-between;
 	flex-direction: row;
 	text-align: center;
+	flex-wrap: wrap;
 }
 
 #select-square {
