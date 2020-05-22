@@ -7,7 +7,7 @@
 	margin: 15px;
 	height: max-content;
 	padding: 5px;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	cursor: pointer;
 }
 
@@ -21,6 +21,7 @@
 .name {
 	font-size: 1.25rem;
 	font-weight: bold;
+	font-family: 'DM Sans Bold';
 }
 
 .desc, .price {
@@ -33,3 +34,11 @@
 	color: #E74C3C;
 }
 
+#12 p {
+	-moz-transform: rotate(-180deg) !important; /* Firefox */
+	-webkit-transform: rotate(-180deg) !important; /* Webkit */        
+	-ms-transform: rotate(-180deg) !important; /* IE */
+	-o-transform: rotate(-180deg) !important; /* Opera */
+	transform: rotate(-180deg) !important; /* future */
+	position:absolute;
+}

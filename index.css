@@ -1,19 +1,37 @@
-#clicker-select-square, #fuck-g-select-square, #inary-select-square, #sharp-select-square, #museum-select-square {
-	background: #1c2833;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 25px;
-    margin-left: 25px;
-    display: block;
-    text-align: center;
-    color:inherit;
-    border-style:solid;
-    border-width: 0px 0px 0px 0px;
-    padding:2px;
+
+#boxes {
+	display: flex;
+	flex-grow: 4; 
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-between;
+	flex-direction: row;
+	text-align: center;
 }
 
+#select-square {
+	background: #1C2833;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	border-radius: 10px;
+	padding: 10px;
+	display: block;
+}
+
+#select-square:hover {
+	background: #1C2833;
+	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;
+	border-radius: 10px;
+	padding: 10px;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+}
+h3 {
+	color: #515A5A;
+}
 img {
 	padding-top: 10px;
 }
+

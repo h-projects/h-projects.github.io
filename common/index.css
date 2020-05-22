@@ -1,6 +1,18 @@
+
+@font-face {
+	font-family: 'DM Sans';
+	src: './common/fonts/DMSans.ttf';
+}
+
+@font-face {
+	font-family: 'DM Sans Bold';
+	src: './common/fonts/DMSans-Bold.ttf';
+	font-weight: bold;
+}
+
 html {
-	background-color: #1c2833;
-	font-family: 'Segoe UI', Tahoma;
+	background-color: #17202A;
+	font-family: Jost;
 	color: #FDFEFE;
 	align-items: center;
 	justify-content: center;
@@ -11,11 +23,11 @@ html {
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	margin: 10px;
+	margin: 200px;
 }
 
 ::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
-	background: #D5DBDB;
+	background: #515A5A;
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +46,7 @@ a {
 	color:inherit;	
 	padding: 3.5px;
 	font-size: 25px;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	margin-top: 10px;
 	margin-left: 10px;
 	border-radius: 20px;

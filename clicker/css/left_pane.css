@@ -4,7 +4,7 @@
 	float: center;
 	display: block;
 	margin: 0px auto;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
 
 #buttons button {
@@ -16,7 +16,7 @@
 	cursor: pointer;
 	padding: 5px;
 	margin: 5px;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
 #h-count, #h-title {
 	font-size: 35px;
@@ -29,6 +29,8 @@
 	border-radius: inherit;
 
 }
+
+
 
 #buttons button {
 	color: black;
@@ -45,7 +47,7 @@
 	background-color: #2C3E50;
 	margin: inherit;
 	border-radius: inherit;
-	box-shadow: 0 4px 4px 0 #283747, 0 6px 4px 0 #283747;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
 
 #links{
