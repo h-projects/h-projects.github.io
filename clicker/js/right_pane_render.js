@@ -182,6 +182,10 @@ addEventListener("load", function() {
 		options.text.value = "h²";
 		options.fontSize.value = 250;
 	});
+	new ShopItem("scienceH", ["text", "fontSize"], "H Cubed", "E S C L A D E D++;", 50000, function() {
+		options.text.value = "h³";
+		options.fontSize.value = 250;
+	});
 	// set loaded shop items to true
 	loadedShopItems = true;
 	// set names to a map of the shop item ids
