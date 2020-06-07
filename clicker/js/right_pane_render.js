@@ -182,7 +182,7 @@ addEventListener("load", function() {
 		options.text.value = "h²";
 		options.fontSize.value = 250;
 	});
-	new ShopItem("scienceH", ["text", "fontSize"], "H Cubed", "E S C L A D E D++;", 50000, function() {
+	new ShopItem("scienceH", ["text", "fontSize"], "H Cubed", "E S C L A D E D++;", 100000, function() {
 		options.text.value = "h³";
 		options.fontSize.value = 250;
 	});
