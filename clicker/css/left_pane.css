@@ -18,8 +18,13 @@
 	margin: 5px;
 	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
-#h-count, #h-title {
+#h-title {
 	font-size: 35px;
+}
+
+#h-count {
+	font-size: 30px;
+	color: #5D6D7E;
 }
 
 
