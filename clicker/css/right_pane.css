@@ -34,7 +34,8 @@
 }
 .name {
 	font-size: 1.25rem;
-	font-family: 'DM Sans Bold';
+	font-family: 'DM Sans';
+	font-weight: 700 !important;
 }
 
 .desc, .price {

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 	<head>
-		<!-- import over logic -->
-		<script src="../common/index.js"></script>
-		<!-- import over styles -->
-		<link rel="stylesheet" type="text/css" href="../common/index.css">
-		<meta name=”viewport” content=”width=device-width, initial-scale=1″>
-		<!-- set retarded web stuff like open graph and search engine optimization -->
-		<title>Fuck G</title>
-		<meta name="description" content="Seroiusly, Fuck That Letter.">
+		<meta charset="utf-8" />
+		<style>
+			html {
+				background: black;
+				color: white;
+				font-family: Arial;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="select-screen">
-			<a href="/">Back</a>
-		</div>
+		<textarea id="h"></textarea>
+		<div id="output"></div>
+		<script>
+			function get(id) {
+				return document.getElementById(id);
+			}
+			get("h").oninput=function() {
+				get("output").innerText=get("h").value.split("g").join("q").split("G").join("Q")
+			}
+		</script>
 	</body>
 </html>

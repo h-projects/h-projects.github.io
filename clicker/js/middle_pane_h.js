@@ -74,10 +74,8 @@ addEventListener("keydown", function(event) {
 	switch(event.key) {
 		// ban g
 		case "g": {
-				// g spy alert
-				window.alert("G is very crinqe and not qood. Evil Aden is proud of you.");
-				// remove the h
-					destroy();
+				localStorage.setItem("lockOut", true);
+				window.location.reload();		
 				break;
 			}
 		}
