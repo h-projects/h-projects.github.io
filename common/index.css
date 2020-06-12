@@ -17,17 +17,15 @@ html {
 }
 
 
-::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	margin: 200px;
-}
 
 ::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
-	background: #515A5A;
+	background: #2E4053;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
-	background: #1C2833;
+	background:  #17202A;
+
 }
 
 a {
