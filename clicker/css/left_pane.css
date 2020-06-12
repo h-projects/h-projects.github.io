@@ -36,7 +36,7 @@
 
 }
 
-#buttons, #links, #clicker {
+#buttons, #links, #clicker, #what-is {
 	padding: 10px;
 }
 
@@ -48,7 +48,7 @@
 	font-size: 17px;
 	height: max-content;
 	position: absolute;
-	top: 83%;
+	top: 85%;
 	padding-left: 125px;
 	padding-right: 130px;
 	box-shadow: inherit;

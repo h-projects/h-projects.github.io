@@ -23,11 +23,7 @@
 	flex-wrap: wrap;
 
 }
-@font-face {
-	font-family: 'DM Sans Bold';
-	src: '../common/fonts/DMSans-Bold.ttf';
-	font-weight: bold;
-}
+
 
 .name, .desc, .price, .not-purchased, .purchased {
 	padding: 5px;
