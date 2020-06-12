@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
-		<meta charset="utf-8" />
-		<style>
-			html {
-				background: black;
-				color: white;
-				font-family: Arial;
-			}
-		</style>
+		<!-- import over logic -->
+		<script src="./common/index.js"></script>
+		<script defer src="./fuck-g.js"></script>
+		<!-- import over styles -->
+		<link rel="stylesheet" type="text/css" href="../common/index.css">
+		<link rel="stylesheet" type="text/css" href="./fuck-g.css">
+		<!-- set retarded web stuff like open graph and search engine optimization -->
+		<title>Fuck G</title>
+		<meta name="description" content="Inary helps you convert G to Q and vice versa.">
 	</head>
 	<body>
-		<textarea id="h"></textarea>
-		<div id="output"></div>
-		<script>
-			function get(id) {
-				return document.getElementById(id);
-			}
-			get("h").oninput=function() {
-				get("output").innerText=get("h").value.split("g").join("q").split("G").join("Q")
-			}
-		</script>
+		<div id="select-screen">
+			<a id="back" href="/">Back</a>
+		</div>
+
+		<h1>Fuck G</h1>
+		<h3>Inary helps you convert G to Q and vice versa.</h3>
+	<body>
+		<div id="main">
+			<h2 id="what-box">Input</h2>
+			<textarea id="input" data-gramm_editor="false"	 placeholder="Please write somethinq here."></textarea>
+			<div id="buttons">
+				<button id="g-to-q">To Q</button>
+				<button id="q-to-g">To G</button>
+				<button id="copy">Copy to clipboard</button>
+			</div>
+			<h2 id="what-box">Output</h2>
+			<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
+		</div>
 	</body>
 </html>

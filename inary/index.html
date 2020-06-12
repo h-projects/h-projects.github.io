@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="./inary.css">
 		<!-- set retarded web stuff like open graph and search engine optimization -->
 		<title>Inary</title>
+		<meta name="description" content="Inary helps you convert text to hinary and vice versa.">
 	</head>
 	<body>
 		<div id="select-screen">
@@ -16,17 +17,20 @@
 		</div>
 
 		<h1>Inary</h1>
-		<h3>Inary helps you convert text from text to hinary and vice versa.</h3>
+		<h3>Inary helps you convert text to hinary and vice versa.</h3>
 	<body>
 		<div id="main">
 			<h2 id="what-box">Input</h2>
-			<textarea id="input" placeholder="Please write somethinq here."></textarea>
+			<textarea id="input" data-gramm_editor="false"	 placeholder="Please write somethinq here."></textarea>
 			<div id="buttons">
 				<button id="text-to-binary">To binary</button>
 				<button id="binary-to-text">To text</button>
+				<button id="copy">Copy to clipboard</button>
 			</div>
 			<h2 id="what-box">Output</h2>
-			<textarea placeholder="Click one of the buttons above!" disabled="disabled" id="output"></textarea>
+			<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
+			<h2 id="what-box">Need to remove massive amounts of the seventh letter?</h2>
+			<button><a href="./fuck-g">Use Fuck G</a></button>
 		</div>
 	</body>
 </html>
