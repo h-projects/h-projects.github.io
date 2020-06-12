@@ -1,18 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 	<head>
-		<!-- import over logic -->
-		<script src="../common/index.js"></script>
-		<!-- import over styles -->
-		<link rel="stylesheet" type="text/css" href="../common/index.css">
-		<meta name=”viewport” content=”width=device-width, initial-scale=1″>
-		<!-- set retarded web stuff like open graph and search engine optimization -->
-		<title>Fuck G</title>
-		<meta name="description" content="Seroiusly, Fuck That Letter.">
+		<meta charset = "utf-8" />
+		<style>
+			html {
+				background: black;
+				color: white;
+				font-family: Arial;
+			}
+			textarea {
+				background: #151515;
+				color: #0f0;
+				border: 0;
+			}
+			#main {
+				width: max-content;
+				text-align: center;
+			}
+			#buttons {
+				text-align: center;
+				width: 100%;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="select-screen">
-			<a href="/">Back</a>
+		<div id = "main">
+			<textarea id = "text"></textarea>
+			<div id = "buttons">
+				<button id = "text-to-binary">To binary</button>
+				<button id = "binary-to-text">To text</button>
+			</div>
+			<textarea id = "binary"></textarea>
 		</div>
+		<script>
+			function get(id) {
+				return document.getElementById(id);
+			}
+			get("text-to-binary").onclick = function() {
+				let text = get("text").value;
+				text = text.split("");
+				text = text.map(n => n.charCodeAt(0));
+				text = text.map(n => n.toString(2)); // Number.prototype.toString() accepts a "base" argument, or what base to convert the number to.
+				text = text.map(n => n.split(""));
+				text = text.map(function(n) {
+					while(n.length < 8) {
+						n.unshift("0");
+					}
+					return n;
+				});
+				text = text.map(n => n.map(function(a) {
+					return ["h", "H"][parseInt(a)];
+				}));
+				text = text.map(n => n.join(""));
+				text = text.join(" ");
+				get("binary").value = text;
+			}
+			get("binary-to-text").onclick = function() {
+				let text = get("binary").value;
+				text = text.split(" ");
+				text = text.map(n => n.split(""));
+				text = text.map(n => n.map(function(a) {
+					return ["h", "H"].indexOf(a);
+				}));
+				text = text.map(n => n.join(""));
+				text = text.map(n => parseInt(n, 2)); // parseInt(n, b) parses the integer (n) as if it were in base (b)
+				text = text.map(n => String.fromCharCode(n));
+				text = text.join("");
+				get("text").value = text;
+			}
+		</script>
 	</body>
 </html>
