@@ -25,7 +25,7 @@ textarea {
 
 
 
-button, #button {
+button {
 	background-color: #D5DBDB;
 	border: none;
 	color: black;
@@ -37,9 +37,7 @@ button, #button {
 	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
 
-#shamless-plug {
-	padding: 5px;
-}
-button:hover, #button {
+button:hover{
 	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;	
 }
+	

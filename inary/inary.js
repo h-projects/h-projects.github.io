@@ -4,11 +4,6 @@ function get(id) {
 
 get("text-to-binary").onclick = function () {
   let parseInput = get("input").value;
-  
-  if(parseInput === 'G') {
-	localStorage.setItem("lockOut", true);
-	window.location.reload();
-  }
 
   parseInput = parseInput.split("");
   parseInput = parseInput.map((n) => n.charCodeAt(0));
@@ -31,38 +26,37 @@ get("text-to-binary").onclick = function () {
   parseInput = parseInput.map((n) => n.join(""));
   parseInput = parseInput.join(" ");
   get("output").value = parseInput;
-  
 };
 
 get("binary-to-text").onclick = function () {
-  let parseInput = get("input").value;
+	let parseInput = get("input").value;
 
-  if(parseInput === 'G') {
-	localStorage.setItem("lockOut", true);
-	window.location.reload();
-  }
+	parseInput = parseInput.split(" ");
+	parseInput = parseInput.map((n) => n.split(""));
 
-  parseInput = parseInput.split(" ");
-  parseInput = parseInput.map((n) => n.split(""));
+	parseInput = parseInput.map((n) =>
+		n.map(function (a) {
+		return ["h", "H"].indexOf(a);
+		})
+	);
 
-  parseInput = parseInput.map((n) =>
-    n.map(function (a) {
-      return ["h", "H"].indexOf(a);
-    })
-  );
+	parseInput = parseInput.map((n) => n.join(""));
+	parseInput = parseInput.map((n) => parseInt(n, 2)); // parseInt(n, b) parses the integer (n) as if it were in base (b)
+	parseInput = parseInput.map((n) => String.fromCharCode(n));
+	parseInput = parseInput.join("");
 
-  parseInput = parseInput.map((n) => n.join(""));
-  parseInput = parseInput.map((n) => parseInt(n, 2)); // parseInt(n, b) parses the integer (n) as if it were in base (b)
-  parseInput = parseInput.map((n) => String.fromCharCode(n));
-  parseInput = parseInput.join("");
-  get("output").value = parseInput;
+	if (parseInput.includes("￿")) {
+		window.alert("There was an error in the conversion!");
+	} else {
+		get("output").value = parseInput;
+	}
 };
 
 get("copy").onclick = function () {
-	  /* Select the text field */
-	  get("output").select();
-	  get("output").setSelectionRange(0, 99999); /*For mobile devices*/
-	
-	  /* Copy the text inside the text field */
-	  document.execCommand("copy");
-}
+  /* Select the text field */
+  get("output").select();
+  get("output").setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+};
