@@ -5,6 +5,7 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	text-align: center;
+
 }
 #left-area, #right-area {
 	background: #1c2833;
@@ -12,6 +13,7 @@
 	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	border-radius: 10px;
 }
+
 #left-area {
 	left: 0%;
 	right: 80%;

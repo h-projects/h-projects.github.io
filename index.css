@@ -21,6 +21,8 @@
 	height: 250px;
 }
 
+
+
 #select-square:hover {
 	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;
 }
@@ -31,6 +33,10 @@ h1, h3 {
 }
 h3 {
 	color: #5D6D7E;
+}
+
+#select-square h3 {
+	margin: 10px;
 }
 img {
 	padding-top: 10px;

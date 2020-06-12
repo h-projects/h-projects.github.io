@@ -9,8 +9,20 @@
 	padding: 5px;
 	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	cursor: pointer;
+	width: 350px;
 }
 
+#shop-items{	
+	display: flex;
+	flex-grow: 4; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-direction: row;
+	text-align: center;
+	flex-wrap: wrap;
+
+}
 @font-face {
 	font-family: 'DM Sans Bold';
 	src: '../common/fonts/DMSans-Bold.ttf';
@@ -18,7 +30,7 @@
 }
 
 .name, .desc, .price, .not-purchased, .purchased {
-	padding: 5px
+	padding: 5px;
 }
 
 .selected-item {
