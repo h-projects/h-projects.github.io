@@ -21,6 +21,10 @@
 	height: 250px;
 }
 
+h1 {
+	text-align: center;
+	padding-right: 60px;
+}
 
 
 #select-square:hover {
@@ -38,4 +42,8 @@ h1, h3 {
 }
 img {
 	padding-top: 10px;
+}
+
+h5 {
+	color: #5D6D7E;
 }
