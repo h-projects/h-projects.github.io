@@ -38,7 +38,7 @@ body > div > h2 {
 	font-weight: lighter;
 }
 
-body > div > button {
+body > div button {
 	background-color: white;
 	color: black;
 	border-radius: 5px;
