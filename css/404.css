@@ -17,7 +17,7 @@ body {
 
 body > h1 {
 	display: none;
-	font-size: 50vw;
+	font-size: 30vw;
 	font-family: futura;
 	animation: blink 0.4s ease;
 }
