@@ -5,7 +5,7 @@ console.log("This feature is for developers only. If someone told you to paste s
  } */ 
  
 if(localStorage.getItem("lockOut") == true) {
-	window.location.replace("./no-g")
+	window.location.replace("https://h-projects.github.io/no-g")
 } /* else {
 	Continue();	
 } */
