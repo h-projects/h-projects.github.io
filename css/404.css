@@ -53,10 +53,10 @@ body > div button {
 }
 
 body > div button:hover {
-	text-spacing: 10px;
+	letter-spacing: 5px;
 }
 
 body > div button:active {
-	text-spacing: 10px;
+	letter-spacing: 5px;
 	transform: scale(0.9);
 }
