@@ -26,3 +26,8 @@ body > div {
 	align-items: center;
 	justify-content: center;
 }
+
+body > div > h1 {
+	font-size: 30px;
+	font-family: futura;
+}
