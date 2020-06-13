@@ -6,7 +6,12 @@ get("g-to-q").onclick = function() {
 	get("output").value = get("input").value.split("g").join("q").split("G").join("Q");
 }
 
-get("q-to-g").onclick = function() {
+get("g-to-soft-aytch").onclick = function() {
+	get("output").value = get("input").value.split("g").join("ĥ").split("G").join("Ĥ");
+}
+
+
+get("to-g").onclick = function() {
 	get("output").value = get("input").value.split("q").join("g").split("Q").join("G");
 }
 
