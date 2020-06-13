@@ -17,12 +17,12 @@ body {
 
 body > h1 {
 	display: none;
-	animation: blink 0.2s ease;
+	animation: blink 0.4s ease;
 }
 
 body > div {
 	display: none;
-	animation: blink 0.2s ease 0.2s;
+	animation: blink 0.2s ease 0.4s;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
