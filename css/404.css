@@ -17,7 +17,7 @@ body {
 
 body > h1 {
 	display: none;
-	font-size: 50%;
+	font-size: 50vw;
 	animation: blink 0.4s ease;
 }
 
