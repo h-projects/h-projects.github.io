@@ -45,5 +45,18 @@ body > div button {
 	background-color: white;
 	color: black;
 	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	font-size: 18px;
 	font-family: futura;
+	transition: all 0.3s ease;
+}
+
+body > div button:hover {
+	text-spacing: 10px;
+}
+
+body > div button:active {
+	text-spacing: 10px;
+	transform: scale(0.9);
 }
