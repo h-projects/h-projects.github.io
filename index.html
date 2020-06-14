@@ -3,6 +3,15 @@
 	<head>
 		<!-- import over logic -->
 		<script src="./common/index.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-169183883-1');
+		</script>
 		<!-- import over styles -->
 		<link rel="stylesheet" type="text/css" href="./common/index.css">
 		<link rel="stylesheet" type="text/css" href="./index.css">
@@ -20,8 +29,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<h1>Aytch Software</h1>
-		<h3>Please select an item.</h3>
+		<div id="big-square">
+			<h1>Aytch Software</h1>
+			<h2 id="gray-this">We are a team of people who love h and codinq.</h2>
+			<a id="lutton" href="./apps">See Our Work</a>
+		</div>
+	
+		<h2>Please select an item.</h2>
 		<div id="boxes">
 				<div id="select-square">
 						<a href="./fuck-g">
@@ -65,15 +79,12 @@
 					<h3 id="docs-desc">The doucmentation for H software. Seventh letter ahead.</h3>
 				</a>
 			</div>
-			<!-- add items above this comment -->
-			<div id="select-square">
-				<h2>More pages</h2>
-				<h4><a href="/contact">Contact</a></h4>
-				<h4><a href="/about">About</a></h4>
-				<h4><a href="/apps">Applications and software</a></h4>
-				<!-- <h4><a href="https://github.com/h-projects">Qithub</a></h4>
-				<h4><a href="https://discord.gg/AbUw9fh">Discord</a></h4> -->
-			</div>
+		</div>
+		<div id="big-square">
+			<h2>More pages</h2>
+			<h4><a href="/contact">Contact</a></h4>
+			<h4><a href="/about">About</a></h4>
+			<h4><a href="/apps">Applications and software</a></h4>
 		</div>
 		<h3>&copy; Aytch Software 2020</h3>
 	</body>

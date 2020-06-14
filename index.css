@@ -21,17 +21,32 @@
 	height: 250px;
 }
 
-
+#big-square {
+	display: block;
+	text-align: center;
+	padding: 5px;
+}
 
 #select-square:hover {
 	box-shadow: 0 0px 0px 0 #e0e8f1, 0 0px 0px 0 #17202A;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	text-align: center;
 	padding: 5px;
 }
 
+#lutton {
+	background-color: #D5DBDB;
+	border: none;
+	color: black;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+}
 
 #select-square h3 {
 	margin: 10px;

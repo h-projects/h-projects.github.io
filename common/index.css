@@ -48,6 +48,10 @@ a {
 
 
 
-#gray-this, h3 {
+#gray-this, h3, hr {
 	color: #5D6D7E;
+}
+
+hr {
+	border-color: #5D6D7E;
 }
