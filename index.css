@@ -1,5 +1,5 @@
 
-#boxes {
+#boxes, .boxes {
 	display: flex;
 	flex-grow: 4; 
 	flex-wrap: wrap;
