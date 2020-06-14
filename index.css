@@ -24,14 +24,14 @@
 #big-square {
 	display: block;
 	text-align: center;
-	padding: 5px;
+	padding: 15px;
 }
 
 #select-square:hover {
 	box-shadow: 0 0px 0px 0 #e0e8f1, 0 0px 0px 0 #17202A;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
 	padding: 5px;
 }

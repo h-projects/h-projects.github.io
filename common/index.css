@@ -45,8 +45,14 @@ a {
 	border-radius: 10px;
 }
 
-
-
+#big-square {
+	display: block;
+	text-align: center !important;
+	padding: 15px;
+}
+#big-square  h4{
+	text-align: center;
+}
 
 #gray-this, h3, hr {
 	color: #5D6D7E;
