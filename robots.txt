@@ -1,0 +1,2 @@
+# why are you here?
+Sitemap: sitemap.xml
