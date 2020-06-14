@@ -22,8 +22,24 @@ textarea {
 	height: 350px;
 }
 
+@media only screen and (max-width: 768px) {
+	textarea {
+		width: 745px;
+	}
+  }
 
 
+@media only screen and ( max-width: 425px) {
+	textarea {
+		width: 400px;
+	}
+}
+
+@media only screen and ( max-width: 375px) {
+	textarea {
+		width: 350px;
+	}
+}
 
 button {
 	background-color: #D5DBDB;
