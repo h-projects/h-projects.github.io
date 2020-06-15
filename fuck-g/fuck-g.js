@@ -11,9 +11,10 @@ get("g-to-soft-aytch").onclick = function() {
 }
 
 
-get("to-g").onclick = function() {
-	get("output").value = get("input").value.split("q").join("g").split("Q").join("G");
+get("to-h").onclick = function() {
+	get("output").value = get("input").value.split("g").join("h").split("G").join("H");
 }
+
 
 get("copy").onclick = function () {
 	/* Select the text field */
@@ -23,3 +24,4 @@ get("copy").onclick = function () {
 	/* Copy the text inside the text field */
 	document.execCommand("copy");
 }
+

@@ -41,7 +41,7 @@ textarea {
 	}
 }
 
-button {
+button, #selector {
 	background-color: #D5DBDB;
 	border: none;
 	color: black;
@@ -52,6 +52,20 @@ button {
 	margin: 5px;
 	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 }
+ option {
+	background: #1C2833;
+	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	border-radius: 10px;
+	margin: 10px;
+	color: #FDFEFE !important;
+	border: none;
+	display: block;
+ }
+
+ option:hover {
+	color: #FDFEFE;
+	background: #1C2833;
+ }
 
 button:hover{
 	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;	
