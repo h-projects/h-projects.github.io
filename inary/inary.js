@@ -2,7 +2,7 @@ function get(id) {
   return document.getElementById(id);
 }
 
-get("text-to-binary").onclick = function () {
+get("to-binary").onclick = function () {
   let parseInput = get("input").value;
 
   parseInput = parseInput.split("");
@@ -28,7 +28,7 @@ get("text-to-binary").onclick = function () {
   get("output").value = parseInput;
 };
 
-get("binary-to-text").onclick = function () {
+get("to-text").onclick = function () {
 	let parseInput = get("input").value;
 
 	parseInput = parseInput.split(" ");
@@ -60,3 +60,31 @@ get("copy").onclick = function () {
   /* Copy the text inside the text field */
   document.execCommand("copy");
 };
+
+
+/* const select = get("selector");
+get("input").oninput= function() {
+    if(select.value = "to-q") {
+        get("output").value = get("input").value.split("g").join("q").split("G").join("Q");
+    }
+    else if(select.value = "to-soft-h") {
+        get("output").value = get("input").value.split("g").join("ĥ").split("G").join("Ĥ");
+    }
+    else if(select.value = "to-hard-h") {
+        get("output").value = get("input").value.split("g").join("h").split("G").join("H");
+    }
+}
+
+get("select").onselect = function() {
+    get("input").oninput= function() {
+        if(select.value = "to-q") {
+            get("output").value = get("input").value.split("g").join("q").split("G").join("Q");
+        }
+        else if(select.value = "to-soft-h") {
+            get("output").value = get("input").value.split("g").join("ĥ").split("G").join("Ĥ");
+        }
+        else if(select.value = "to-hard-h") {
+            get("output").value = get("input").value.split("g").join("h").split("G").join("H");
+        }
+    }
+} */
