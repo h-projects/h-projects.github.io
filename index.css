@@ -2,6 +2,7 @@
 
 html {
   font-family: "DM Sans";
+  background-color: #202020;
 }
 
 ::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
@@ -58,6 +59,7 @@ header {
   background-size: 2%;
   color: white;
   height: 100vh;
+  border-bottom: 2px solid #303030;
 }
 
 header h1 {
@@ -85,7 +87,7 @@ header a {
   font-size: 13px;
 }
 
-main {
+main, #main {
   background-color: #202020;
   padding-top: 20px;
 }
@@ -150,6 +152,7 @@ body > div {
   color: #202020;
   padding: 30px 0;
   margin: 0px;
+  border-top: 1px solid #303030;
 }
 
 body > div > h4 {
@@ -171,4 +174,81 @@ footer {
   padding: 30px 0;
   color: white;
   border-top: 1px solid #303030;
+}
+ 
+main > div > a {
+	color: white;
+}
+
+#boxes {
+	display: flex;
+	flex-grow: 4; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-direction: row;
+	text-align: center;
+	flex-wrap: wrap;
+
+}
+
+
+#select-square {
+	text-align: center;
+	margin: 10px;
+	transition: all 0.1s ease;
+	border: 1px solid #404040;
+	border-radius: 5px;
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+}
+
+#select-square:hover {
+	background-color: #FFFFFF10;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	padding: 5px;
+}
+
+h3 {
+	color: #FDFEFE !important;
+}
+
+#select-square h3 {
+	margin: 10px;
+}
+img {
+	padding-top: 10px;
+}
+
+h4, #main > h2		 {
+	color: #00ff21;
+}
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+
+#hype-desc {
+	font-size: 10px !important;
+}  
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#select-square > h5 {
+	color: white;
 }
