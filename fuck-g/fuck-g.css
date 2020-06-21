@@ -11,7 +11,6 @@ h3 {
 
 textarea {
 	background: inherit;
- 
 	border-radius: 10px;
 	font-family: 'DM Sans';
 	color: #FDFEFE;
@@ -73,3 +72,7 @@ button:hover {
 	 
 	}
 */
+
+footer h3 {
+	color: white !important;
+}
