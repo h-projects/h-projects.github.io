@@ -1,2 +1,8 @@
 # why are you here?
-Sitemap: sitemap.xml
+Sitemap: https://h-projects.github.io/sitemap.xml
+
+
+User-Agent: *
+Disallow: https://h-projects.github.io/404
+Disallow: https://h-projects.github.io/no-g
+
