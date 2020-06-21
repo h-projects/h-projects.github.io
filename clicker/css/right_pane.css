@@ -2,12 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	background: #2C3E50;
+	background: #191919;
 	border-radius: 20px;
 	margin: 15px;
 	height: max-content;
 	padding: 5px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+ 
 	cursor: pointer;
 	width: 350px;
 }
@@ -30,7 +30,7 @@
 }
 
 .selected-item {
-	background: #34495E;
+	background: #363636;
 }
 .name {
 	font-size: 1.25rem;

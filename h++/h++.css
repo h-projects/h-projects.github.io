@@ -12,7 +12,7 @@ h3 {
 textarea {
 	background: #1C2833;
 	border: none;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+ 
 	border-radius: 10px;
 	font-family: 'DM Sans';
 	color: #FDFEFE;
@@ -53,7 +53,7 @@ button {
 	cursor: pointer;
 	padding: 10px;
 	margin: 5px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+ 
 }
 
 button:hover{

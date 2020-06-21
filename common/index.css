@@ -10,17 +10,17 @@ html {
 	justify-content: center;
 	border-radius: 20px;
 	font-weight: 400;
+	margin: 0;
 }
 
 
 
 ::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
-	background: #2E4053;
-	border-radius: 10px;
+	background-color: #191919;
 }
 
 ::-webkit-scrollbar {
-	background:  #17202A;
+	background: transparent;
 
 }
 
@@ -32,32 +32,56 @@ a {
 #select-screen{
 	float: left;
 	color: #D5DBDB;
-	color:inherit;	
+	color: inherit;	
 	padding: 5px;
 	font-size: 25px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	margin-top: 10px;
 	margin-left: 10px;
 	border-radius: 20px;
-	background: #1c2833;
 	margin: 10px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
 	border-radius: 10px;
 }
 
 #big-square {
-	display: block;
-	text-align: center !important;
-	padding: 15px;
+	text-align: center;
+	background-color: #191919;
+	color: #202020;
+	padding: 30px 0;
+	margin: 0px;	
 }
 #big-square  h4{
 	text-align: center;
+	color: white;
 }
 
-#gray-this, h3, hr {
-	color: #5D6D7E;
-}
+
 
 hr {
 	border-color: #5D6D7E;
 }
+
+h1 {
+	color: #00ff21;
+}
+
+button {
+	padding: 10px;
+	font-size: 16px;
+	background-color: #00ff21;
+	color: #202020;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px #00000040;
+}
+
+
+
+footer, header {
+	text-align: center;
+	background-color: #191919;
+	color: #202020;
+	padding: 30px 0;
+	margin: 0;
+	color: white;
+} 
+

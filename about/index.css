@@ -8,17 +8,23 @@
 	flex-direction: row;
 	text-align: center;
 	flex-wrap: wrap;
+	
 
 }
 
 #select-square {
-	background: #1C2833;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
-	border-radius: 10px;
+	text-align: center;
 	margin: 10px;
-	display: block;
+	transition: all 0.1s ease;
+	border: 1px solid #404040;
+	border-radius: 5px;
+	padding: 10px;
 	width: 300px;
 	height: 300px;
+}
+
+#select-square:hover {
+	background-color: #FFFFFF10;
 }
 
 h1 {
@@ -26,9 +32,11 @@ h1 {
 	padding-right: 60px !important;
 }
 
-#select-square:hover {
-	box-shadow: 0 0px 0px 0 #e0e8f1, 0 0px 0px 0 #17202A;
+h2 {
+	color: #00b900;
 }
+
+
 
 h1, h2, h3 {
 	text-align: center;

@@ -4,33 +4,23 @@
 	float: center;
 	display: block;
 	margin: 0px auto;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+ 
 }
 
-#buttons button {
-	background-color: #D5DBDB;
-	border: none;
-	color: white;
-	font-size: 25px;
-	border-radius: 10px;
-	cursor: pointer;
-	padding: 5px;
-	margin: 5px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
-}
 #h-title {
 	font-size: 35px;
+	color: #00ff21;
 }
 
 #h-count {
 	font-size: 30px;
-	color: #5D6D7E;
+
 }
 
 
 #text, #buttons, #what-is	{
 	box-shadow: inherit;
-	background-color: #2C3E50;
+	background-color: 191919;
 	margin: inherit;
 	border-radius: inherit;
 
@@ -38,7 +28,7 @@
 
 #buttons, #links, #clicker, #what-is {
 	padding: 10px;
-	background-color: #2C3E50;
+	background-color: #191919;
 }
 
 #buttons button {
@@ -55,7 +45,7 @@
 	box-shadow: inherit;
 	margin: inherit;
 	border-radius: inherit;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+ 
 }
 
 #links{

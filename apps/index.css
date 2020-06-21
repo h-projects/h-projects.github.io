@@ -11,20 +11,20 @@
 
 }
 
+
 #select-square {
-	background: #1C2833;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
-	border-radius: 10px;
+	text-align: center;
 	margin: 10px;
-	display: block;
-	width: 300px;
+	transition: all 0.1s ease;
+	border: 1px solid #404040;
+	border-radius: 5px;
+	padding: 10px;
+	width: 250px;
 	height: 250px;
 }
 
-
-
 #select-square:hover {
-	box-shadow: 0 0px 0px 0 #e0e8f1, 0 0px 0px 0 #17202A;
+	background-color: #FFFFFF10;
 }
 
 h1, h2, h3, h4 {
@@ -43,10 +43,9 @@ img {
 	padding-top: 10px;
 }
 
-h5, #grey-this {
-	color: #5D6D7E;
+h4 {
+	color: #00ff21;
 }
-
 h3 {
 	font-size: 22px;
 }

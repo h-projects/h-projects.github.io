@@ -2,22 +2,24 @@
 
 
 #button {
-	background-color: #D5DBDB;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #00ff21;
+	color: #202020;
+	border-radius: 5px;
 	border: none;
-	color: black;
-	font-size: 25px;
-	border-radius: 10px;
-	cursor: pointer;
-	padding: 5px;
-	margin: 5px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	box-shadow: 0 5px 10px #00000040;
 }
 
 #button:hover{
 	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;	
 }
 
-
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 #boxes {
 	display: flex;
 	flex-grow: 4; 
@@ -30,29 +32,26 @@
 
 }
 
+
 #select-square {
-	background: #1C2833;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
-	border-radius: 10px;
+	text-align: center;
 	margin: 10px;
-	display: block;
+	border-radius: 5px;
+	padding: 10px;
 }
+
+
 
 
 a {
 	text-align: center;
 }
 
-#select-square:hover {
-	box-shadow: 0 0px 0px 0 #17202A, 0 0px 0px 0 #17202A;
-}
+
 
 h1, h3 {
 	text-align: center;
 
-}
-h3 {
-	color: #5D6D7E;
 }
 
 #select-square h3 {

@@ -10,9 +10,7 @@ h3 {
 }
 
 textarea {
-	background: #1C2833;
-	border: none;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	background: inherit;
 	border-radius: 10px;
 	font-family: 'DM Sans';
 	color: #FDFEFE;
@@ -46,15 +44,13 @@ textarea {
 
 
 button, #button {
-	background-color: #D5DBDB;
-	border: none;
-	color: black;
-	font-size: 25px;
-	border-radius: 10px;
-	cursor: pointer;
 	padding: 10px;
-	margin: 5px;
-	box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	font-size: 16px;
+	background-color: #00ff21;
+	color: #202020;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px #00000040;
 }
 
 #shamless-plug {
@@ -80,6 +76,6 @@ button:hover, #button {
 		cursor: pointer;
 		padding: 10px;
 		margin: 5px;
-		box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A;
+	 
 	}
 */
