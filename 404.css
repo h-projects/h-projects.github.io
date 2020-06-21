@@ -16,6 +16,12 @@ html {
   animation: h 20s linear infinite;
   background-size: 2%;
 }
+
+header {
+  opacity: 80%;
+  background-color: #191919;
+}
+
 #button {
   padding: 10px;
   font-size: 16px;
@@ -27,8 +33,8 @@ html {
 }
 
 #button:hover {
-	background-color: #ffffff10;
-	color: white;
+  background-color: #ffffff10;
+  color: white;
 }
 
 img {
@@ -36,6 +42,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 #boxes {
   display: flex;
   flex-grow: 4;
@@ -57,21 +64,14 @@ img {
 a {
   text-align: center;
 }
-h1 {
-	text-align: center;
-}
 
 h2 {
-	color: #00b900;
-}
-h2,
-h3 {
-  text-align: center;
+  color: #00b900;
 }
 
 h3 {
-	color: white;
-	padding-bottom: 10px;
+  color: white;
+  padding-bottom: 10px;
 }
 
 #select-square h3 {
