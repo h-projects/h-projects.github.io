@@ -11,15 +11,11 @@
 		<priority>0.95</priority>
 	</url>
 	<url>
-		<loc>https://h-projects.github.io/apps/</loc>
-		<priority>0.95</priority>
-	</url>
-	<url>
 		<loc>https://h-projects.github.io/about/</loc>
 		<priority>0.95</priority>
 	</url>
 	<url>
-		<loc>https://h-projects.github.io/press/</loc>
+		<loc>https://h-projects.github.io/about/credits/</loc>
 		<priority>0.95</priority>
 	</url>
 	<url>
@@ -48,6 +44,14 @@
 	</url>
 	<url>
 		<loc>https://h-projects.github.io/docs/hode-hh/</loc>
+		<priority>0.80</priority>
+	</url>
+		<url>
+		<loc>https://h-projects.github.io/docs/bots/</loc>
+		<priority>0.80</priority>
+	</url>
+		<url>
+		<loc>https://h-projects.github.io/docs/hode-hh/havahcript/</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>

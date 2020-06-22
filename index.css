@@ -202,6 +202,7 @@ main > div > a {
 	padding: 10px;
 	width: 250px;
 	height: 250px;
+	background: #202020;
 }
 
 #select-square:hover {
@@ -251,4 +252,30 @@ a {
 
 #select-square > h5 {
 	color: white;
+}
+
+details, details:hover {
+	color: white;
+	font: 'DM Sans';
+	text-align: center;
+	outline: none;
+	border: none;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+	background: #1C1C1C;
+	outline-color: #404040 !important;
+	margin: 8px;
+	transition: all 0.1s ease;
+	border: 1px solid #404040;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
+summary {
+	padding: 10px;
 }
