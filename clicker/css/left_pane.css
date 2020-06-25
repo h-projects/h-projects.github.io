@@ -7,9 +7,16 @@
  
 }
 
+#text {
+	text-align: center;
+}
+
 #h-title {
 	font-size: 35px;
 	color: #00ff21;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 75px !important;
 }
 
 #h-count {
@@ -26,10 +33,6 @@
 
 }
 
-#buttons, #links, #clicker, #what-is {
-	padding: 10px;
-	background-color: #191919;
-}
 
 #buttons button {
 	color: black;

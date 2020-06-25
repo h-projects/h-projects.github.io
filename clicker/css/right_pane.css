@@ -1,13 +1,11 @@
 .shop-item {
-	display: flex;
-	flex-direction: column;
 	text-align: center;
 	background: #191919;
 	border-radius: 20px;
 	margin: 15px;
 	height: max-content;
 	padding: 5px;
- 
+	border: 1px solid #404040;	
 	cursor: pointer;
 	width: 350px;
 }
@@ -21,16 +19,20 @@
 	flex-direction: row;
 	text-align: center;
 	flex-wrap: wrap;
-
 }
 
+
+.shop-item:hover {
+	background-color: #FFFFFF10;	
+}
 
 .name, .desc, .price, .not-purchased, .purchased {
 	padding: 5px;
 }
 
 .selected-item {
-	background: #363636;
+	border: 1px solid #2ECC71;
+	background-color: #FFFFFF15;	
 }
 .name {
 	font-size: 1.25rem;
