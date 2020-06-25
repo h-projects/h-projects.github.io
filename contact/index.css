@@ -59,3 +59,24 @@ h4 {
 h2 {
 	text-align: center;
 }
+
+form {
+	text-align: center;
+}
+
+input, textarea {
+	background: inherit;
+	border-radius: 10px;
+	font-family: 'DM Sans';
+	color: #FDFEFE;
+	font-size: 17px;
+	padding: 10px;
+	border: 1px solid #404040;
+	width: 1000px;
+}
+
+textarea {
+	width: 1000px; 
+	height: 350px;
+	resize: none;
+}

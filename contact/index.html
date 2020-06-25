@@ -22,14 +22,25 @@
 </head>
 
 <body>
+	<div id="select-screen">
+		<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
+	</div>
 	<header>
-		<div id="select-screen">
-			<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
-		</div>
-	
-		<h1>Contact</h1>
-	
+		<h1>Contact</h1>	
 	</header>
+	<h2>Contact Us</h2>
+	<h3>This is an expermintal form, it is not ready for use.</h3>
+	<form onsubmit="return false">
+		<input type="text" placeholder="Name" id="name">
+		<br></br>
+		<input type="email" placeholder="Email Address" id="email">
+		<br></br>
+		<input type="text" placeholder="Message Title" id="shortMessage">
+		<br></br>
+		<textarea placeholder="Your Message" id="text"></textarea>
+		<br></br>
+		<button onclick="Sumbit()">Submit</button>
+	</form>
 	<h2>Contact Info</h2>
 	<div id="boxes">
 		<div id="select-square">
