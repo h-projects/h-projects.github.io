@@ -21,9 +21,13 @@ body {
   padding: 0;
 }
 
+p {
+	color: white;
+}
+
 ::-webkit-progress-bar,
 ::-webkit-scrollbar-thumb {
-  background-color: #191919;
+  background-color: #303030;
 }
 
 ::-webkit-scrollbar {
