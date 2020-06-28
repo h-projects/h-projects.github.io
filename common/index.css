@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
   background-color: #202020;
@@ -8,6 +9,14 @@ html {
   justify-content: center;
   border-radius: 20px;
   font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "DM Sans";
+}
+ 
+p, summary, footer {
+	font-family: Montserrat;
 }
 
 @media only print {
