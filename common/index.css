@@ -25,6 +25,12 @@ p, summary, footer {
 	}
 }
 
+input:focus, textarea:focus {
+	border: 1px solid #2ECC71;
+	outline: none;
+}
+
+
 body {
   margin: 0;
   padding: 0;

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .shop-item {
 	text-align: center;
 	background: #191919;
@@ -38,11 +41,14 @@
 	font-size: 1.25rem;
 	font-family: 'DM Sans';
 	font-weight: 700 !important;
+	color: ;
 }
 
-.desc, .price {
-	color: #BFC9CA;
+.desc, .price, .not-purchased, .purchased {
+	font-family: 'Montserrat';
 }
+
+
 .purchased {
 	color: #2ECC71;
 }

@@ -53,8 +53,8 @@ img {
 	padding-top: 10px;
 }
 
-h4 {
-	color: #5D6D7E;
+body {
+	text-align: center;
 }
 h2 {
 	text-align: center;
@@ -73,6 +73,11 @@ input, textarea {
 	padding: 10px;
 	border: 1px solid #404040;
 	width: 1000px;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #2ECC71;
+	outline: none;
 }
 
 textarea {
@@ -99,3 +104,4 @@ textarea {
 		width: 350px;
 	}
 }
+
