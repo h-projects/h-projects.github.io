@@ -1,3 +1,7 @@
+body {
+	overflow: hidden;
+}
+
 #left-area, #middle-area, #right-area {
 	position: absolute;
 	top: 0%;
@@ -115,3 +119,5 @@
 		bottom: 0% !important;
 	}
 }
+
+

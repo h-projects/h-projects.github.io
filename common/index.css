@@ -25,6 +25,9 @@ p, summary, footer {
 	}
 }
 
+button:hover, a:hover {
+	cursor: pointer;
+}
 input:focus, textarea:focus {
 	border: 1px solid #2ECC71;
 	outline: none;
@@ -34,6 +37,7 @@ input:focus, textarea:focus {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -121,4 +125,43 @@ header {
 
 body > #big-square {
 	border-top: 1px solid #303030;
+}
+
+#contain-message {
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#overlay {
+	background: #0008;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#error {
+	background: #191919;
+	opacity: 100% !important;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px !important;
+	border: 1px solid #404040;
+	border-radius: 10px;
+}
+
+#js {
+	color: #f7e018;
+}
+
+#ns {
+	color: #157bf8;
 }

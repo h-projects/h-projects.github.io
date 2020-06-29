@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<!-- import over logic -->
-		<script src="js/middle_pane_h.js"></script>
-		<script src="js/right_pane_render.js"></script>
-		<script src="../common/index.js"></script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
 
-		gtag('config', 'UA-169183883-1');
-		</script>
-		<link rel="stylesheet" type="text/css" href="css/pane_layout.css">
-		<link rel="stylesheet" type="text/css" href="css/left_pane.css">
-		<link rel="stylesheet" type="text/css" href="../common/index.css">
-		<link rel="stylesheet" type="text/css" href="css/middle_pane.css">
-		<link rel="stylesheet" type="text/css" href="css/right_pane.css">
-		<!-- set retarded web stuff like open graph and search engine optimization -->
-		<title>Aytch Software | H Clicker</title>
-		<meta name="description" content="The best qame to ever exist. Click to buy thinqs for your H.">
-		<meta name=”viewport” content=”width=device-width, initial-scale=1″>
-	</head>
-	<body>
-		<!-- the values below are defaults not used in prod -->
-		<div id="left-area">
-			<div id="select-screen">
-				<a href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
-			</div>
+<head>
+	<!-- import over logic -->
+	<script src="js/middle_pane_h.js"></script>
+	<script src="js/right_pane_render.js"></script>
+	<script src="../common/index.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
+	<script>
+		window.dataLayer=window.dataLayer||[];
+		function gtag() {dataLayer.push(arguments);}
+		gtag('js',new Date());
+
+		gtag('config','UA-169183883-1');
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/pane_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/left_pane.css">
+	<link rel="stylesheet" type="text/css" href="../common/index.css">
+	<link rel="stylesheet" type="text/css" href="css/middle_pane.css">
+	<link rel="stylesheet" type="text/css" href="css/right_pane.css">
+	<!-- set retarded web stuff like open graph and search engine optimization -->
+	<title>Aytch Software | H Clicker</title>
+	<meta name="description" content="The best qame to ever exist. Click to buy thinqs for your H.">
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+</head>
+
+<body>
+
+	<!-- the values below are defaults not used in prod -->
+	<div id="left-area">
+		<div id="select-screen">
+			<a href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
+		</div>
+		<br></br>
+		<div id="text">
+			<h2 id="h-title">H Count</h2>
+			<h3 id="h-count">0</h3>
+		</div>
+		<div id="buttons">
+			<button type="button" id="hehirth">Hehirth</button>
 			<br></br>
-			<div id="text">
-				<h2 id="h-title">H Count</h2>
-				<h3 id="h-count">0</h3>
-			</div>
-			<div id="buttons">
-				<button type="button" id="hehirth">Hehirth</button>
-				<br></br>
-				<button type="button" id="reset">Hehet</button>
-			</div>
-			<div id="links">
-				<nav>
-					<p>tos link - pp link</p>
-				</nav>
-				<footer>&copy; Copyrihqt Aytch Software 2020. All Riqhts Reserved.</footer>
-			</div>
+			<button type="button" id="reset">Hehet</button>
 		</div>
-		<div id ="middle-area">
-			<button type="button" id="h">h</button>
+		<div id="links">
+			<nav>
+				<p>tos link - pp link</p>
+			</nav>
+			<footer>&copy; Copyrihqt Aytch Software 2020. All Riqhts Reserved.</footer>
 		</div>
-		<div id="right-area">
-			<div id="not_items">
-				<h2 id="shop_header">Shop</h1>
+	</div>
+	<div id="middle-area">
+		<button type="button" id="h">h</button>
+	</div>
+	<div id="right-area">
+		<div id="not_items">
+			<h2 id="shop_header">Shop</h1>
 				<h3>Buy Thinqs For Your H. Refresh To Remove These Chanqes.</h3>
-			</div>
-			<div id="shop-items">
-
+		</div>
+		<div id="shop-items">
+			<noscript>There is nothinq here.</noscript>
+		</div>
+	</div>
+	<noscript id="contain-message">
+		<div id="overlay">
+			<div id="error">
+				<h1>Critical Error</h1>
+				<p>This app requires <b id="js">JavaScript</b> to run. If you are usinq <b id="ns">NoScript</b>, please confiqure the settinqs to allow <b id="js">JavaScript</b>. If you have <b id="js">JavaScript</b> disabled, please enable it.</p>
+				<a href="/"><button>Qo Back Home</button></a>
 			</div>
 		</div>
-	</body>
+	</noscript>	
+</body>
+
 </html>

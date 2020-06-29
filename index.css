@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   background-color: #202020;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: "DM Sans";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans";
 }
- 
-p, summary, footer {
-	font-family: Montserrat;
+
+p,
+summary,
+footer {
+  font-family: Montserrat;
 }
 
-::-webkit-progress-bar, ::-webkit-scrollbar-thumb {
-	background-color: #303030;
+::-webkit-progress-bar,
+::-webkit-scrollbar-thumb {
+  background-color: #303030;
 }
 
 ::-webkit-scrollbar {
-	background-color: #202020;
-
+  background-color: #202020;
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,14 +55,13 @@ p, summary, footer {
   }
 }
 
-
 body {
   margin: 0;
 }
 
 p {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 
 header {
@@ -65,12 +70,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-	background-color: black;
-	background-image: url("./h.png");
-	background-position: 0vh 0vw;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	animation: h 20s linear infinite;
+  background-color: black;
+  background-image: url("./h.png");
+  background-position: 0vh 0vw;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  animation: h 20s linear infinite;
   background-size: 2%;
   color: white;
   height: 100vh;
@@ -78,7 +83,7 @@ header {
 }
 
 header h1 {
-	color: #00b900;
+  color: #00b900;
 }
 
 header h1 {
@@ -106,7 +111,8 @@ header a {
   font-size: 13px;
 }
 
-main, #main {
+main,
+#main {
   background-color: #202020;
   padding-top: 20px;
 }
@@ -194,117 +200,118 @@ footer {
   color: white;
   border-top: 1px solid #303030;
 }
- 
+
 main > div > a {
-	color: white;
+  color: white;
 }
 
 #boxes {
-	display: flex;
-	flex-grow: 4; 
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-	flex-direction: row;
-	text-align: center;
-	flex-wrap: wrap;
-
+  display: flex;
+  flex-grow: 4;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-
 #select-square {
-	text-align: center;
-	margin: 10px;
-	transition: all 0.1s ease;
-	border: 1px solid #404040;
-	border-radius: 5px;
-	padding: 10px;
-	width: 250px;
-	height: 250px;
-	background: #202020;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.1s ease;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  background: #202020;
 }
 
 #select-square:hover {
-	background-color: #FFFFFF10;
+  background-color: #ffffff10;
 }
 
-h1, h2, h3, h4 {
-	text-align: center;
-	padding: 5px;
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  padding: 5px;
 }
 
 h3 {
-	color: #FDFEFE !important;
+  color: #fdfefe !important;
 }
 
 #select-square h3 {
-	margin: 10px;
+  margin: 10px;
 }
 img {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
-h4, #main > h2		 {
-	color: #00ff21;
+h4,
+#main > h2 {
+  color: #00ff21;
 }
 h3 {
-	font-size: 22px;
+  font-size: 22px;
 }
 
 h4 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 h5 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
-
 #hype-desc {
-	font-size: 10px !important;
-}  
+  font-size: 10px !important;
+}
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #select-square > h5 {
-	color: white;
+  color: white;
 }
 
-details, details:hover {
-	color: white;
-	font: 'DM Sans';
-	text-align: center;
-	outline: none;
-	border: none;
-	background: #1C1C1C;
-	outline-color: #404040 !important;
-	margin: 10px;
-	transition: all 0.1s ease;
-	border: 1px solid #404040;
-	border-radius: 5px;
-	padding: 10px;	
+details,
+details:hover {
+  color: white;
+  font: "DM Sans";
+  text-align: center;
+  outline: none;
+  border: none;
+  background: #1c1c1c;
+  outline-color: #404040 !important;
+  margin: 10px;
+  transition: all 0.1s ease;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  padding: 10px;
 }
-
 
 summary {
-	padding: 10px;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-	user-select: none;
+  padding: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 summary:hover {
-	outline: none;
+  outline: none;
 }
 
 @media only print {
-	html {
-		display: none;
-	}
+  html {
+    display: none;
+  }
 }

@@ -40,7 +40,18 @@ textarea {
 	}
 }
 
+#contain-message {
+	background-color: #191919;
+	padding: 10px;
+}
 
+#contain-message p, #contain-message h1, #contain-message button{
+	margin: 0 auto;
+	top: 0;
+
+	text-align: center;
+	margin: 10px;
+}
 
 
 button, #button {
