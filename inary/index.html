@@ -15,6 +15,9 @@
 		</script>
 		<!-- import over styles -->
 		<link rel="stylesheet" type="text/css" href="../common/index.css">
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="../common/noscipt.css">
+		</noscript>
 		<link rel="stylesheet" type="text/css" href="./inary.css">
 		<!-- set retarded web stuff like open graph and search engine optimization -->
 		<title>Aytch Software | Inary</title>
@@ -23,12 +26,6 @@
 	</head>
 	<body>
 		<header>
-			<noscript id="contain-message">
-				<h1>Critical Error</h1>
-				<p>This app requires <b id="js">JavaScript</b> to run. If you are usinq <b id="ns">NoScript</b>, please confiqure the settinqs to allow <b id="js">JavaScript</b>. If you have <b id="js">JavaScript</b> disabled, please enable it.</p>
-				<a href="/"><button>Qo Back Home</button></a>
-			</noscript>
-			<br></br>
 			<div id="select-screen">
 				<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
 				</div>
@@ -36,7 +33,6 @@
 				<h1>Inary</h1>
 				<h3>Inary helps you convert text to hinary and vice versa.</h3>
 		</header>
-	<body>
 		<div id="main">
 			<h2 id="what-box">Input</h2>
 			<textarea id="input" data-gramm_editor="false"	 placeholder="Please write somethinq here."></textarea>
@@ -55,6 +51,15 @@
 			<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
 
 		</div>
+		<noscript id="contain-message">
+			<div id="overlay">
+				<div id="error">
+					<h1>Critical Error</h1>
+					<p>This app requires <b id="js">JavaScript</b> to run. If you are usinq <b id="ns">NoScript</b>, please confiqure the settinqs to allow <b id="js">JavaScript</b>. If you have <b id="js">JavaScript</b> disabled, please enable it.</p>
+					<a href="/" tabindex="1"><button>Qo Back Home</button></a>
+				</div>
+			</div>
+		</noscript>	
 		<div id="big-square" id="gray-this" class="boxes">
 			<div id="shamless-plug">
 				<h2 id="what-box">Need to remove massive amounts of the seventh letter?</h2>
