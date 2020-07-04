@@ -19,22 +19,14 @@ html {
 
 header {
   opacity: 80%;
-  background-color: #191919;
+  background-color: var(--bgSecondary);
 }
 
-#button {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #00ff21;
-  color: #202020;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 5px 10px #00000040;
-}
+
 
 #button:hover {
-  background-color: #ffffff10;
-  color: white;
+  background-color: var(--hover);
+  color: var(--text);
 }
 
 img {
@@ -70,7 +62,7 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: var(--text);
   padding-bottom: 10px;
 }
 

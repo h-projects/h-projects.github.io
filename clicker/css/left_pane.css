@@ -13,7 +13,7 @@
 
 #h-title {
 	font-size: 35px;
-	color: #00ff21;
+	color: var(--accentMain);
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 75px !important;

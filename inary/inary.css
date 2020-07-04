@@ -41,7 +41,7 @@ textarea {
 }
 
 #contain-message {
-	background-color: #191919;
+	background-color: var(--bgSecondary);
 	padding: 10px;
 }
 
@@ -57,8 +57,8 @@ textarea {
 button, #button {
 	padding: 10px;
 	font-size: 16px;
-	background-color: #00ff21;
-	color: #202020;
+	background-color: var(--accentMain);
+	color: var(--bgMain);
 	border-radius: 5px;
 	border: none;
 	box-shadow: 0 5px 10px #00000040;

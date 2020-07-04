@@ -16,7 +16,7 @@
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid #404040;
+	border: 1px solid var(--border);
 	border-radius: 5px;
 	padding: 10px;
 	width: 250px;
@@ -44,7 +44,7 @@ img {
 }
 
 h4 {
-	color: #00ff21;
+	color: var(--accentMain);
 }
 h3 {
 	font-size: 22px;

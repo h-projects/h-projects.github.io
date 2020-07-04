@@ -16,7 +16,7 @@
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid #404040;
+	border: 1px solid var(--border);
 	border-radius: 5px;
 	padding: 10px;
 	width: 300px;
@@ -71,12 +71,12 @@ input, textarea {
 	color: #FDFEFE;
 	font-size: 17px;
 	padding: 10px;
-	border: 1px solid #404040;
+	border: 1px solid var(--border);
 	width: 1000px;
 }
 
 input:focus, textarea:focus {
-	border: 1px solid #2ECC71;
+	border: 1px solid var(--selectedGreen);
 	outline: none;
 }
 

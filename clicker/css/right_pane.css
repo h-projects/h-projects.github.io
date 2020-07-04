@@ -3,12 +3,12 @@
 
 .shop-item {
 	text-align: center;
-	background: #191919;
+	background: var(--bgSecondary);
 	border-radius: 20px;
 	margin: 15px;
 	height: max-content;
 	padding: 5px;
-	border: 1px solid #404040;	
+	border: 1px solid var(--border);	
 	cursor: pointer;
 	width: 350px;
 }
@@ -34,14 +34,14 @@
 }
 
 .selected-item {
-	border: 1px solid #2ECC71;
+	border: 1px solid var(--selectedGreen);
 	background-color: #FFFFFF15;	
 }
 .name {
 	font-size: 1.25rem;
 	font-family: 'DM Sans';
 	font-weight: 700 !important;
-	color: #00ff21;
+	color: var(--accentMain);
 }
 
 .desc, .price, .not-purchased, .purchased {
@@ -50,7 +50,7 @@
 
 
 .purchased {
-	color: #2ECC71;
+	color: var(--selectedGreen);
 }
 .not-purchased {
 	color: #E74C3C;
