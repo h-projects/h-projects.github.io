@@ -88,7 +88,7 @@ class ShopItem {
         // set text of each child
         this.displayName,
         this.desc,
-        "Costs " + this.price + " h",
+        `Costs ${this.price} H.`,
         ["Not Purchased", "Purchased"][+this.purchased],
       ][i];
     }
