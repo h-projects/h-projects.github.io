@@ -33,12 +33,12 @@
 		new Crate({
 			server: '720009823458033705',
 			channel: '726889377346748498',
-			color: 'var(--border);',
+			color: '#404040',
 			glyph: [
-				"https://h-projects.github.io/favicon.ico", "1"	
+				"https://h-projects.github.io/favicon.ico","1"
 			]
 		})
-		addEventListener("load", function () { 
+		addEventListener("load",function() {
 			crate.notify({
 				content: "We are here to answer your questions. The team usually responds within 2 hours.",
 				avatar: "https://h-projects.github.io/loqo.png"
@@ -48,6 +48,15 @@
 </head>
 
 <body>
+
+	<nav id="head-nav">
+		<ul>
+			<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64" alt="Loqo"></img></a>
+			<li>
+				<a href="/contact">Contact</a><a href="/about">About</a><a href="/brand">Brand And Press</a><a
+					href="/apps">Apps</a></li>
+		</ul>
+	</nav>
 	<header>
 		<img src="./loqo.png" alt="Loqo" width="125" height="125">
 		<h1>Aytch Software</h1>
@@ -64,11 +73,11 @@
 			<summary>Converters</summary>
 			<div id="boxes">
 
-					<a id="select-square" href="/fuck-g">
-						<img src="./apps/nog.png" alt="No G" height="64" width="64"></img>
-						<h4>Fuck G</h4>
-						<p>G is the worst letter. Quies your text.</p>
-					</a>
+				<a id="select-square" href="/fuck-g">
+					<img src="./apps/nog.png" alt="No G" height="64" width="64"></img>
+					<h4>Fuck G</h4>
+					<p>G is the worst letter. Quies your text.</p>
+				</a>
 
 				<div id="select-square">
 					<a href="/inary">
@@ -197,14 +206,14 @@
 		</div>
 
 	</main>
-
-	<div>
-		<p id="gray-this"><a href="/contact">Contact</a></p>
-		<p id="gray-this"><a href="/about">About</a></p>
-		<p id="gray-this"><a href="/about/credits">Credits</a></p>
-		<p id="gray-this"><a href="/sitemap">Sitemap</a></p>
-	</div>
-	<footer>© Aytch Software 2020</footer>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a></li>
+			</ul>
+		</nav>
+		&copy; Aytch Software 2020
+	</footer>
 </body>
 
 </html>

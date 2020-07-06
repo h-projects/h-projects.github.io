@@ -79,7 +79,12 @@ header {
   animation: h 20s linear infinite;
   background-size: 2%;
   color: var(--text);
-  height: 100vh;
+  height: 50vh;
+}
+
+
+footer > nav {
+	padding: 10px;
 }
 
 header h1 {
@@ -91,7 +96,7 @@ header h1 {
 }
 
 header p {
-	color: #d5dbdb !important;
+  color: #d5dbdb !important;
 }
 
 header button {
@@ -166,7 +171,7 @@ main > div:nth-child(4) {
 }
 
 main > div:nth-child(4) > a {
-  color: var(--accentSecondary);;
+  color: var(--accentSecondary);
   text-decoration: none;
   font-size: 13px;
 }
@@ -201,6 +206,45 @@ main > div > a {
   color: var(--text);
 }
 
+main > * {
+  text-align: left !important;
+}
+
+main {
+  margin: 0 50vh;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 10px;
+  }
+}
+
+li {
+  padding: 10px;
+}
+
+li > a {
+  padding: 10px;
+}
+#head-nav {
+	text-align: center;
+	background-color: var(--bgSecondary);
+	padding: 30px 0;
+	color: var(--text);
+	font-family: 'Montserrat';
+	background-image: url("./h.png");
+	background-position: 0vh 0vw;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	animation: h 20s linear infinite;
+	background-size: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 #boxes {
   display: flex;
   flex-grow: 4;
@@ -235,8 +279,6 @@ h4 {
   text-align: center;
   padding: 5px;
 }
-
-
 
 #select-square h3 {
   margin: 10px;
@@ -289,9 +331,6 @@ details:hover {
   padding: 10px;
 }
 
-
-
-
 summary {
   padding: 10px;
   -webkit-touch-callout: none;
@@ -303,8 +342,8 @@ summary {
 }
 
 summary:hover {
-	background-color: var(--hover);
-	outline: none;
+  background-color: var(--hover);
+  outline: none;
 }
 
 @media only print {

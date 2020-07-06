@@ -13,7 +13,8 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="../common/index.css">	<link rel="stylesheet" type="text/css" href="../common/theme.css">
+	<link rel="stylesheet" type="text/css" href="../common/index.css">
+	<link rel="stylesheet" type="text/css" href="../common/theme.css">
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<!-- set retarded web stuff like open graph and search engine optimization -->
 	<title>Aytch Software | Contact</title>
@@ -23,12 +24,12 @@
 		new Crate({
 			server: '720009823458033705',
 			channel: '726889377346748498',
-			color: 'var(--border);',
+			color: '#404040',
 			glyph: [
-				"https://h-projects.github.io/favicon.ico", "1"	
+				"https://h-projects.github.io/favicon.ico","1"
 			]
 		})
-		addEventListener("load", function () { 
+		addEventListener("load",function() {
 			crate.notify({
 				content: "We are here to answer your questions. The team usually responds within 2 hours.",
 				avatar: "https://h-projects.github.io/loqo.png"
@@ -38,68 +39,79 @@
 </head>
 
 <body>
-	<div id="select-screen">
-		<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
-	</div>
 	<header>
-		<h1>Contact</h1>	
+		<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64" alt="Loqo"></img></a>
+		<h1>Contact</h1>
 	</header>
-	<h2>Chat with us now</h2>
-	<button onclick="crate.toggle(true)">Chat Now</button>
-	<h2>Contact Us</h2>
-	<p>This is an expermintal form, it is not ready for use.</p>
-	<form onsubmit="return false">
-		<input type="text" placeholder="Name" id="name">
-		<br></br>
-		<input type="email" placeholder="Email Address" id="email">
-		<br></br>
-		<input type="text" placeholder="Message Title" id="shortMessage">
-		<br></br>
-		<textarea placeholder="Your Message" id="text"></textarea>
-		<br></br>
-		<button onclick="Sumbit()">Submit</button>
-	</form>
-	<h2>Contact Info</h2>
-	<div id="boxes">
-		<div id="select-square">
-			<h3><a href="mailto:AytchSoftware@gmail.com">Email</a></h3>
-			<p>AytchSoftware@gmail.com</p>
+	<main>
+		<h2>Chat with us now</h2>
+		<button onclick="crate.toggle(true)">Chat Now</button>
+		<h2>Contact Us</h2>
+		<p>This is an expermintal form, it is not ready for use.</p>
+		<form onsubmit="return false">
+			<input type="text" placeholder="Name" id="name">
+			<br></br>
+			<input type="email" placeholder="Email Address" id="email">
+			<br></br>
+			<input type="text" placeholder="Message Title" id="shortMessage">
+			<br></br>
+			<textarea placeholder="Your Message" id="text"></textarea>
+			<br></br>
+			<button onclick="Sumbit()">Submit</button>
+		</form>
+		<h2>Contact Info</h2>
+		<div id="boxes">
+			<div id="select-square">
+				<h3><a href="mailto:AytchSoftware@gmail.com">Email</a></h3>
+				<p>AytchSoftware@gmail.com</p>
+			</div>
+			<div id="select-square">
+				<h3>Phone Number</h3>
+				<p>We don't have a phone number. Because if we did, we would qet CRITICAL ALERT FROM MICROSOFT.</p>
+			</div>
+			<div id="select-square">
+				<h3>Location</h3>
+				<p>It's open source so fuck centerlization. We are 100% remote.</p>
+			</div>
 		</div>
-		<div id="select-square">
-			<h3>Phone Number</h3>
-			<p>We don't have a phone number. Because if we did, we would qet CRITICAL ALERT FROM MICROSOFT.</p>
 		</div>
-		<div id="select-square">
-			<h3>Location</h3>
-			<p>It's open source so fuck centerlization. We are 100% remote.</p>
-		</div>
-	</div>
-	</div>
-	<h2>Our Social Medias</h2>
-	<div id="boxes">
-		<div id="select-square">
-			<h3><a href="https://github.com/h-projects">GitHub</a></h3>
-			<p>Where the source code for Hode.HH, this site and the qames live.</p>
-		</div>
-		<div id="select-square">
-			<h3><a href="https://glitch.com/@h-projects">Glitch</a></h3>
-			<p>Where the source code for the discord bots is.</p>
-		</div>
-		<div id="select-square">
-			<h3><a href="https://reddit.com/r/AytchSoftware">Reddit</a></h3>
-			<p>The official community for Aytch Software on reddit.</p>
-		</div>
-		<div id="select-square">
-			<h3><a href="https://discord.gg/AbUw9fh">Discord</a></h3>
-			<p>Where we talk about aytch software.</p>
-		</div>
-	</div>
-	<div id="big-square" id="gray-this" class="boxes">
- 				<p id="gray-this"><a href="/contact">Contact</a></p><p id="gray-this"><a href="/about">About</a></p><p id="gray-this"><a href="/about/credits">Credits</a></p><p id="gray-this"><a href="/sitemap">Sitemap</a></p>
+		<h2>Our Social Medias</h2>
+		<div id="boxes">
+			<a id="select-square" href="https://github.com/h-projects">
+				<h3>GitHub</h3>
+				<p>Where the source code for Hode.HH, this site and the qames live.</p>
+			</a>
 
- 
-	</div>
-	<footer>&copy; Aytch Software 2020</footer>
+			<a id="select-square" href="https://glitch.com/@h-projects">
+				<h3>Glitch</h3>
+				<p>Where the source code for the discord bots is.</p>
+			</a>
+
+			<a id="select-square" href="https://reddit.com/r/AytchSoftware">
+				<h3>Reddit</h3>
+				<p>The official community for Aytch Software on reddit.</p>
+			</a>
+
+			<a id="select-square" href="https://discord.gg/AbUw9fh">
+				<h3>Discord</h3>
+				<p>Where we talk about aytch software.</p>
+			</a>
+
+			<a id="select-square" href="https://twitter.com/@AytchSoftware">
+				<h3>Twitter</h3>
+				<p>Where you can stay up to date on updates!</p>
+			</a>
+		</div>
+
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a></li>
+			</ul>
+		</nav>
+		&copy; Aytch Software 2020
+	</footer>
 	</div>
 </body>
 

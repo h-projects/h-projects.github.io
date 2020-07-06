@@ -13,7 +13,8 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="../common/index.css">	<link rel="stylesheet" type="text/css" href="../common/theme.css">
+	<link rel="stylesheet" type="text/css" href="../common/index.css">
+	<link rel="stylesheet" type="text/css" href="../common/theme.css">
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<!-- set retarded web stuff like open graph and search engine optimization -->
 	<title>Aytch Software | About</title>
@@ -24,12 +25,12 @@
 		new Crate({
 			server: '720009823458033705',
 			channel: '726889377346748498',
-			color: 'var(--border);',
+			color: '#404040',
 			glyph: [
-				"https://h-projects.github.io/favicon.ico", "1"	
+				"https://h-projects.github.io/favicon.ico","1"
 			]
 		})
-		addEventListener("load", function () { 
+		addEventListener("load",function() {
 			crate.notify({
 				content: "We are here to answer your questions. The team usually responds within 2 hours.",
 				avatar: "https://h-projects.github.io/loqo.png"
@@ -40,59 +41,66 @@
 
 <body>
 	<header>
-		<div id="select-screen">
-			<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
-		</div>
-	
-		<h1>About Aytch Software</h1>
+		<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64" alt="Loqo"></img></a>
+		<nav>
+			<ul>
+				<li><a href="/contact">Contact</a><a href="/about">About</a><a href="/brand">Brand And Press</a><a href="/apps">Apps</a></li>
+			</ul>
+		</nav>
 	</header>
+	<main>
+		<h2>About Us</h2>
+		<p id="description">We are a qroup of developers who like the letter H. We make software for H fans. We have
+			been servinq H Fans Software since 2020.</p>
+		<h2>Our Mission</h2>
+		<p>Our Mission is to aytchify the world and allow the expansion of what JS, CSS and HTML can do.</p>
+		<h2>Our History<h2>
+		<p>This area is not complete yet, check back soon!</p>
+		<h2>Who are we?</h2>
+		<div id="boxes">
+			<div id="select-square">
+						<img src="senko.webp" width="128" height="138">
+						<h2>Senko#2137</h2>
+						<p>Web and JS Wizard</p>
+					</div>
+					<div id="select-square">
+						<img src="index.webp">
+						<h2>Indexerrowaty#8155</h2>
+						<p>G.A.S Bot Coder and UI Wizard</p>
+					</div>
+					<div id="select-square">
+						<img src="superchupu.webp">
+						<h2>Superchupu#5249</h2>
+						<p>G.A.S Bot Creator and Dev, D.JS Wizard</p>
+					</div>
+					<div id="select-square">
+						<img src="hhhhh.webp">
+						<h2>｟h｠#1836</h2>
+						<p>JS Class wizard</p>
+					</div>
+					<div id="select-square">
+						<img src="dnor.webp">
+						<h2>dnorhoj#0110</h2>
+						<p>Flutter wizard</p>
+					</div>
+					<div id="select-square">
+						<img src="sneeze.webp">
+						<h2>SneezingCactus#5637</h2>
+						<p>JSON Wizard</p>
+					</div>
+				</div>
+	</main>
 
-	<h2>About Us</h2>
-	<h3 id="description">We are a qroup of developers who like <br> the letter H. We make software for H <br> fans. We
-		have been servinq H Fans <br> Software since 2020.</h3>
-	<h2>Our Mission</h2>
-	<h3>Our Mission is to aytchify the world and allow the expansion of what JS, CSS and HTML can do.</h3>
-	<h2>Our History<h2>
-			<h3>This area is not complete yet, check back soon!</h3>
-			<h2>Who are we?</h2>
-			<div id="boxes">
-				<div id="select-square">
-					<img src="senko.webp" width="128" height="138">
-					<h2>Senko#2137</h2>
-					<h3>Web and JS Wizard</h3>
-				</div>
-				<div id="select-square">
-					<img src="index.webp">
-					<h2>Indexerrowaty#8155</h2>
-					<h3>G.A.S Bot Coder and UI Wizard</h3>
-				</div>
-				<div id="select-square">
-					<img src="superchupu.webp">
-					<h2>Superchupu#5249</h2>
-					<h3>G.A.S Bot Creator and Dev, D.JS Wizard</h3>
-				</div>
-				<div id="select-square">
-					<img src="hhhhh.webp">
-					<h2>｟h｠#1836</h2>
-					<h3>JS Class wizard</h3>
-				</div>
-				<div id="select-square">
-					<img src="dnor.webp">
-					<h2>dnorhoj#0110</h2>
-					<h3>Flutter wizard</h3>
-				</div>
-				<div id="select-square">
-					<img src="sneeze.webp">
-					<h2>SneezingCactus#5637</h2>
-					<h3>JSON Wizard</h3>
-				</div>
-			</div>
-			<div id="big-square" id="gray-this" class="boxes">
-			<p id="gray-this"><a href="/contact">Contact</a></p><p id="gray-this"><a href="/about">About</a></p><p id="gray-this"><a href="/about/credits">Credits</a></p><p id="gray-this"><a href="/sitemap">Sitemap</a></p>
+	<div>
+		<p><a href="/contact">Contact</a></p>
+		<p><a href="/about">About</a></p>
+		<p><a href="/about/credits">Credits</a></p>
+		<p><a href="/sitemap">Sitemap</a></p>
+		<p><a href="/brand">Brand And Press</a></p>
 
-		 
-			</div>
-			<footer>&copy; Aytch Software 2020</footer>
+
+	</div>
+	<footer>&copy; Aytch Software 2020</footer>
 </body>
 
 </html>
