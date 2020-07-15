@@ -65,3 +65,21 @@ h5 {
 #hype-desc {
 	font-size: 10px !important;
 }
+
+body {
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"sidebar content aside"
+		"footer footer footer"
+}
+
+header { grid-area: header;}
+main { grid-area: content;}
+#sidebar { 
+	grid-area: sidebar;
+	/* background: var(--bgTeritary); */
+	background: #19191950;	
+ }
+aside { grid-area: aside; }
+footer { grid-area: footer;}
