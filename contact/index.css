@@ -61,8 +61,10 @@ h2 {
 }
 
 form {
-	text-align: center;
+	text-align: left !important;
 }
+
+
 
 input, textarea {
 	background: inherit;
@@ -72,7 +74,7 @@ input, textarea {
 	font-size: 17px;
 	padding: 10px;
 	border: 1px solid var(--border);
-	width: 1000px;
+	width: 98% !important;
 }
 
 input:focus, textarea:focus {

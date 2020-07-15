@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><meta name="twitter:site" content="@AytchSoftware"><meta property="og:image" content="https://h-projects.github.io/header.png"><meta property="og:site_name" content="Aytch Software">
 	<!-- import over logic -->
 	<script src="https://h-projects.github.io/common/index.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
@@ -40,22 +40,35 @@
 
 <body>
 	<header>
-		<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64" alt="Loqo"></img></a>
-		<h1>Contact</h1>
+		<nav>
+			<ul>
+				<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64"
+						alt="Loqo"></img></a>
+				<li>
+<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a href="/contact">Contact</a>
+				</li>
+
+			</ul>
+		</nav>
 	</header>
 	<main>
+		<h1>Contact</h1>
 		<h2>Chat with us now</h2>
 		<button onclick="crate.toggle(true)">Chat Now</button>
 		<h2>Contact Us</h2>
 		<p>This is an expermintal form, it is not ready for use.</p>
 		<form onsubmit="return false">
-			<input type="text" placeholder="Name" id="name">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name">
 			<br></br>
-			<input type="email" placeholder="Email Address" id="email">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
 			<br></br>
-			<input type="text" placeholder="Message Title" id="shortMessage">
+			<label for="title">Title</label>
+			<input type="text" name="title" id="shortMessage">
 			<br></br>
-			<textarea placeholder="Your Message" id="text"></textarea>
+			<label for="message">Messaqe</label>
+			<textarea name="message" id="text"></textarea>
 			<br></br>
 			<button onclick="Sumbit()">Submit</button>
 		</form>
@@ -67,7 +80,7 @@
 			</div>
 			<div id="select-square">
 				<h3>Phone Number</h3>
-				<p>We don't have a phone number. Because if we did, we would qet CRITICAL ALERT FROM MICROSOFT.</p>
+				<p>(669) 777-9468</p>
 			</div>
 			<div id="select-square">
 				<h3>Location</h3>
@@ -107,7 +120,7 @@
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a></li>
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And Press</a><a href="/reviews">Reviews</a></li>
 			</ul>
 		</nav>
 		&copy; Aytch Software 2020

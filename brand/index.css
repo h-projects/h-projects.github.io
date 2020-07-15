@@ -13,6 +13,35 @@ main {
 
 }
 
+details,
+details:hover {
+  color: var(--text);
+  font: "DM Sans";
+  text-align: center;
+  outline: none;
+  border: none;
+  background: var(--bgSecondary);
+  outline: none;
+  margin: 10px;
+  transition: all 0.1s ease;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+summary {
+  padding: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+summary:hover {
+  background-color: var(--hover);
+  outline: none;
+}
 
 #select-square {
 	text-align: center;

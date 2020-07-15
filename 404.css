@@ -17,13 +17,19 @@ html {
   background-size: 2%;
 }
 
-header {
+header, footer {
   opacity: 80%;
   background-color: var(--bgSecondary);
 }
 
-
-
+li {
+	color: var(--text);
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 	100vw;
+}
 #button:hover {
   background-color: var(--hover);
   color: var(--text);
@@ -33,6 +39,10 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}	
+
+ol > p{
+	margin: none;
 }
 
 #boxes {
@@ -44,6 +54,7 @@ img {
   flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
+  margin: 15vh 0;
 }
 
 #select-square {

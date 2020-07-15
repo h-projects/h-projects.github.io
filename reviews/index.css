@@ -1,0 +1,99 @@
+review-boxes {
+	display: flex;
+	flex-grow: 4;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+  }
+
+  
+#select-square {
+  text-align: center;
+  margin: 10px;
+  transition: all 0.1s ease;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  background: var(--bgMain);
+}
+
+#select-square:hover {
+  background-color: var(--hover);
+}
+
+#expanded-select-square {
+  text-align: center;
+  margin: 10px;
+  transition: all 0.1s ease;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  width: 98%;
+  background: var(--bgMain);
+}
+  
+#non-hover-square {
+	text-align: center;
+	margin: 10px;
+	transition: all 0.1s ease;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+	background: var(--bgMain);
+}
+
+
+
+#expanded-select-square > hr {
+	border-color: var(--accentSecondary);
+}
+
+#expanded-select-square > img {
+	border-radius: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  padding: 5px;
+}
+
+#select-square h3 {
+  margin: 10px;
+}
+img {
+  padding-top: 10px;
+}
+
+h4,
+#main > h2 {
+  color: var(--accentMain);
+}
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#select-square > h5 {
+  color: var(--text);
+}
