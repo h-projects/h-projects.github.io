@@ -81,5 +81,4 @@ main { grid-area: content;}
 	/* background: var(--bgTeritary); */
 	background: #19191950;	
  }
-aside { grid-area: aside; text-align: left !important;}
 footer { grid-area: footer;}
