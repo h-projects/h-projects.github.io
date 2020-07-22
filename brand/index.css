@@ -20,11 +20,11 @@ details:hover {
   text-align: center;
   outline: none;
   border: none;
-  background: var(--bgSecondary);
+  background: var(--bgSecond);
   outline: none;
   margin: 10px;
   transition: all 0.1s ease;
-  border-radius: 5px;
+  border-radius: var(--radius);
   padding: 10px;
 }
 
@@ -47,7 +47,7 @@ summary:hover {
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid var(--border);
+	background-color: var(--bgThird);
 	border-radius: 5px;
 	padding: 10px;
 	width: 300px;

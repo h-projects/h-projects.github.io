@@ -1,4 +1,4 @@
-review-boxes {
+#review-boxes {
 	display: flex;
 	flex-grow: 4;
 	flex-wrap: wrap;
@@ -9,54 +9,47 @@ review-boxes {
 	flex-wrap: wrap;
   }
 
-  
-#select-square {
-  text-align: center;
-  margin: 10px;
-  transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 10px;
-  width: 250px;
-  height: 250px;
-  background: var(--bgMain);
-}
+
 
 #select-square:hover {
   background-color: var(--hover);
 }
 
-#expanded-select-square {
-  text-align: center;
-  margin: 10px;
-  transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 10px;
-  width: 98%;
-  background: var(--bgMain);
+#testmonial > p::before, #testmonial > p::after {
+	content: "\“";
+	font-size: 23px;
+	font-family: "Source Serif Pro" !important;
 }
-  
-#non-hover-square {
+
+#testmonial > p {
+	font-family: "Source Serif Pro" !important;
+	font-size: 23px;
+}
+
+#expanded-select-square {
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid var(--border);
-	border-radius: 5px;
+	background: var(--bgThird);
+	border-radius: var(--radius);
 	padding: 10px;
-	width: 250px;
-	height: 250px;
-	background: var(--bgMain);
+	display: grid;
+	grid-template-areas: "data review";
+	
 }
 
 
-
-#expanded-select-square > hr {
-	border-color: var(--accentSecondary);
+#reviewerData > img {
+  border-radius: 100%;
 }
 
-#expanded-select-square > img {
-	border-radius: 100%;
+#reviewerdata {
+	grid-area: data;
+	background: var(--bgFourth);
+}
+
+#testmonial {
+	grid-area: review;
 }
 h1,
 h2,

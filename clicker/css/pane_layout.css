@@ -31,7 +31,7 @@ body {
 }
 
 #left-area, #right-area {
-	background-color: var(--bgSecondary);
+	background-color: var(--bgSecond);
 }
 
 @media only screen and (max-width: 768px) {

@@ -16,7 +16,7 @@
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid var(--border);
+	background-color: var(--bgThird);
 	border-radius: 5px;
 	padding: 10px;
 	width: 250px;
@@ -78,7 +78,7 @@ header { grid-area: header;}
 main { grid-area: content;}
 #sidebar { 
 	grid-area: sidebar;
-	/* background: var(--bgTeritary); */
+	/* background: var(--bgThird); */
 	background: #19191950;	
  }
 footer { grid-area: footer;}

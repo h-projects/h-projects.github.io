@@ -1,13 +1,15 @@
 :root {
-  --bgMain: #202020;
-  --bgSecondary: #191919;
-  --bgTeritary: #19191910;
+  --bgFirst: #0a0a0a;
+  --bgSecond: #000000;
+  --bgThird: #0f0f0f;
+  --bgFourth: #262626;
   --hover: #ffffff10;
   --border: #404040;
   --text: #d5dbdb;
   --selectedGreen: #2ecc71;
   --unselectedRed: #e74c3c;
-  --accentMain: #00ff21;
-  --accentSecondary: #00b900;
+  --accentMain: #4d1fb0;
+  --accentSecondary: #4d1fb0;
   --overlay: #0008;
+  --radius: 20px;
 }

@@ -19,12 +19,12 @@ img {
   text-align: center;
   margin: 10px;
   transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
+background: var(--bgThird);
+  border-radius: var(--radius);
   padding: 10px;
   width: 250px;
   height: 250px;
-  background: var(--bgMain);
+  background: var(--bgFirst);
 }
 
 #select-square:hover {

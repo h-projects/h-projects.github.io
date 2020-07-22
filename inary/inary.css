@@ -41,7 +41,7 @@ textarea {
 }
 
 #contain-message {
-	background-color: var(--bgSecondary);
+	background-color: var(--bgSecond);
 	padding: 10px;
 }
 
@@ -58,7 +58,7 @@ button, #button {
 	padding: 10px;
 	font-size: 16px;
 	background-color: var(--accentMain);
-	color: var(--bgMain);
+	color: var(--bgFirst);
 	border-radius: 5px;
 	border: none;
 	box-shadow: 0 5px 10px #00000040;

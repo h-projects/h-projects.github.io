@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
-  background-color: var(--bgMain);
+  background-color: var(--bgFirst);
   color: var(--text);
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  background-color: var(--bgMain);
+  background-color: var(--bgFirst);
 }
 
 @media only screen and (max-width: 600px) {
@@ -88,7 +88,7 @@ footer > nav {
 }
 
 header h1 {
-  color: #00b900;
+  color: var(--accentSecondary);
 }
 
 header h1 {
@@ -99,18 +99,19 @@ header p {
   color: #d5dbdb !important;
 }
 
+
 button {
   padding: 10px;
   font-size: 16px;
   background-color: var(--accentMain);
-  color: var(--bgMain);
-  border-radius: 5px;
+  color: var(--text);
+  border-radius: var(--radius);
   border: none;
   box-shadow: 0 5px 10px #00000040;
 }
 
 header a {
-  color: #00b900;
+  color: var(--accentSecondary);
   text-decoration: none;
   margin-top: 10px;
   font-size: 13px;
@@ -118,7 +119,7 @@ header a {
 
 main,
 #main {
-  background-color: var(--bgMain);
+  background-color: var(--bgFirst);
   padding-top: 20px;
 }
 
@@ -148,8 +149,8 @@ main > div > * {
   text-align: center;
   margin: 10px;
   transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
+  background: var(--bgThird);
+  border-radius: var(--radius);
   padding: 10px;
 }
 
@@ -181,7 +182,7 @@ main > div:nth-child(4) > a {
 
 body > div {
   text-align: center;
-  background-color: var(--bgSecondary);
+  background-color: var(--bgSecond);
   padding: 30px 0;
   margin: 0px;
 }
@@ -200,7 +201,7 @@ body > div > h4 > a {
 
 footer {
   text-align: center;
-  background-color: var(--bgSecondary);
+  background-color: var(--bgSecond);
   padding: 30px 0;
   color: var(--text);
 }
@@ -248,6 +249,7 @@ li {
   animation: h 20s linear infinite;
   background-size: 2%;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -264,73 +266,81 @@ ul {
   flex-wrap: wrap;
   margin: none;
 }
+ 
 
 #review-boxes {
-	display: flex;
-	flex-grow: 4;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-	flex-direction: column;
-	text-align: center;
-	flex-wrap: wrap;
-  }
+  display: flex;
+  flex-grow: 4;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+}
 
-  
 #select-square {
   text-align: center;
   margin: 10px;
   transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
+  background: var(--bgThird);
+  border-radius: var(--radius);
   padding: 10px;
   width: 250px;
   height: 250px;
-  background: var(--bgMain);
 }
 
 #select-square:hover {
   background-color: var(--hover);
 }
 
-#expanded-select-square {
+
+
+#non-hover-square {
   text-align: center;
   margin: 10px;
   transition: all 0.1s ease;
-  border: 1px solid var(--border);
-  border-radius: 5px;
+  background-color: var(--bgThird);
+  border-radius: var(--radius);
   padding: 10px;
-  width: 98%;
-  background: var(--bgMain);
+  width: 250px;
+  height: 250px;
 }
-  
-#non-hover-square {
+
+#testmonial > p::before, #testmonial > p::after {
+	content: "\“";
+	font-size: 23px;
+	font-family: "Source Serif Pro" !important;
+}
+
+#testmonial > p {
+	font-family: "Source Serif Pro" !important;
+	font-size: 23px;
+}
+#expanded-select-square {
 	text-align: center;
 	margin: 10px;
 	transition: all 0.1s ease;
-	border: 1px solid var(--border);
-	border-radius: 5px;
+	background: var(--bgThird);
+	border-radius: var(--radius);
 	padding: 10px;
-	width: 250px;
-	height: 250px;
-	background: var(--bgMain);
+	display: grid;
+	grid-template-areas: "data review";
 }
 
 
-
-#expanded-select-square > hr {
-	border-color: var(--accentSecondary);
+#reviewerData > img {
+  border-radius: 100%;
 }
 
-#expanded-select-square > img {
-	border-radius: 100%;
+#reviewerdata {
+	grid-area: data;
+	background: var(--bgFourth);
+	opacity: 50%;
 }
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
-  padding: 5px;
+
+#testmonial {
+	grid-area: review;
 }
 
 #select-square h3 {
@@ -356,8 +366,9 @@ h5 {
   font-size: 18px;
 }
 
-button:hover, #select-square:hover {
-	cursor: pointer;
+button:hover,
+#select-square:hover {
+  cursor: pointer;
 }
 
 a {

@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
-  background-color: var(--bgMain);
+  background-color: var(--bgFirst);
   font-family: "DM Sans";
   color: var(--text);
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   font-weight: 400;
+  
 }
 
 h1,
@@ -19,6 +20,7 @@ h5,
 h6 {
   font-family: "DM Sans";
 }
+
 
 p,
 summary,
@@ -47,6 +49,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  
 }
 
 p {
@@ -67,42 +70,24 @@ a {
   color: inherit;
 }
 
-#select-screen {
-  float: left;
-  color: #d5dbdb;
-  color: inherit;
-  padding: 5px;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-#big-square {
-  text-align: center;
-  background-color: var(--bgSecondary);
-  color: var(--bgMain);
-  padding: 30px 0;
-  margin-top: 10px;
-}
-
-#big-square h4 {
-  text-align: center;
-  color: var(--text);
-}
-
 h1 {
   color: var(--accentMain);
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	color: var(--accentMain);
+}
+
 button {
-  padding: 10px;
+  padding: 20px;
   font-size: 16px;
   background-color: var(--accentMain);
-  color: var(--bgMain);
-  border-radius: 5px;
+  color: var(--bgFirst);
+  border-radius: var(--radius);
   border: none;
   box-shadow: 0 5px 10px #00000040;
 }
@@ -116,7 +101,7 @@ ul {
 footer,
 header {
   text-align: center;
-  background-color: var(--bgSecondary);
+  background-color: var(--bgSecond);
   padding: 30px 0;
   color: var(--text);
 }
@@ -142,14 +127,14 @@ header {
 }
 
 #error {
-  background: var(--bgSecondary);
+  background: var(--bgSecond);
   opacity: 100% !important;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 10px !important;
-  border: 1px solid var(--border);
+background: var(--bgThird);
   border-radius: 10px;
 }
 

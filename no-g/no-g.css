@@ -20,7 +20,7 @@
 	padding: 10px;
 	font-size: 16px;
 	background-color: var(--accentMain);
-	color: var(--bgMain);
+	color: var(--bgFirst);
 	border-radius: 5px;
 	border: none;
 	box-shadow: 0 5px 10px #00000040;
@@ -62,7 +62,7 @@
   }
   
   h2 {
-	  color: #00b900;
+	  color: var(--accentSecondary);
   }
   h2,
   h3 {

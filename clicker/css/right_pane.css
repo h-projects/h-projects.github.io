@@ -3,12 +3,12 @@
 
 .shop-item {
 	text-align: center;
-	background: var(--bgSecondary);
+	background: var(--bgSecond);
 	border-radius: 20px;
 	margin: 15px;
 	height: max-content;
 	padding: 5px;
-	border: 1px solid var(--border);	
+	background-color: var(--bgThird);	
 	cursor: pointer;
 	width: 350px;
 }
@@ -56,11 +56,6 @@
 	color: #E74C3C;
 }
 
-#12 p {
-	-moz-transform: rotate(-180deg) !important; /* Firefox */
-	-webkit-transform: rotate(-180deg) !important; /* Webkit */        
-	-ms-transform: rotate(-180deg) !important; /* IE */
-	-o-transform: rotate(-180deg) !important; /* Opera */
-	transform: rotate(-180deg) !important; /* future */
-	position:absolute;
+#12 {
+	transform: matrix(1, 0, 0, -1, 0, 0);
 }

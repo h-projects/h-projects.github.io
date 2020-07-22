@@ -19,7 +19,7 @@ html {
 
 header, footer {
   opacity: 80%;
-  background-color: var(--bgSecondary);
+  background-color: var(--bgSecond);
 }
 
 li {
@@ -60,7 +60,7 @@ ol > p{
 #select-square {
   text-align: center;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: var(--radius);
   padding: 10px;
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 h2 {
-  color: #00b900;
+  color: var(--accentSecondary);
 }
 
 h3 {
