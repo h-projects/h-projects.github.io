@@ -1,15 +1,6 @@
-@keyframes h {
-  from {
-    background-position: 0vh 0vw;
-  }
-  to {
-    background-position: -100vh -100vw;
-  }
-}
-
 html {
   background-color: black;
-  background-image: url("https://h-projects.github.io/huh.png");
+  background-image: url("https://h-projects.github.io/assets/images/hero/huh.png");
   background-position: 0vh 0vw;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -17,43 +8,28 @@ html {
   background-size: 2%;
 }
 
-header, footer {
+header,
+footer {
   opacity: 80%;
-  background-color: var(--bgSecond);
 }
 
-li {
-	color: var(--text);
-}
 footer {
-	position: fixed;
-	bottom: 0;
-	width: 	100vw;
-}
-#button:hover {
-  background-color: var(--hover);
-  color: var(--text);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}	
+}
 
-ol > p{
-	margin: none;
+ol > p {
+  margin: none;
 }
 
 #boxes {
-  display: flex;
-  flex-grow: 4;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
   margin: 15vh 0;
 }
 
@@ -62,21 +38,4 @@ ol > p{
   margin: 10px;
   border-radius: var(--radius);
   padding: 10px;
-}
-
-a {
-  text-align: center;
-}
-
-h2 {
-  color: var(--accentSecondary);
-}
-
-h3 {
-  color: var(--text);
-  padding-bottom: 10px;
-}
-
-#select-square h3 {
-  margin: 10px;
 }

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><meta name="twitter:site" content="@AytchSoftware"><meta property="og:image" content="https://h-projects.github.io/header.png"><meta property="og:site_name" content="Aytch Software">
+<head>
+	<meta name="twitter:site" content="@AytchSoftware">
+	<meta property="og:image" content="https://h-projects.github.io/assets/images/brand/loqo.png">
+	<meta property="og:site_name" content="Aytch Software">
+	<script src="./index.js"></script>
 	<!-- import over logic -->
-	<script src="https://h-projects.github.io/common/index.js"></script>
+	<script src="https://h-projects.github.io/assets/index.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
 		window.dataLayer=window.dataLayer||[];
@@ -13,24 +17,25 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="../common/index.css">
-	<link rel="stylesheet" type="text/css" href="../common/theme.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<!-- set retarded web stuff like open graph and search engine optimization -->
 	<title>Aytch Software | Contact</title>
 	<meta name="description" content="Contact the people at aytch software.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
 </head>
 
 <body>
 	<header>
 		<nav>
 			<ul>
-				<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64"
+				<a href="/"><img src="https://h-projects.github.io/assets/images/brand/loqo.png" height="64" width="64"
 						alt="Loqo"></img></a>
 				<li>
-<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a href="/contact">Contact</a>
+					<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a
+						href="/contact" id="selected">Contact</a>
 				</li>
 
 			</ul>
@@ -38,8 +43,6 @@
 	</header>
 	<main>
 		<h1>Contact</h1>
-		<h2>Chat with us now</h2>
-		<button onclick="crate.toggle(true)">Chat Now</button>
 		<h2>Contact Us</h2>
 		<p>This is an expermintal form, it is not ready for use.</p>
 		<form onsubmit="return false">
@@ -55,7 +58,7 @@
 			<label for="message">Messaqe</label>
 			<textarea name="message" id="text"></textarea>
 			<br></br>
-			<button onclick="Sumbit()">Submit</button>
+			<button id="submitButton">Submitw</button>
 		</form>
 		<h2>Contact Info</h2>
 		<div id="boxes">
@@ -105,7 +108,8 @@
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And Press</a><a href="/reviews">Reviews</a></li>
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And
+						Press</a><a href="/reviews">Reviews</a></li>
 			</ul>
 		</nav>
 		&copy; Aytch Software 2020

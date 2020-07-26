@@ -16,7 +16,6 @@ body {
 #left-area {
 	left: 0%;
 	right: 80%;
-	border-right: 1px solid var(--border);
 }
 #middle-area {
 	left: 20%;
@@ -27,7 +26,6 @@ body {
 	padding: 25px;
 	left: 80%;
 	right: 0%;
-	border-left: 1px solid var(--border);
 }
 
 #left-area, #right-area {
@@ -35,88 +33,31 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
 	#left-area, #middle-area, #right-area {
-		position: absolute !important;
-		left: 0% !important;
-		right: 0% !important;
-		overflow-y: scroll !important;
-		overflow-x: hidden !important;
-		text-align: center !important;
+		position: absolute;
+		left: 0%;
+		right: 0%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		text-align: center;
 	}
 	#left-area, #right-area {
-		background: #1c2833 !important;
-		margin: 10px !important;
-		box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A !important;
-		border-radius: 10px !important;
+		background-color: var(--bgSecond);
 	}
 	#left-area {
-		top: 0% !important;
-		bottom: 80% !important;
+		top: 0%;
+		bottom: 80%;
 	}
 	#middle-area {
-		top: 20% !important;
-		bottom: 20% !important;
-		overflow-y: hidden !important;
+		top: 20%;
+		bottom: 20%;
+		overflow-y: hidden;
 	}
 	#right-area {
-		padding: 50px !important;
-		top: 80% !important;
-		bottom: 0% !important;
-	}
-}
-
-
-@media only screen and (max-width: 425px) {
-	#left-area, #middle-area, #right-area {
-		left: 0% !important;
-		right: 0% !important;
-		overflow-y: scroll !important;
-		overflow-x: hidden !important;
-	}
-	#left-area {
-		top: 0% !important;
-		bottom: 80% !important;
-	}
-	#middle-area {
-		top: 20% !important;
-		bottom: 20% !important;
-		overflow-y: hidden !important;
-	}
-	#right-area {
-		padding: 50px !important;
-		top: 80% !important;
-		bottom: 0% !important;
-	}
-}
-
-@media only screen and (max-width: 375px) {
-	#left-area, #middle-area, #right-area {
-		position: absolute !important;
-		left: 0% !important;
-		right: 0% !important;
-		overflow-y: scroll !important;
-		overflow-x: hidden !important;
-		text-align: center !important;
-	}
-	#left-area, #right-area {
-		background: #1c2833 !important;
-		margin: 10px !important;
-		box-shadow: 0 4px 4px 0 #17202A, 0 6px 4px 0 #17202A !important;
-		border-radius: 10px !important;
-	}
-	#left-area {
-		top: 0% !important;
-		bottom: 80% !important;
-	}
-	#middle-area {
-		top: 20% !important;
-		bottom: 20% !important;
-		overflow-y: hidden !important;
-	}
-	#right-area {
-		padding: 50px !important;
-		top: 80% !important;
-		bottom: 0% !important;
+		padding: 50px;
+		top: 80%;
+		bottom: 0%;
 	}
 }
 

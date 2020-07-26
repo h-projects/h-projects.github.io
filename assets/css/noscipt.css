@@ -1,0 +1,42 @@
+body {
+  overflow: hidden;
+}
+
+#contain-message {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#overlay {
+  background: #0008;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#error {
+  background: var(--bgSecond);
+  opacity: 100% !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px !important;
+  background: var(--bgThird);
+  border-radius: 10px;
+}
+
+#js {
+  color: #f7e018;
+}
+
+#ns {
+  color: #157bf8;
+}

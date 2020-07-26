@@ -1,63 +1,18 @@
 
-
-#loqo {
-	float: center;
-	display: block;
-	margin: 0px auto;
- 
+/* square it */
+#left-area > * {
+	background: var(--bgThird);
+	margin: 20px;
+	padding: 10px;
+	border-radius: var(--radius);
 }
 
-#text {
-	text-align: center;
-}
-
-#h-title {
-	font-size: 35px;
-	color: var(--accentMain);
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 75px !important;
-}
-
+/* focus */
 #h-count {
 	font-size: 30px;
-
 }
 
-
-#text, #buttons, #what-is	{
-	box-shadow: inherit;
-	background-color: 191919;
-	margin: inherit;
-	border-radius: inherit;
-
+/* this fixes nav */
+nav > ul > li > * {
+	padding: 10px !important;
 }
-
-
-#buttons button {
-	color: black;
-}
-
-#clicker{
-	font-size: 17px;
-	height: max-content;
-	position: absolute;
-	top: 85%;
-	padding-left: 125px;
-	padding-right: 130px;
-	box-shadow: inherit;
-	margin: inherit;
-	border-radius: inherit;
- 
-}
-
-#links{
-	font-size: 17px;
-	height: max-content;
-	position: absolute;
-	top: 100%;
-	box-shadow: inherit;
-	margin: inherit;
-	border-radius: inherit;
-}
-

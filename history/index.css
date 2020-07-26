@@ -15,7 +15,7 @@
 #select-square {
 	text-align: center;
 	margin: 10px;
-	transition: all 0.1s ease;
+	
 	background-color: var(--bgThird);
 	border-radius: 5px;
 	padding: 10px;

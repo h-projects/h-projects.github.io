@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><meta name="twitter:site" content="@AytchSoftware"><meta property="og:image" content="https://h-projects.github.io/header.png"><meta property="og:site_name" content="Aytch Software">
+<head>
+
 	<!-- import over logic -->
 	<script src="js/middle_pane_h.js"></script>
 	<script src="js/right_pane_render.js"></script>
-	<script src="../common/index.js"></script>
+	<script src="../assets/index.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
 		window.dataLayer=window.dataLayer||[];
@@ -14,15 +15,21 @@
 
 		gtag('config','UA-169183883-1');
 	</script>
+	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/pane_layout.css">
 	<link rel="stylesheet" type="text/css" href="css/left_pane.css">
-	<link rel="stylesheet" type="text/css" href="../common/index.css">
-	<link rel="stylesheet" type="text/css" href="../common/theme.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
 	<link rel="stylesheet" type="text/css" href="css/middle_pane.css">
 	<link rel="stylesheet" type="text/css" href="css/right_pane.css">
-	<!-- set retarded web stuff like open graph and search engine optimization -->
+	<!-- search -->
 	<title>Aytch Software | H Clicker</title>
 	<meta name="description" content="The best qame to ever exist. Click to buy thinqs for your H.">
+	<!-- twitter -->
+	<meta name="twitter:site" content="@AytchSoftware">
+	<meta property="og:image" content="https://h-projects.github.io/assets/images/apps/clicker.png">
+	<meta property="og:site_name" content="Aytch Software">
+	<meta property="og:type" content="website" />
 	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
 </head>
 
@@ -31,12 +38,21 @@
 	<!-- the values below are defaults not used in prod -->
 	<div id="left-area">
 		<div id="select-screen">
-			<a href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
+			<nav>
+				<ul>
+					<a href="/"><img src="https://h-projects.github.io/assets/images/brand/loqo.png" height="64"
+							width="64" alt="Loqo"></img></a>
+					<li>
+						<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a
+							href="/contact">Contact</a>
+					</li>
+
+				</ul>
+			</nav>
 		</div>
-		<br></br>
 		<div id="text">
 			<h2 id="h-title">H Count</h2>
-			<h3 id="h-count">0</h3>
+			<p id="h-count">0</p>
 		</div>
 		<div id="buttons">
 			<button type="button" id="hehirth">Hehirth</button>
@@ -45,9 +61,12 @@
 		</div>
 		<div id="links">
 			<nav>
-				<p>tos link - pp link</p>
+				<ul>
+					<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand &
+							Press</a><a href="/reviews">Reviews</a></li>
+				</ul>
 			</nav>
-			<footer>&copy; Copyrihqt Aytch Software 2020. All Riqhts Reserved.</footer>
+			<p>&copy; Copyrihqt Aytch Software 2020. All Riqhts Reserved.</p>
 		</div>
 	</div>
 	<div id="middle-area">
@@ -56,7 +75,7 @@
 	<div id="right-area">
 		<div id="not_items">
 			<h2 id="shop_header">Shop</h1>
-			<p>Buy Thinqs For Your H. Refresh To Remove These Chanqes.</>
+				<p>Buy Thinqs For Your H. Refresh To Remove These Chanqes.</>
 		</div>
 		<div id="shop-items">
 			<noscript>There is nothinq here.</noscript>

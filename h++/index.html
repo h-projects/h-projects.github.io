@@ -3,10 +3,10 @@
 
 <head>
 	<meta name="twitter:site" content="@AytchSoftware">
-	<meta property="og:image" content="https://h-projects.github.io/header.png">
+	<meta property="og:image" content="https://h-projects.github.io/assets/images/brand/loqo.png">
 	<meta property="og:site_name" content="Aytch Software">
 	<!-- import over logic -->
-	<script src="./common/index.js"></script>
+	<script src="./assets/index.js"></script>
 	<script defer src="./h++.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
@@ -17,9 +17,8 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="../common/index.css">
-	<link rel="stylesheet" type="text/css" href="../common/theme.css">
-	<link rel="stylesheet" type="text/css" href="./h++.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
 	<!-- set retarded web stuff like open graph and search engine optimization -->
 	<title>Aytch Software | H++</title>
 	<meta name="description" content="H++ helps you convert code to hode and vice versa.">
@@ -27,41 +26,51 @@
 </head>
 
 <body>
-	<div id="select-screen">
-		<a id="back" href="/"><img src="../loqo.png" height="64" width="64" alt="Loqo"></img></a>
-	</div>
-
-	<h1>H++</h1>
-	<h3>H++ helps you convert code to hode and vice versa.</h3>
-
-	<body>
-		<div id="main">
-			<h2 id="what-box">Input</h2>
-			<textarea id="input" data-gramm_editor="false" placeholder="Please write somethinq here."></textarea>
-			<div id="buttons">
-				<button id="text-to-binary">To H</button>
-				<button id="binary-to-text">To C</button>
-				<button id="copy">Copy to clipboard</button>
+	<header>
+		<nav>
+			<ul>
+				<a href="/"><img src="https://h-projects.github.io/assets/images/brand/loqo.png" height="64" width="64"
+						alt="Loqo"></img></a>
+				<li>
+					<a href="/about">About</a><a href="/apps">Apps</a><a href="/docs">Docs</a><a
+						href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<noscript id="contain-message">
+		<div id="overlay">
+			<div id="error">
+				<h1>Critical Error</h1>
+				<p>This app requires <b id="js">JavaScript</b> to run. If you are usinq <b id="ns">NoScript</b>, please
+					confiqure the settinqs to allow <b id="js">JavaScript</b>. If you have <b id="js">JavaScript</b>
+					disabled, please enable it.</p>
+				<a href="/" tabindex="1"><button>Qo Back Home</button></a>
 			</div>
-			<h2 id="what-box">Output</h2>
-			<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
-			<div>
-				<p><a href="/contact">Contact</a></p>
-				<p><a href="/about">About</a></p>
-				<p><a href="/about/credits">Credits</a></p>
-				<p><a href="/sitemap">Sitemap</a></p>
-				<p><a href="/brand">Brand And Press</a></p>
-
-
-			</div>
-			<footer>
-				<nav>
-					<ul>
-						<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And
-								Press</a><a href="/reviews">Reviews</a></li>
-					</ul>
-				</nav>&copy; Aytch Software 2020</footer>
 		</div>
-	</body>
+	</noscript>
+	<main>
+		<h1>H++</h1>
+		<p>H++ helps you convert code to hode and vice versa.</p>
+		<h2 id="what-box">Input</h2>
+		<textarea id="input" data-gramm_editor="false" placeholder="Please write somethinq here."></textarea>
+		<div id="buttons">
+			<button id="text-to-binary">To H</button>
+			<button id="binary-to-text">To C</button>
+
+		</div>
+		<h2 id="what-box">Output</h2>
+		<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
+		<button id="copy">Copy to clipboard</button>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And
+							Press</a><a href="/reviews">Reviews</a></li>
+				</ul>
+			</nav>&copy; Aytch Software 2020
+		</footer>
+	</main>
+</body>
 
 </html>

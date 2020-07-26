@@ -2,11 +2,9 @@
 <html lang="en-US">
 
 <head>
-	<meta name="twitter:site" content="@AytchSoftware">
-	<meta property="og:image" content="https://h-projects.github.io/header.png">
-	<meta property="og:site_name" content="Aytch Software">
+
 	<!-- import over logic -->
-	<script src="./common/index.js"></script>
+	<script src="./assets/index.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
@@ -17,17 +15,22 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="/common/theme.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/theme.css">
 	<link rel="stylesheet" type="text/css" href="./index.css">
-	<!-- set retarded web stuff like open graph and search engine optimization -->
-	<title>Aytch Software | Home</title>
+	<!-- search -->
+	<title>Aytch Software | Software by H fans, for H Fans</title>
+	<meta name="description" content="We are a team of people who make software for people who like the letter H.">
+	<!-- open graph -->
 	<meta property="og:site_name" content="Aytch Software" />
-	<meta property="og:title" content="Home" />
-	<meta property="og:type" content="" />
+	<meta property="og:title" content="Software by H fans, for H Fans" />
+	<meta property="og:type" content="website" />
 	<meta property="og:description" content="Software By H Fans, For H Fans" />
 	<meta property="og:url" content="https://h-projects.github.io" />
-	<meta property="og:image" content="https://h-projects.github.io/loqo.png" />
-	<meta property="og:image:alt" content=">h" />
+	<meta property="og:image" content="https://h-projects.github.io/assets/images/brand/loqo.png" />
+	<meta property="og:image:alt" content="Loqo" />
+	<!-- twitter -->
+	<meta name="twitter:site" content="@AytchSoftware">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,61 +38,64 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#b91d47">
 	<link rel="icon" href="https://h-projects.github.io/favicon.ico">
-	<meta name="description" content="Software made by H Fans, for H fans.">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style class="__css_exfil_protection_filtered_styles"></style>
-
 </head>
 
 <body>
 
-	<nav id="head-nav">
-		<ul>
-			<a href="/"><img src="https://h-projects.github.io/loqo.png" height="64" width="64" alt="Loqo"></img></a>
-			<li>
-				<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a
-					href="/contact">Contact</a>
-			</li>
-		</ul>
-	</nav>
+
 	<header>
-		<img src="./loqo.png" alt="Loqo" width="125" height="125">
-		<h1>Software By H Fans, <br> For H Fans.</h1>
-		<p>We are a team of people who make software for people who like the letter H.</p>
-		<a href="/apps"><button id="lutton">See Our Creations</button></a>
-		<br></br>
-		<a href="./about">Learn more about us</a>
+		<nav>
+			<ul>
+				<a href="/"><img src="https://h-projects.github.io/assets/images/brand/loqo.png" height="64" width="64" alt="Loqo"></img></a>
+				<li>
+					<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a
+						href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
+	<div id="hero">
+		<div id="hero-content">
+			<h1>Software By H Fans, <br> For H Fans.</h1>
+			<p>We are a team of people who make software for people who like the letter H.</p>
+			<a href="/apps" id="cta">See Our Creations</a>
+			<br></br>
+			<a href="./about">Learn more about us</a>
+		</div>
+	</div>
 
 	<main id="main">
 		<h2>Our Popular Creations</h2>
 		<div id="boxes">
 
 			<a id="select-square" href="/fuck-g">
-				<img src="/apps/nog.png" alt="No G" height="64" width="64"></img>
+				<img src="/assets/images/apps/nog.png" alt="No G" height="64" width="64"></img>
 				<h3>Fuck G</h3>
 				<p>G is the worst letter. Quies your text.</p>
 			</a>
 
 			<a id="select-square" href="/inary">
-				<img src="/apps/inary.png" alt="Inary" height="64" width="64"></img>
+				<img src="/assets/images/apps/inary.png" alt="Inary" height="64" width="64"></img>
 				<h3>Inary</h3>
 				<p>Fuck Every Letter. Etshfies Your Text.</p>
 			</a>
 
 			<a href="/clicker" id="select-square">
-				<img src="/apps/clicker.png" alt="H++" height="64" width="64"></img>
+				<img src="/assets/images/apps/clicker.png" alt="H++" height="64" width="64"></img>
 				<h3>Clicker</h3>
 				<p>Click and buy thinqs for your H.</p>
 			</a>
 			<a href="/clicker" id="select-square">
-				<img src="/apps/gas.webp" alt="H++" height="64" width="64"></img>
+				<img src="/assets/images/apps/gas.webp" alt="H++" height="64" width="64"></img>
 				<h3>GAS Bot</h3>
 				<p>A discord bot to remove the letter G.</p>
 			</a>
 		</div>
-		<a href="/apps"><button>See More Creations</button></a>
-		<a id="cta" href="/docs">Read The Docs</a>
+		<a href="/apps" id="cta">See More Creations</a>
+		<a href="/docs">Read The Docs</a>
 		<br></br>
 		<h2>Why Aytch Software</h2>
 		<div id="boxes">

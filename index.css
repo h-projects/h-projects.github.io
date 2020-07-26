@@ -1,37 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-html {
-  background-color: var(--bgFirst);
-  color: var(--text);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "DM Sans";
-}
-
-p,
-summary,
-footer,
-a {
-  font-family: Montserrat;
-  color: var(--text);
-}
-
-::-webkit-progress-bar,
-::-webkit-scrollbar-thumb {
-  background-color: var(--border);
-}
-
-::-webkit-scrollbar {
-  background-color: var(--bgFirst);
-}
-
 @media only screen and (max-width: 600px) {
   main > div {
     flex-direction: column;
@@ -49,29 +15,15 @@ a {
   }
 }
 
-@keyframes h {
-  from {
-    background-position: 0vh 0vw;
-  }
-  to {
-    background-position: -100vh -100vw;
-  }
-}
 
-body {
-  margin: 0;
-}
-
-p {
-  text-align: center;
-}
-
-header {
-  font-family: "DM Sans";
+/* hero */
+#hero {
+/* flex */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  /* bg */
   background-color: black;
   background-image: url("./h.png");
   background-position: 0vh 0vw;
@@ -83,305 +35,30 @@ header {
   height: 50vh;
 }
 
-footer > nav {
-  padding: 10px;
-}
-
-header h1 {
-  color: var(--accentSecondary);
-}
-
-header h1 {
-  margin: 0;
-}
-
-header p {
-  color: #d5dbdb !important;
-}
-
-
-button {
-  padding: 10px;
-  font-size: 16px;
-  background-color: var(--accentMain);
-  color: var(--text);
-  border-radius: var(--radius);
-  border: none;
-  box-shadow: 0 5px 10px #00000040;
-}
-
-header a {
+#hero-content a {
   color: var(--accentSecondary);
   text-decoration: none;
   margin-top: 10px;
   font-size: 13px;
 }
 
-main,
-#main {
-  background-color: var(--bgFirst);
-  padding-top: 20px;
-}
-
-main > h2,
-main > h3 {
-  text-align: center;
-  margin: 0;
-  padding: 5px;
-  color: var(--text);
-}
-
-main > h2 {
-  color: var(--accentMain);
-}
-
-main > h3 {
-  padding-bottom: 20px;
-}
-
-main > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main > div > * {
-  text-align: center;
-  margin: 10px;
-  transition: all 0.1s ease;
-  background: var(--bgThird);
-  border-radius: var(--radius);
-  padding: 10px;
-}
-
-main > div > *:hover {
-  background-color: var(--hover);
-}
-
-main > div > * a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-main > div > * h2 {
-  color: var(--accentMain);
-}
-
-main > div:nth-child(4) {
-  padding-bottom: 10px;
-}
-
-#cta {
-  color: var(--accentSecondary);
-}
-main > div:nth-child(4) > a {
-  color: var(--accentSecondary);
-  text-decoration: none;
-  font-size: 13px;
-}
-
-body > div {
-  text-align: center;
-  background-color: var(--bgSecond);
-  padding: 30px 0;
-  margin: 0px;
-}
-
-body > div > h4 {
-  margin: 0;
-  text-align: center;
-  padding: 10px;
-  display: inline-block;
-}
-
-body > div > h4 > a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  background-color: var(--bgSecond);
-  padding: 30px 0;
-  color: var(--text);
-}
-
-main > div > a {
-  color: var(--text);
-}
-
-main > * {
-  text-align: left !important;
-}
-
-main {
-  margin: 0 50vh;
+#hero-content {
+	margin: 0 50vh;
 }
 
 @media only screen and (max-width: 1024px) {
-  main {
-    margin: 10px;
+	#hero-content {
+	  margin: 20px;
+	}
   }
-}
-
-li {
-  padding: 10px;
-}
-
-li > a {
-  padding: 10px;
-}
-
-li {
-  text-align: center;
-}
-
-#head-nav {
-  text-align: center;
-  background-color: black;
-  padding: 30px 0;
-  color: var(--text);
-  font-family: "Montserrat";
-  background-image: url("./h.png");
-  background-position: 0vh 0vw;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  animation: h 20s linear infinite;
-  background-size: 2%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#boxes {
-  display: flex;
-  flex-grow: 4;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: none;
-}
- 
-
-#review-boxes {
-  display: flex;
-  flex-grow: 4;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-direction: column;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-#select-square {
-  text-align: center;
-  margin: 10px;
-  transition: all 0.1s ease;
-  background: var(--bgThird);
-  border-radius: var(--radius);
-  padding: 10px;
-  width: 250px;
-  height: 250px;
-}
-
-#select-square:hover {
-  background-color: var(--hover);
-}
-
-
-
-#non-hover-square {
-  text-align: center;
-  margin: 10px;
-  transition: all 0.1s ease;
-  background-color: var(--bgThird);
-  border-radius: var(--radius);
-  padding: 10px;
-  width: 250px;
-  height: 250px;
-}
-
-#testmonial > p::before, #testmonial > p::after {
-	content: "\“";
-	font-size: 23px;
-	font-family: "Source Serif Pro" !important;
-}
-
-#testmonial > p {
-	font-family: "Source Serif Pro" !important;
-	font-size: 23px;
-}
-#expanded-select-square {
-	text-align: center;
-	margin: 10px;
-	transition: all 0.1s ease;
-	background: var(--bgThird);
-	border-radius: var(--radius);
-	padding: 10px;
-	display: grid;
-	grid-template-areas: "data review";
-}
-
-
-#reviewerData > img {
-  border-radius: 100%;
-}
-
-#reviewerdata {
-	grid-area: data;
-	background: var(--bgFourth);
-	opacity: 50%;
-}
-
-#testmonial {
-	grid-area: review;
-}
-
-#select-square h3 {
-  margin: 10px;
-}
-img {
-  padding-top: 10px;
-}
-
-h4,
-#main > h2 {
-  color: var(--accentMain);
-}
-h3 {
-  font-size: 22px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-button:hover,
-#select-square:hover {
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#select-square > h5 {
-  color: var(--text);
-}
-
-@media only print {
-  html {
-    display: none;
-  }
+  
+/* hero merge header */
+header {
+	background-color: black;
+	background-image: url("./h.png");
+	background-position: 0vh 0vw;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	animation: h 20s linear infinite;
+	background-size: 2%;
 }
