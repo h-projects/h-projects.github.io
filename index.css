@@ -25,7 +25,7 @@
   justify-content: center;
   /* bg */
   background-color: black;
-  background-image: url("./h.png");
+  background-image: url("assets/images/hero/h.png");
   background-position: 0vh 0vw;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -55,7 +55,7 @@
 /* hero merge header */
 header {
 	background-color: black;
-	background-image: url("./h.png");
+	background-image: url("assets/images/hero/h.png");
 	background-position: 0vh 0vw;
 	background-attachment: fixed;
 	background-repeat: repeat;
