@@ -15,10 +15,16 @@
   }
 }
 
+#banner {
+  height: 5vh;
+  text-align: center;
+  background: black;
+}
+
 
 /* hero */
 #hero {
-/* flex */
+  /* flex */
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -43,22 +49,22 @@
 }
 
 #hero-content {
-	margin: 0 50vh;
+  margin: 0 50vh;
 }
 
 @media only screen and (max-width: 1024px) {
-	#hero-content {
-	  margin: 20px;
-	}
+  #hero-content {
+    margin: 20px;
   }
-  
+}
+
 /* hero merge header */
 header {
-	background-color: black;
-	background-image: url("assets/images/hero/h.png");
-	background-position: 0vh 0vw;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	animation: h 20s linear infinite;
-	background-size: 2%;
+  background-color: black;
+  background-image: url("assets/images/hero/h.png");
+  background-position: 0vh 0vw;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  animation: h 20s linear infinite;
+  background-size: 2%;
 }
