@@ -39,3 +39,8 @@ ol > p {
   border-radius: var(--radius);
   padding: 10px;
 }
+
+main {
+  background-color: transparent;
+  margin: 0;
+}
