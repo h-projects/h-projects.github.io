@@ -1,6 +1,6 @@
 html {
   background-color: black;
-  background-image: url("https://h-projects.github.io/assets/images/hero/huh.png");
+  background-image: url("/assets/images/hero/huh.png");
   background-position: 0vh 0vw;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -38,4 +38,9 @@ ol > p {
   margin: 10px;
   border-radius: var(--radius);
   padding: 10px;
+}
+
+main {
+  background-color: transparent;
+  margin: 0;
 }
