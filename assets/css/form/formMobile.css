@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+	input,
+	textarea {
+	  width: 745px;
+	}
+  }
+  
+  @media only screen and (max-width: 425px) {
+	input,
+	textarea {
+	  width: 400px;
+	}
+  }
+  
+  @media only screen and (max-width: 375px) {
+	input,
+	textarea {
+	  width: 350px;
+	}
+  }
+  

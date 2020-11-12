@@ -1,0 +1,45 @@
+form {
+	text-align: left !important;
+}
+
+textarea {
+	border-radius: 10px;
+	font-family: "DM Sans";
+	color: #fdfefe;
+	font-size: 17px;
+	padding: 10px;
+	background-color: var(--bgThird);
+	width: 98% !important;
+	border: none;
+	height: 350px;
+	padding: 10px;
+	resize: none;
+}
+
+input {
+	border-radius: 10px;
+	font-family: "DM Sans";
+	color: #fdfefe;
+	font-size: 17px;
+	padding: 10px;
+	background-color: var(--bgThird);
+	width: 98% !important;
+	border: none;
+	padding: 10px;
+	resize: none;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+	border: none;
+	outline: none;
+	background: var(--hover);
+}
+
+input:invalid {
+	border: none;
+	background: red;
+	color: black;
+}

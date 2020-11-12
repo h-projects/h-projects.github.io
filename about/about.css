@@ -1,0 +1,8 @@
+.pronouns {
+	color: var(--gray);
+	font-size: 12px;
+}
+
+#select-square {
+	height: 300px !important;
+}

@@ -1,0 +1,22 @@
+#boxes {
+	display: flex;
+	flex-grow: 4;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+  }
+  
+  #review-boxes {
+	display: flex;
+	flex-grow: 4;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px;
+  }
+  
