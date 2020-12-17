@@ -5,10 +5,10 @@
 	<meta name="twitter:site" content="@AytchSoftware">
 	<meta property="og:image" content="/assets/images/brand/loqo.png">
 	<meta property="og:site_name" content="Aytch Software">
-	<meta property="og:type" content="website" />
 	<!-- import over logic -->
 	<script src="./assets/index.js"></script>
-	<script defer src="./spoil.js"></script>
+	<script defer src="./inary.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
 		window.dataLayer=window.dataLayer||[];
@@ -18,31 +18,53 @@
 		gtag('config','UA-169183883-1');
 	</script>
 	<!-- import over styles -->
-	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/index.css">
 
 	<noscript>
-		<link rel="stylesheet" type="text/css" href="../assets/noscipt.css">
+		<link rel="stylesheet" type="text/css" href="/assets/noscipt.css">
 	</noscript>
 	<!-- set retarded web stuff like open graph and search engine optimization -->
-	<title>Aytch Software | Spoil</title>
-	<meta name="description" content="Spoil helps you spoil non h.">
+	<title>Aytch Software | Inary</title>
+	<meta name="description" content="Inary helps you convert text to hinary and vice versa.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
 	<header>
 		<nav>
 			<ul>
 				<a href="/"><img src="/assets/images/brand/loqo.png" height="64" width="64"
 						alt="Loqo"></img></a>
 				<li>
-					<a href="/about">About</a><a href="/apps">Apps</a><a href="/docs">Docs</a><a
+					<a href="/about">About</a><a href="/apps">Apps</a></a><a href="/docs">Docs</a><a
 						href="/contact">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
+	<main>
+		<h1>Inary</h1>
+		<p>Inary helps you convert text to hinary and vice versa.</p>
+		<h2 id="what-box">Input</h2>
+		<textarea id="input" data-gramm_editor="false" placeholder="Please write somethinq here."></textarea>
+		<div id="buttons">
+			<!-- 
+					<select id="selector">
+						<option value="to-binary">Convert to binary</option>
+						<option value="to-text">Convert to text</option>
+					</select>
+				 -->
+			<button id="to-binary">Convert to binary</button>
+			<button id="to-text">Convert to text</button>
+			<button id="copy">Copy to clipboard</button>
+		</div>
+		<h2 id="what-box">Output</h2>
+		<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
+		<div id="shamless-plug">
+			<h2 id="what-box">Need to remove massive amounts of the seventh letter?</h2>
+			<a href="/fuck-g"><button>Use Fuck G</button></a>
+		</div>
+	</main>
 	<noscript id="contain-message">
 		<div id="overlay">
 			<div id="error">
@@ -54,24 +76,13 @@
 			</div>
 		</div>
 	</noscript>
-	<main>
-		<h1>Spoil</h1>
-		<p>Spoil helps you spoil non h.</p>
-		<h2 id="what-box">Input</h2>
-		<textarea id="input" data-gramm_editor="false" placeholder="Please write somethinq here."></textarea>
-		<div id="buttons">
-			<button id="H-Accentuate">Spoil letters that are not H</button>
-			<button id="G-Spoil">Spoil the 7th letter</button>
-		</div>
-		<h2 id="what-box">Output</h2>
-		<textarea placeholder="Click one of the buttons above!" readonly id="output"></textarea>
-		<button id="copy">Copy to clipboard</button>
-	</main>
+
 	<footer>
 		<nav>
+
 			<ul>
-				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand &
-						Press</a><a href="/reviews">Reviews</a></li>
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand">Brand And
+						Press</a><a href="/brand">Brand & Press</a></li>
 			</ul>
 		</nav>
 		&copy; Aytch Software 2020

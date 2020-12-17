@@ -6,11 +6,15 @@ header {
   color: var(--text);
 }
 
+
+
 nav,
 nav > *,
 nav > ul > li > * {
   padding: 20px;
 }
+
+
 
 nav > ul {
   list-style-type: none;
