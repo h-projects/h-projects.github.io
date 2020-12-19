@@ -8,6 +8,11 @@ html {
   background-size: 2%;
 }
 
+body {
+	background-color: transparent !important;
+}
+
+
 header,
 footer {
   opacity: 80%;
@@ -44,3 +49,4 @@ main {
   background-color: transparent;
   margin: 0;
 }
+
