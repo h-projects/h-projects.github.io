@@ -9,7 +9,7 @@ function actionNo() {
   );
 }
 
-function confirmVar() {
+function confirmAction() {
   return confirm("Are you sure you want to do that?");
 }
 
@@ -40,7 +40,7 @@ while (localStorage.clickCount === 9007199254740992) {
 
 // Rebirth (relies on remove and confirmVar)
 function rebirth() {
-  if (parseInt(localStorage.clickCount) >= 200000000 && confirmVar()) {
+  if (parseInt(localStorage.clickCount) >= 200000000 && confirmAction()) {
     localStorage.clickCount = 0;
     updateHCount();
   } else {
@@ -79,7 +79,7 @@ addEventListener("keydown", function (event) {
   switch (event.key) {
     // ban g
     case "g": {
-      localStorage.setItem("lockOut", true);
+      destroy();
       window.location.reload();
       break;
     }

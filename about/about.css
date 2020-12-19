@@ -3,6 +3,14 @@
 	font-size: 12px;
 }
 
+hr {
+	border: 1px solid var(--border);
+}
+img {
+	width: 96px;
+	height: 96px;
+}
+
 #select-square {
 	height: 300px !important;
 }

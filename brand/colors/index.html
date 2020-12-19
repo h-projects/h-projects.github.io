@@ -9,6 +9,7 @@
 	<!-- import over styles -->
 	<script src="/assets/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./colors.css">
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169183883-1"></script>
 	<script>
@@ -27,8 +28,7 @@
 
 <body>
 	<header>
-		<a href="/"><img src="/assets/images/brand/loqo.png" height="64" width="64"
-				alt="Loqo"></img></a>
+		<a href="/"><img src="/assets/images/brand/loqo.png" height="64" width="64" alt="Loqo"></img></a>
 		<nav>
 			<ul>
 				<li>
@@ -40,18 +40,69 @@
 	</header>
 	<main>
 		<h1>Color Palette</h1>
-		<p>This color palette page is split across different applications.</p>
+		<p>These are the colors for Aytch Software itself, the website and all that qood stuff.</p>
+
 
 		<h2>Website</h2>
-		<div id="boxes">
-			<div id="select-square" backrgound="var(--"></div>
-		</div>
-		<h2>Press</h2>
+		<p>Backqrounds, hover colors, borders and all those qoodies.</p>
+		<details>
+			<summary>Click to expand</summary>
+			<h3>Backqrounds</h3>
+			<div id="boxes">
+				<div class="select-square bg-one">
+					<h4>Qreey</h4>
+					<div class="positionHex">
+						<p>#0a0a0a</p>
+						<p>CMYK 0, 0, 0, 96</p>
+					</div>
+				</div>
+				<div class="select-square bg-two">
+					<h4>Blacked Out</h4>
+					<div class="positionHex">
+						<p>#000000</p>
+						<p>CMYK 0, 0, 0, 100</p>
+					</div>
+				</div>
+				<div class="select-square bg-three">
+					<h4>Light Qreey</h4>
+					<div class="positionHex">
+						<p>#0f0f0f</p>
+						<p>CMYK 0, 0, 0, 94</p>
+					</div>
+				</div>
+				<div class="select-square bg-four">
+					<h4>Qrite</h4>
+					<div class="positionHex">
+						<p>#262626</p>
+						<p>CMYK 0, 0, 0, 85</p>
+					</div>
+				</div>
+			</div>
+	
+			<h3>Text</h3>
+			<div id="boxes">
+				<div class="select-square text-one">
+					<h4 class="reverseSwap">Whity</h4>
+					<div class="positionHex">
+						<p class="reverseSwap">#d5dbdb</p>
+						<p class="reverseSwap">CMYK 0, 0, 0, 96</p>
+					</div>
+				</div>
+				<div class="select-square text-two">
+					<h4 class="reverseSwap">Qreey</h4>
+					<div class="positionHex">
+						<p class="reverseSwap">#0a0a0a</p>
+						<p class="reverseSwap">CMYK 0, 0, 0, 96</p>
+					</div>
+				</div>
+			</div>
+		</details>
 	</main>
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand" id="selected">Brand &
+				<li><a href="/about/credits">Credits</a><a href="/sitemap">Sitemap</a><a href="/brand"
+						id="selected">Brand &
 						Press</a><a href="/reviews">Reviews</a></li>
 			</ul>
 		</nav>

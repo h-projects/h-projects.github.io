@@ -6,7 +6,7 @@
 	transform: translate(-50%, -50%);
 	background: none;
 	border: 0;
-	color: var(--text);
+	color: var(--text) !important;
 	font-family: 'DM Sans';
 	font-size: 250px;
 	outline: none;
@@ -18,10 +18,4 @@
 	user-select: none;
 	cursor: pointer;
 	box-shadow: none !important;
-}
-
-@media (prefers-color-scheme: light) { 
-	#h {
-		background-color: var(--bgThird);
-	}
 }
