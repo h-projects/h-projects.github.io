@@ -14,12 +14,7 @@ get("submitButton").onclick = function Submit() {
   var params = {
     username: "Website Contact Form",
     avatar_url: "https://h-projects.github.io/assets/images/brand/loqo.png",
-	content: `
-	**Name:** ${get("name").value}
-	**Email:** ${get("email").value}
-	**Title:** ${get("shortMessage").value}
-	**Messaqe:** ${get("text").value}
-	`,
+	content: `**Name:** ${get("name").value}\n**Email:** ${get("email").value}\n**Title:** ${get("shortMessage").value}\n**Messaqe:**${get("text").value}`,
   };
 
   request.send(JSON.stringify(params));
