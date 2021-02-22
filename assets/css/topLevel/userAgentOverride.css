@@ -2,6 +2,11 @@
 	transition: all 0.1s ease;
 }
 
+/* text */
+p {
+	line-height: 32px;
+}
+
 h1,
 h2,
 h3,
@@ -12,7 +17,9 @@ h6 {
 	color: var(--accentMain);
 }
 
-br, hr {
+/* hr/br no select */
+br,
+hr {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -21,6 +28,7 @@ br, hr {
 	user-select: none;
 }
 
+/* a */
 a {
 	text-decoration: none;
 	color: inherit;
@@ -30,14 +38,7 @@ a:hover {
 	color: var(--accentSecondary);
 }
 
-img {
-	border-radius: var(--radius);
-}
-
-hr {
-	border-color: var(--gray);
-}
-
+/* button/cta */
 button,
 #cta {
 	padding: 10px;
@@ -56,13 +57,18 @@ a:hover,
 	cursor: pointer;
 }
 
-p {
-	line-height: 32px;
-}
-
 button:hover {
 	background: var(--hover);
 	color: white !important;
 	padding: 10px;
 	border-radius: var(--radius);
+}
+
+/* misc */
+img {
+	border-radius: var(--radius);
+}
+
+hr {
+	border-color: var(--gray);
 }
