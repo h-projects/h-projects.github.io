@@ -11,7 +11,7 @@ details summary {
 }
 
 details summary::-webkit-details-marker {
-    background: url('/assets/svg/details/down.svg') center no-repeat;
+    background: url('/assets/svgs/details/down.svg') center no-repeat;
     color: transparent;
 }
 
@@ -30,7 +30,7 @@ details[open] summary~* {
     animation: sweep .5s ease-in-out;
 }
 details[open] summary::-webkit-details-marker {
-    background: url('/assets/svg/details/up.svg') center no-repeat;
+    background: url('/assets/svgs/details/up.svg') center no-repeat;
     color: transparent;
 }
 
