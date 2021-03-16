@@ -2,7 +2,9 @@ body {
 	overflow: hidden;
 }
 
-#left-area, #middle-area, #right-area {
+#left-area,
+#middle-area,
+#right-area {
 	position: absolute;
 	top: 0%;
 	bottom: 0%;
@@ -12,29 +14,33 @@ body {
 
 }
 
-
 #left-area {
 	left: 0%;
 	right: 80%;
 }
+
 #middle-area {
 	left: 20%;
 	right: 20%;
 	overflow-y: hidden;
 }
+
 #right-area {
 	padding: 25px;
 	left: 80%;
 	right: 0%;
 }
 
-#left-area, #right-area {
+#left-area,
+#right-area {
 	background-color: var(--bgSecond);
 }
 
 @media only screen and (max-width: 768px) {
 
-	#left-area, #middle-area, #right-area {
+	#left-area,
+	#middle-area,
+	#right-area {
 		position: absolute;
 		left: 0%;
 		right: 0%;
@@ -42,23 +48,26 @@ body {
 		overflow-x: hidden;
 		text-align: center;
 	}
-	#left-area, #right-area {
+
+	#left-area,
+	#right-area {
 		background-color: var(--bgSecond);
 	}
+
 	#left-area {
 		top: 0%;
 		bottom: 80%;
 	}
+
 	#middle-area {
 		top: 20%;
 		bottom: 20%;
 		overflow-y: hidden;
 	}
+
 	#right-area {
 		padding: 50px;
 		top: 80%;
 		bottom: 0%;
 	}
 }
-
-

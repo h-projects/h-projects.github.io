@@ -9,7 +9,7 @@ this is to optomize ram usage. check the file for comments */
 @import url("./topLevel/theme.css");
 @import url("./topLevel/webkit.css");
 @import url("./topLevel/keyframes.css");
-@import url("./topLevel/userAgentOverride.css");
+@import url("./topLevel/clickerOverride.css");
 
 /* main (body/elements/nav) */
 @import url("./main/body.css");
@@ -26,3 +26,5 @@ this is to optomize ram usage. check the file for comments */
 @import url("./boxes/selectSquare.css");
 @import url("./boxes/nonHover.css");
 @import url("./boxes/testmonial.css");
+
+
