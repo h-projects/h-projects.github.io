@@ -4,14 +4,14 @@ function get(id) {
 
 get("to-binary").onclick = function () {
   let parseInput = get("input").value;
-  hBinary(parseInput);
+  parseInput = hBinary(parseInput);
   get("output").value = parseInput;
 };
 
 get("to-text").onclick = function () {
 	let parseInput = get("input").value;
 
-	text(parseInput);
+	parseInput = text(parseInput);
 
 	if (parseInput.includes("￿")) {
 		window.alert("There was an error in the conversion!");
