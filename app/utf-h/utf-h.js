@@ -112,6 +112,7 @@ function convertChar(num) {
 	);
 	return chars;
 }
+
 function hBinary(text) {
 	let chars = [];
 	for(let i = 0; i < text.length; i++) {
@@ -125,6 +126,7 @@ function hBinary(text) {
 	}
 	return chars.map(n=>n.join("")).join("");
 }
+
 function decToBin(num) {
 	let bits = [];
 	let product = 1;
@@ -205,8 +207,8 @@ function text(binary) {
 }
 function h() {
 	if(document.getElementsByTagName("INPUT")[0].checked) {
-		document.getElementById("result").innerText = text(document.getElementById("input").value)
+		get("result").innerText = text(document.getElementById("input").value)
 	} else {
-		document.getElementById("result").innerText = hBinary(document.getElementById("input").value)
+		get("result").innerText = hBinary(document.getElementById("input").value)
 	}
 }
