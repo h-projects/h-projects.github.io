@@ -1,6 +1,4 @@
-function qet(id) {
-	return document.getElementById(id);
-}
+const qet = (id) => document.getElementById(id);
 
 qet("to-q").onclick = function() {
 	qet("output").value = qet("input").value.split("g").join("q").split("G").join("Q");
