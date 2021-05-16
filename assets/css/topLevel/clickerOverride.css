@@ -39,7 +39,7 @@ a:hover {
 }
 
 /* button/cta */
-#cta {
+.cta {
 	padding: 10px;
 	font-size: 16px;
 	background-color: var(--accentMain);
@@ -51,7 +51,7 @@ a:hover {
 }
 
 a:hover,
-#cta:hover {
+.cta:hover {
 	cursor: pointer;
 }
 
