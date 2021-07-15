@@ -1,6 +1,7 @@
 {
     "name": "Aytch Software",
     "short_name": "Aytch Software",
+    "start_url": "index.html",
     "icons": [
         {
             "src": "/assets/images/favicons/android/android-chrome-192x192.png",
