@@ -22,6 +22,7 @@ function clicked() {
 function destroy() {
   localStorage.removeItem("clickCount");
   localStorage.removeItem("itemsPurchased");
+  localStorage.setItem("lockOut", true)
   window.location.reload();
 }
 
