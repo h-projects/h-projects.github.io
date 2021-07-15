@@ -6,10 +6,9 @@
 	  background-position: -100vh -100vw;
 	}
   }
-  
   html {
 	background-color: black;
-	background-image: url("../h.png");
+	background-image: url("/assets/images/hero/h.png");
 	background-position: 0vh 0vw;
 	background-attachment: fixed;
 	background-repeat: repeat;
