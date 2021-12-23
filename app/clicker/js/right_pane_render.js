@@ -250,7 +250,7 @@ addEventListener("load", function () {
     function () {
       options.text.value =
         "██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝";
-      options.fontSize.value = 150;
+      options.fontSize.value = 100;
     }
   );
   new ShopItem(
@@ -306,6 +306,17 @@ addEventListener("load", function () {
       options.fontSize.value = 250;
     }
   );
+  new ShopItem(
+    "prideH",
+    ["text", "fontSize"],
+    "Pride H",
+    "Trans riqhts are human riqhts! Credits to SneezingCactus.",
+    250000,
+    function() {
+      options.text.value = '<img src="https://cdn.discordapp.com/attachments/547173752774066178/852738016262357003/result.gif" alt="pride_hif" />';
+      options.text.fontSize = 150;
+    }
+  )
   // set loaded shop items to true
   loadedShopItems = true;
   // set names to a map of the shop item ids
