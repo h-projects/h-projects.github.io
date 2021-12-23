@@ -27,7 +27,9 @@ var options = {
 // create new shop item class
 class ShopItem {
   // add item property constructors
-  constructor(name, types, displayName, desc, price, onselect) {
+  constructor(name, types, displayName, desc, price, onselect, purchased) {
+    if (!purchased) purchased = false;
+
     // push this to shop items
     shopItems.push(this);
     // set shop item name to this name (local storage one)
@@ -45,14 +47,14 @@ class ShopItem {
       // map options and id
       this.types.map(
         (n) =>
-          (options[n] = options[n]
-            ? { value: options[n].value, recent: this.id }
-            : { value: "", recent: this.id })
+        (options[n] = options[n]
+          ? { value: options[n].value, recent: this.id }
+          : { value: "", recent: this.id })
       );
       onselect();
     };
     // whether this item is purchased or not
-    this.purchased = false;
+    this.purchased = purchased;
     // is this selected
     this.selected = false;
     // the id
@@ -104,26 +106,30 @@ class ShopItem {
         item.onselect();
       } else {
         // if it's not bought, but it can be bought
-        if (parseInt(localStorage.clickCount) >= item.price && confirmVar()) {
-          // purchase this item
-          item.purchased = true;
-          this.children[3].innerText = "Purchased";
-          this.children[3].className = "purchased";
+        if (parseInt(localStorage.clickCount) >= item.price) {
+          if (confirmVar()) {
+            // purchase this item
+            item.purchased = true;
+            this.children[3].innerText = "Purchased"; ``
+            this.children[3].className = "purchased";
 
-          // save that the parent item is purchased
-          let x = JSON.parse(localStorage.itemsPurchased);
-          x[item.name] = true;
-          localStorage.itemsPurchased = JSON.stringify(x);
+            // save that the parent item is purchased
+            let x = JSON.parse(localStorage.itemsPurchased);
+            x[item.name] = true;
+            localStorage.itemsPurchased = JSON.stringify(x);
 
-          // select this item
-          item.onselect();
-          // take away the price of this item
-          localStorage.clickCount =
-            parseInt(localStorage.clickCount) - item.price;
-          // update your h
-          updateHCount();
+            // select this item
+            item.onselect();
+            // take away the price of this item
+            localStorage.clickCount =
+              parseInt(localStorage.clickCount) - item.price;
+            // update your h
+            updateHCount();
+          } else {
+            window.alert("You didn't buy that item.");
+          }
         } else {
-          window.alert("You didn't buy that item.");
+          window.alert("You can't buy that item.");
         }
       }
     };
@@ -142,7 +148,8 @@ addEventListener("load", function () {
     function () {
       options.text.value = "h";
       options.fontSize.value = 250;
-    }
+    },
+    true
   );
   new ShopItem(
     "lightMode",
@@ -152,7 +159,8 @@ addEventListener("load", function () {
     0,
     function () {
       options.color.value = "#FFFFFF";
-    }
+    },
+    true
   );
   new ShopItem(
     "capitalH",
