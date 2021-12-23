@@ -314,7 +314,7 @@ addEventListener("load", function () {
     250000,
     function() {
       options.text.value = '<img src="https://cdn.discordapp.com/attachments/547173752774066178/852738016262357003/result.gif" alt="pride_hif" />';
-      options.text.fontSize = 150;
+      options.fontSize.value = 150;
     }
   )
   // set loaded shop items to true
