@@ -2,9 +2,12 @@
 /* square it */
 #left-area > * {
 	background: var(--bgThird);
-	margin: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 	padding: 10px;
-	border-radius: var(--radius);
+	/* border-radius: var(--radius); */
+	width: 100%;
+	/* padding-right: 20px !important; */
 }
 
 /* focus */
