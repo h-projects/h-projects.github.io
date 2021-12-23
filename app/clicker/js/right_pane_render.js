@@ -206,7 +206,7 @@ addEventListener("load", function () {
     function () {
       options.text.value =
         '<img src="https://cdn.discordapp.com/emojis/699995508810317895.gif?v=1" alt="h">';
-      options.fontSize.value = 250;
+      options.fontSize.value = 100;
     }
   );
   new ShopItem(
@@ -228,7 +228,7 @@ addEventListener("load", function () {
     function () {
       options.text.value =
         '<img src="https://media1.tenor.com/images/b251279ed54ed48dc45021890f7cd96a/tenor.gif" alt="h_hif" />';
-      options.fontSize.value = 250;
+      options.fontSize.value = 100;
     }
   );
   new ShopItem(
@@ -314,7 +314,7 @@ addEventListener("load", function () {
     250000,
     function() {
       options.text.value = '<img src="https://cdn.discordapp.com/attachments/547173752774066178/852738016262357003/result.gif" alt="pride_hif" />';
-      options.fontSize.value = 150;
+      options.fontSize.value = 100;
     }
   )
   // set loaded shop items to true
