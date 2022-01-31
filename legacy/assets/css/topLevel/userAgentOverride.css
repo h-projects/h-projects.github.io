@@ -1,0 +1,74 @@
+* {
+	transition: all 0.1s ease;
+}
+
+/* text */
+p {
+	line-height: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "DM Sans" !important;
+	color: var(--accentMain);
+}
+
+/* hr/br no select */
+br,
+hr {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* a */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: var(--accentSecondary);
+}
+
+/* button/cta */
+button,
+#cta {
+	padding: 10px;
+	font-size: 16px;
+	background-color: var(--accentMain);
+	color: var(--bgFirst);
+	border-radius: var(--radius);
+	border: none;
+	color: #000 !important;
+	box-shadow: 0 5px 10px #00000040;
+}
+
+button:hover,
+a:hover,
+#cta:hover {
+	cursor: pointer;
+}
+
+button:hover {
+	background: var(--hover);
+	color: white !important;
+	padding: 10px;
+	border-radius: var(--radius);
+}
+
+/* misc */
+img {
+	border-radius: var(--radius);
+}
+
+hr {
+	border-color: var(--gray);
+}

@@ -1,0 +1,21 @@
+
+/* square it */
+#left-area > * {
+	background: var(--bgThird);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px;
+	/* border-radius: var(--radius); */
+	width: 100%;
+	/* padding-right: 20px !important; */
+}
+
+/* focus */
+#h-count {
+	font-size: 30px;
+}
+
+/* this fixes nav */
+nav > ul > li > * {
+	padding: 10px !important;
+}

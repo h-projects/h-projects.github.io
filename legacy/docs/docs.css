@@ -1,0 +1,17 @@
+body {
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"sidebar content aside"
+		"footer footer footer"
+}
+
+header { grid-area: header;}
+main { grid-area: content;}
+
+#sidebar { 
+	grid-area: sidebar;
+	background: var(--bgThird);	
+}
+
+footer { grid-area: footer;}

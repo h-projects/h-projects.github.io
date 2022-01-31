@@ -1,0 +1,18 @@
+.pronouns {
+	color: var(--gray);
+	font-size: 12px;
+}
+
+hr {
+	border: 1px solid var(--border);
+	background: var(--border);
+}
+img {
+	width: 96px;
+	height: 96px;
+	border-radius: 100% !important;
+}
+
+#select-square {
+	height: 300px !important;
+}

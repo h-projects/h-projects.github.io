@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.shop-item {
+	text-align: center;
+	background: var(--bgSecond);
+	/* border-radius: 20px; */
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: max-content;
+	padding: 5px;
+	background-color: var(--bgThird);	
+	cursor: pointer;
+	width: 100%;
+}
+
+#shop-items{	
+	display: flex;
+	flex-grow: 4; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: right;
+	flex-direction: row;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+
+.shop-item:hover {
+	background-color: #FFFFFF10;	
+}
+
+.name, .desc, .price, .not-purchased, .purchased {
+	padding: 5px;
+}
+
+.selected-item {
+	border: 1px solid var(--selectedGreen);
+	background-color: #FFFFFF15;	
+}
+.name {
+	font-size: 1.25rem;
+	font-family: 'DM Sans';
+	font-weight: 700 !important;
+	color: var(--accentMain);
+}
+
+.desc, .price, .not-purchased, .purchased {
+	font-family: 'Montserrat';
+}
+
+
+.purchased {
+	color: var(--selectedGreen);
+}
+.not-purchased {
+	color: #E74C3C;
+}
+
+#12 {
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}

@@ -1,0 +1,30 @@
+/* this file imports css styles from the folders,
+this is to optomize ram usage. check the file for comments */
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* topLevel (webkit/vars) */
+@import url("./topLevel/theme.css");
+@import url("./topLevel/webkit.css");
+@import url("./topLevel/keyframes.css");
+@import url("./topLevel/clickerOverride.css");
+
+/* main (body/elements/nav) */
+@import url("./main/body.css");
+@import url("./main/main.css");
+@import url("./main/nav.css");
+@import url("./main/dropdown.css");
+
+/* form */
+@import url("./form/form.css");
+@import url("./form/formMobile.css");
+
+/* flexboxes and items */
+@import url("./boxes/flexbox.css");
+@import url("./boxes/selectSquare.css");
+@import url("./boxes/nonHover.css");
+@import url("./boxes/testmonial.css");
+
+

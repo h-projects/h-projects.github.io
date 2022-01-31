@@ -1,0 +1,9 @@
+.non-hover-square {
+	margin: 10px;
+	background-color: var(--bgThird);
+	border-radius: 5px;
+	padding: 20px;
+	width: 250px;
+	height: 250px;
+	border-radius: var(--radius);
+  }

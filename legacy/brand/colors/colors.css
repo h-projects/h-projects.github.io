@@ -1,0 +1,12 @@
+.positionHex { margin-top: 130px; }
+.reverseSwap { color: #000000 !important;}
+.select-square { border: 1px solid var(--border); }
+
+/* web */
+.bg-one { background: var(--bgFirst) !important;}
+.bg-two { background: var(--bgSecond) !important;}
+.bg-three { background: var(--bgThird) !important;}
+.bg-four { background: var(--bgFourth) !important;}
+
+.text-one { background: var(--text) !important; }
+.text-two { background: var(--gray) !important; }

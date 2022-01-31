@@ -1,0 +1,20 @@
+{
+    "name": "Aytch Software",
+    "short_name": "Aytch Software",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/assets/images/favicons/android/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicons/android/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#00ff21",
+    "background_color": "black",
+    "display": "standalone"
+}
