@@ -1,6 +1,4 @@
 # why are you here?
-Sitemap: https://h-projects.github.io/sitemap.xml
-
 
 User-Agent: *
 Disallow: /404/

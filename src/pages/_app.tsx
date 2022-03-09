@@ -1,9 +1,12 @@
-import '../styles/globals.css';
+import '../styles/normalize.css';
+import '../styles/_app.css';
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-			<Component {...pageProps} />
+			<main>
+				<Component {...pageProps} />
+			</main>
 		</>
 	);
 }

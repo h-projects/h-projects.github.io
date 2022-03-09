@@ -1,3 +1,3 @@
 export default function Index() {
-	return <p className="text-center">h</p>;
+	return <h1>Software for H Fans, by H fans.</h1>;
 }
