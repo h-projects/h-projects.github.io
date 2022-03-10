@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--increment: 0.5rem;
+	--round: calc(var(--increment) * 5)
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+main, header, footer {
+	padding: var(--increment);
+}
+
+/* bolder headings */
+h1,
+h2,
+h3 {
+	font-weight: 900;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 800;
+}
+
+@media (min-width: 1024px) {
+	main, header, footer {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 75vw;
+	}
+}
