@@ -1,25 +1,22 @@
 import styles from './Header.module.css';
-import buttonStyles from '../styles/Button.module.css';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const links = [
 	{
 		name: 'About',
-		url: '/about'
-	},
-	{
-		name: 'Credits',
-		url: '/credits'
+		url: '/'
 	}
 ];
 
-const Header: React.FC<{}> = () => (
-	<header className={styles.header}>
+const Footer: React.FC<{}> = () => (
+	<footer className={styles.header}>
 		<nav className={styles.nav}>
-			<Link to="/" className={styles.logo}>
-				<Logo />
-			</Link>
+			<div className={styles.logo}>
+				<Link to="/" className={styles.logo}>
+					<Logo />
+				</Link>
+			</div>
 			<ul className={styles.ul}>
 				{links.map((link, index) => (
 					<li key={index} className={styles.li}>
@@ -29,13 +26,8 @@ const Header: React.FC<{}> = () => (
 					</li>
 				))}
 			</ul>
-			<div>
-				<Link to="/projects" className={buttonStyles.button}>
-					Our Projects
-				</Link>
-			</div>
 		</nav>
-	</header>
+	</footer>
 );
 
-export default Header;
+export default Footer;

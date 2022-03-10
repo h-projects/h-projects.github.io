@@ -129,3 +129,8 @@ progress {
 summary {
 	display: list-item;
 }
+
+a {
+	text-decoration: none;
+	color: var(--brand-light);
+}

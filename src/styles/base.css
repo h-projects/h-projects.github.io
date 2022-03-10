@@ -1,16 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
 	--increment: 0.5rem;
-	--round: calc(var(--increment) * 5)
-	font-size: 16px;
+	--round: calc(var(--increment) * 2);
+
+	--brand-light: #00ff00;
+	--brand-dark: #00b900;
+
+	--brand-text-color: #000;
+	--shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+	--border: #27272a;
+}
+
+.light {
+	--slate: #f1f5f9;
+	--text-color: var(--border);
+	--bg: #ffffff;
+	--brand-suited: var(--brand-dark);
+}
+
+.dark {
+	--slate: #171717;
+	--text-color: #e5e5e5;
+	--bg: #303030;
+	--brand-suited: var(--brand-light);
 }
 
 body {
 	font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+	background: var(--bg);
 }
 
-main, header, footer {
+main,
+nav {
 	padding: var(--increment);
 }
 
@@ -28,7 +53,8 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-	main, header, footer {
+	main,
+	nav {
 		margin-right: auto;
 		margin-left: auto;
 		max-width: 75vw;

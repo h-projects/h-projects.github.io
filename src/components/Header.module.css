@@ -1,0 +1,28 @@
+.header {
+	background: var(--slate);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: calc(var(--increment) * 2);
+}
+
+.link {
+	color: var(--text-color);
+
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+
+.link:hover {
+	color: var(--brand-suited);
+}
