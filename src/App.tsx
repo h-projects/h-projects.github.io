@@ -17,6 +17,7 @@ const App: React.FC<{}> = () => {
 		}
 
 		document.body.classList.add(isDark ? 'dark' : 'light');
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	function setDark() {
