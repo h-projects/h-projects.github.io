@@ -8,7 +8,7 @@ const links = [
 		url: 'https://twitter.com/AytchSoftware'
 	},
 	{
-		name: 'GitHub',
+		name: 'QitHub',
 		url: 'https://github.com/h-projects'
 	},
 	{

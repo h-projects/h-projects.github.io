@@ -17,7 +17,7 @@
 	justify-content: flex-end;
 	padding: calc(var(--increment) * 3.5);
 
-	background-image: url('https://h-projects.github.io/assets/images/hero/h.png');
+	background-image: var(--image-url);
 	background-position: 0vh 0vw;
 	background-attachment: fixed;
 	background-repeat: repeat;
@@ -32,15 +32,16 @@
 }
 
 .heroHeading {
-	color: var(--brand-light);
+	color: var(--brand-suited);
 }
 
 .heroContent {
-	color: white;
+	color: var(--text-color);
 	/* fixes buttons overlaying each other */
 	margin-bottom: calc(var(--increment) * 4);
 }
 
 .whoWeAre {
 	margin-left: calc(var(--increment) * 2);
+	color: var(--brand-suited);
 }
