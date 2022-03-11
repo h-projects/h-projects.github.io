@@ -17,7 +17,7 @@
 	--slate: #f1f5f9;
 	--bg: #ffffff;
 	--hero: #e4e4e7;
-	--image-url: url('/public/liqht-h.png');
+	--image-url: url('/liqht-h.png');
 	--border: var(--light-border);
 	--text-color: var(--dark-border);
 	--brand-suited: var(--brand-dark);
@@ -26,9 +26,9 @@
 
 .dark {
 	--slate: #171717;
-	--bg: #303030;
+	--bg: #1e1e1e;
 	--hero: #060606;
-	--image-url: url('/public/dark-h.png');
+	--image-url: url('/dark-h.png');
 	--text-color: var(--light-border);
 	--brand-suited: var(--brand-light);
 	--border: var(--dark-border);
@@ -40,9 +40,11 @@ body {
 	color: var(--text-color);
 	background: var(--bg);
 
-	transition-property: color;
+	transition-property: color background;
 	transition-timing-function: ease-in-out;
-	transition-duration: 0.15s;
+	transition-duration: 150ms;
+
+	min-width: 425px;
 }
 
 .container {
