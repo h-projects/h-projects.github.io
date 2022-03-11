@@ -2,6 +2,7 @@
 	height: calc(var(--increment) / 4);
 	background: var(--border);
 	padding: 0 !important;
+	margin-bottom: calc(var(--increment) + 0.5rem);
 }
 
 .nav {
@@ -34,6 +35,6 @@
 @media (min-width: 768px) {
 	.nav {
 		flex-direction: row;
-		gap: none;
+		gap: 0;
 	}
 }

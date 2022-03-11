@@ -2,6 +2,16 @@
 	background: var(--slate);
 }
 
+.banner {
+	background: var(--brand-suited);
+	color: var(--brand-text-color);
+}
+
+.bannerText {
+	display: flex;
+	justify-content: center;
+}
+
 .desktopNav {
 	display: flex;
 	justify-content: space-between;

@@ -6,6 +6,10 @@ import Logo from './Logo';
 
 const links = [
 	{
+		name: 'Home',
+		url: '/'
+	},
+	{
 		name: 'About',
 		url: '/about'
 	},
@@ -15,9 +19,18 @@ const links = [
 	}
 ];
 
+const headerText = 'This is an example message.';
+
 const Header: React.FC<{}> = () => (
 	<>
 		<header className={styles.header}>
+			{headerText && (
+				<aside className={styles.banner}>
+					<div className={`${styles.bannerText} container`}>
+						<p>{headerText}</p>
+					</div>
+				</aside>
+			)}
 			<nav className={`${styles.desktopNav} container`}>
 				<Link to="/" className={`${styles.logo} ${transStyles.transitionable}`}>
 					<Logo />

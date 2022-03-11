@@ -13,21 +13,23 @@ const links = [
 	},
 	{
 		name: 'Discord',
-		url: ''
+		url: 'https://discord.gg/bJcT5QG'
 	}
 ];
 
 const Footer: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean }> = ({ set, get }) => (
-	<footer>
-		<div className={`${styles.hr} container`}></div>
-		<nav className={`${styles.nav} container`}>
+	<footer className="container">
+		<div className={styles.hr}></div>
+		<nav className={styles.nav}>
 			<div>
 				<p>&copy; Aytch Software 2022.</p>
 			</div>
 			<ul className={styles.ul}>
-				<button onClick={set} className={`${styles.link} ${transStyles.transitionable}`}>
-					Theme
-				</button>
+				<li>
+					<button onClick={set} className={`${styles.link} ${transStyles.transitionable}`}>
+						{get ? 'Light' : 'Dark'}
+					</button>
+				</li>
 				{links.map((link, index) => (
 					<li key={index} className={styles.li}>
 						<a href={link.url} className={`${styles.link} ${transStyles.transitionable}`}>

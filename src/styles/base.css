@@ -4,34 +4,35 @@
 
 :root {
 	--increment: 0.5rem;
-	--round: calc(var(--increment) * 2);
+	--shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 
 	--brand-light: #00ff00;
 	--brand-dark: #00b900;
 
-	--brand-text-color: #000;
-	--shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 	--dark-border: #27272a;
+	--light-border: #e5e5e5;
 }
 
 .light {
 	--slate: #f1f5f9;
-	--text-color: var(--dark-border);
 	--bg: #ffffff;
-	--brand-suited: var(--brand-dark);
-	--border: #71717a;
 	--hero: #e4e4e7;
 	--image-url: url('/public/liqht-h.png');
+	--border: var(--light-border);
+	--text-color: var(--dark-border);
+	--brand-suited: var(--brand-dark);
+	--brand-text-color: var(--light-border);
 }
 
 .dark {
 	--slate: #171717;
-	--text-color: #e5e5e5;
 	--bg: #303030;
-	--brand-suited: var(--brand-light);
-	--border: var(--dark-border);
 	--hero: #060606;
 	--image-url: url('/public/dark-h.png');
+	--text-color: var(--light-border);
+	--brand-suited: var(--brand-light);
+	--border: var(--dark-border);
+	--brand-text-color: var(--dark-border);
 }
 
 body {

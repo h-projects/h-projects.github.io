@@ -14,10 +14,11 @@ const App: React.FC<{}> = () => {
 	useEffect(() => {
 		if (!currentTheme) {
 			localStorage.setItem('theme', JSON.stringify(prefersDarkScheme));
+			setDarkState(JSON.parse(localStorage.getItem('theme') ?? JSON.stringify(prefersDarkScheme)));
 		}
 
 		document.body.classList.add(isDark ? 'dark' : 'light');
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	function setDark() {
