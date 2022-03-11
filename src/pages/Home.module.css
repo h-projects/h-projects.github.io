@@ -41,7 +41,22 @@
 	margin-bottom: calc(var(--increment) * 4);
 }
 
+.ctas {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--increment) * 2);
+	align-items: flex-start;
+	justify-content: center;
+}
+
 .whoWeAre {
-	margin-left: calc(var(--increment) * 2);
 	color: var(--brand-suited);
+}
+
+@media (min-width: 425px) {
+	.ctas {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
 }

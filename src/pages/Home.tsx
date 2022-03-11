@@ -11,7 +11,7 @@ const Home: React.FC<{}> = () => (
 				<p className={styles.heroContent}>
 					We create apps specifically tailored to those who like the letter H.
 				</p>
-				<div>
+				<div className={styles.ctas}>
 					<Link to="/projects" className={buttonStyles.button}>
 						See our creations
 					</Link>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import buttonStyles from '../styles/Button.module.css';
 import transStyles from '../styles/Trans.module.css';
@@ -19,15 +20,50 @@ const links = [
 	}
 ];
 
-const headerText = 'This is an example message.';
+const headerText = 'Aytch Software stands in support of arrow function components.';
 
-const Header: React.FC<{}> = () => (
-	<>
+const Header: React.FC<{}> = () => {
+	const shouldBeShown = JSON.parse(localStorage.getItem('banner') ?? '{"shown": true}');
+	const shouldShow = !shouldBeShown.shown && shouldBeShown.message !== headerText;
+	const [showMessage, setShown] = useState(shouldShow);
+
+	useEffect(() => {
+		console.log(showMessage);
+
+		if (!localStorage.getItem('banner')) {
+			localStorage.setItem(
+				'banner',
+				JSON.stringify({
+					shown: true,
+					message: headerText
+				})
+			);
+		}
+	});
+
+	function hideBanner() {
+		setShown(false);
+		localStorage.setItem(
+			'banner',
+			JSON.stringify({
+				shown: false,
+				message: headerText
+			})
+		);
+	}
+
+	return (
 		<header className={styles.header}>
-			{headerText && (
+			{showMessage && (
 				<aside className={styles.banner}>
 					<div className={`${styles.bannerText} container`}>
-						<p>{headerText}</p>
+						<p>{headerText}</p>{' '}
+						<button
+							className={`${buttonStyles.button} ${styles.bannerButton} ${transStyles.transitionable}`}
+							onClick={hideBanner}
+						>
+							Close
+						</button>
 					</div>
 				</aside>
 			)}
@@ -51,7 +87,7 @@ const Header: React.FC<{}> = () => (
 				</div>
 			</nav>
 		</header>
-	</>
-);
+	);
+};
 
 export default Header;

@@ -10,6 +10,20 @@
 .bannerText {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.bannerButton {
+	background: var(--slate);
+	color: var(--brand-suited);
+	border: none;
+	padding: calc(var(--increment) / 2);
+	margin-left: var(--increment);
+}
+
+.bannerButton:hover {
+	cursor: pointer;
+	filter: var(--shadow);
 }
 
 .desktopNav {
@@ -38,6 +52,9 @@
 
 .link {
 	color: var(--text-color);
+	background: none;
+	border: none;
+	padding: 0;
 }
 
 .link:hover {
