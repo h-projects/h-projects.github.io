@@ -4,7 +4,7 @@
 	color: var(--brand-text-color);
 	font-weight: 500;
 	border-radius: var(--increment);
-	border: 4px var(--border) solid;
+	border: calc(var(--increment) / 4) var(--border) solid;
 	font-family: 'Montserrat';
 	color: white;
 }

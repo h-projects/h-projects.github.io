@@ -11,14 +11,16 @@
 
 	--brand-text-color: #000;
 	--shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-	--border: #27272a;
+	--hero: #060606;
+	--dark-border: #27272a;
 }
 
 .light {
 	--slate: #f1f5f9;
-	--text-color: var(--border);
+	--text-color: var(--dark-border);
 	--bg: #ffffff;
 	--brand-suited: var(--brand-dark);
+	--border: #71717a;
 }
 
 .dark {
@@ -26,6 +28,7 @@
 	--text-color: #e5e5e5;
 	--bg: #303030;
 	--brand-suited: var(--brand-light);
+	--border: var(--dark-border);
 }
 
 body {
@@ -34,29 +37,32 @@ body {
 	background: var(--bg);
 }
 
-main,
-nav {
-	padding: var(--increment);
+.container {
+	padding: calc(var(--increment) * 1.5);
+	padding-top: calc(var(--increment) * 2);
+	padding-bottom: calc(var(--increment) * 2);
 }
 
 /* bolder headings */
 h1,
 h2,
 h3 {
-	font-weight: 900;
+	font-weight: 800;
 }
 
 h4,
 h5,
 h6 {
-	font-weight: 800;
+	font-weight: 700;
 }
 
 @media (min-width: 1024px) {
-	main,
-	nav {
+	.container {
 		margin-right: auto;
 		margin-left: auto;
 		max-width: 75vw;
+		padding: 0;
+		padding-top: calc(var(--increment) * 2);
+		padding-bottom: calc(var(--increment) * 2);
 	}
 }

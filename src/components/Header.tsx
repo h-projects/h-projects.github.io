@@ -15,27 +15,29 @@ const links = [
 ];
 
 const Header: React.FC<{}> = () => (
-	<header className={styles.header}>
-		<nav className={styles.nav}>
-			<Link to="/" className={styles.logo}>
-				<Logo />
-			</Link>
-			<ul className={styles.ul}>
-				{links.map((link, index) => (
-					<li key={index} className={styles.li}>
-						<Link to={link.url} className={styles.link}>
-							{link.name}
-						</Link>
-					</li>
-				))}
-			</ul>
-			<div>
-				<Link to="/projects" className={buttonStyles.button}>
-					Our Projects
+	<>
+		<header className={styles.header}>
+			<nav className={`${styles.desktopNav} container`}>
+				<Link to="/" className={styles.logo}>
+					<Logo />
 				</Link>
-			</div>
-		</nav>
-	</header>
+				<ul className={styles.ul}>
+					{links.map((link, index) => (
+						<li key={index} className={styles.li}>
+							<Link to={link.url} className={styles.link}>
+								{link.name}
+							</Link>
+						</li>
+					))}
+				</ul>
+				<div>
+					<Link to="/projects" className={buttonStyles.button}>
+						Our Projects
+					</Link>
+				</div>
+			</nav>
+		</header>
+	</>
 );
 
 export default Header;

@@ -1,3 +1,46 @@
+@keyframes h {
+	from {
+		background-position: 0vh 0vw;
+	}
+
+	to {
+		background-position: -100vh -100vw;
+	}
+}
+
 .hero {
-	border-radius: 
+	border-radius: calc(var(--increment) * 4);
+	height: 50vh;
+	background: var(--hero);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: calc(var(--increment) * 3.5);
+
+	background-image: url('https://h-projects.github.io/assets/images/hero/h.png');
+	background-position: 0vh 0vw;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	animation: h 20s linear infinite;
+	background-size: 2%;
+	margin-bottom: calc(var(--increment) * 4);
+}
+
+.projectSectionHeader,
+.heroHeading {
+	margin-bottom: var(--increment);
+}
+
+.heroHeading {
+	color: var(--brand-light);
+}
+
+.heroContent {
+	color: white;
+	/* fixes buttons overlaying each other */
+	margin-bottom: calc(var(--increment) * 4);
+}
+
+.whoWeAre {
+	margin-left: calc(var(--increment) * 2);
 }
