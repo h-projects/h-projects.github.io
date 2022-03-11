@@ -1,39 +1,39 @@
-import { MouseEventHandler } from 'react';
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
 import transStyles from '../styles/Trans.module.css';
+import Discord from './Discord';
 import styles from './Footer.module.css';
 
 const links = [
 	{
 		name: 'Twitter',
+		icon: FaTwitter,
 		url: 'https://twitter.com/AytchSoftware'
 	},
 	{
 		name: 'QitHub',
+		icon: FaGithub,
 		url: 'https://github.com/h-projects'
 	},
 	{
 		name: 'Discord',
+		icon: Discord,
 		url: 'https://discord.gg/bJcT5QG'
 	}
 ];
 
-const Footer: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean }> = ({ set, get }) => (
+const Footer: React.FC<{}> = () => (
 	<footer className="container">
 		<div className={styles.hr}></div>
 		<nav className={styles.nav}>
 			<div>
-				<p>&copy; Aytch Software 2022.</p>
+				<p>&copy; Aytch Software {new Date().getFullYear()}.</p>
 			</div>
 			<ul className={styles.ul}>
-				<li>
-					<button onClick={set} className={`${styles.link} ${transStyles.transitionable}`}>
-						{get ? 'Light' : 'Dark'}
-					</button>
-				</li>
 				{links.map((link, index) => (
 					<li key={index} className={styles.li}>
 						<a href={link.url} className={`${styles.link} ${transStyles.transitionable}`}>
-							{link.name}
+							<link.icon title={link.name} size="1.5em" />
 						</a>
 					</li>
 				))}

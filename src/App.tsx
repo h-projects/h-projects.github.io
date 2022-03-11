@@ -30,12 +30,12 @@ const App: React.FC<{}> = () => {
 
 	return (
 		<>
-			<Header />
+			<Header get={isDark} set={setDark} />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 			</Routes>
-			<Footer get={isDark} set={setDark} />
+			<Footer />
 		</>
 	);
 };
