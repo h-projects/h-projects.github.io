@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -9,23 +9,17 @@ const App: React.FC<{}> = () => {
 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 	const currentTheme = localStorage.getItem('theme');
 
-	const [isDark, setDarkState] = useState(currentTheme ? JSON.parse(currentTheme) : prefersDarkScheme);
+	const [isDark, setDarkState] = useState<boolean>(currentTheme ? JSON.parse(currentTheme) : prefersDarkScheme);
+	document.body.classList.add(isDark ? 'dark' : 'light');
 
-	useEffect(() => {
-		if (!currentTheme) {
-			localStorage.setItem('theme', JSON.stringify(prefersDarkScheme));
-			setDarkState(JSON.parse(localStorage.getItem('theme') ?? JSON.stringify(prefersDarkScheme)));
-		}
-
-		document.body.classList.add(isDark ? 'dark' : 'light');
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	if (!currentTheme) {
+		localStorage.setItem('theme', JSON.stringify(prefersDarkScheme));
+	}
 
 	function setDark() {
+		localStorage.setItem('theme', JSON.stringify(!isDark));
 		setDarkState((dark: boolean) => !dark);
-		document.body.classList.remove(isDark ? 'light' : 'dark');
-		document.body.classList.add(isDark ? 'dark' : 'light');
-		localStorage.setItem('theme', JSON.stringify(isDark));
+		document.body.classList.toggle(isDark ? 'dark' : 'light');
 	}
 
 	return (
