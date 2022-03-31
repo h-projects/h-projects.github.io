@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 const App: React.FC<{}> = () => {
 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -41,6 +42,7 @@ const App: React.FC<{}> = () => {
 		<Routes>
 			{route(<Home />, '/')}
 			{route(<About />, '/about')}
+			{route(<NotFound />, '*')}
 		</Routes>
 	);
 };
