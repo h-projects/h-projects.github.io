@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import About from './pages/About';
 import Home from './pages/Home';
-import Shell from './Shell';
 
 const App: React.FC<{}> = () => {
 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -26,9 +27,11 @@ const App: React.FC<{}> = () => {
 			<Route
 				path={route}
 				element={
-					<Shell get={isDark} set={setDark}>
+					<>
+						<Header set={setDark} get={isDark} />
 						{component}
-					</Shell>
+						<Footer />
+					</>
 				}
 			/>
 		);
