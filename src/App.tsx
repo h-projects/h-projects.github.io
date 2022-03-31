@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
-import Header from './components/Header';
 import About from './pages/About';
 import Home from './pages/Home';
+import Shell from './Shell';
 
 const App: React.FC<{}> = () => {
 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -22,15 +21,24 @@ const App: React.FC<{}> = () => {
 		document.body.classList.toggle(isDark ? 'dark' : 'light');
 	}
 
+	function route(component: React.ReactNode, route: string) {
+		return (
+			<Route
+				path={route}
+				element={
+					<Shell get={isDark} set={setDark}>
+						{component}
+					</Shell>
+				}
+			/>
+		);
+	}
+
 	return (
-		<>
-			<Header get={isDark} set={setDark} />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-			</Routes>
-			<Footer />
-		</>
+		<Routes>
+			{route(<Home />, '/')}
+			{route(<About />, '/about')}
+		</Routes>
 	);
 };
 
