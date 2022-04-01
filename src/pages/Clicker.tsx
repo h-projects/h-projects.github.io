@@ -66,7 +66,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 			setHImage(shopItem.exec.image);
 		}
 
-		localStorage.setItem('clicked', JSON.stringify(clickedCount));
+		localStorage.setItem('count', JSON.stringify(clickedCount));
 		localStorage.setItem('purchased', JSON.stringify(purchasedItems));
 	}
 
