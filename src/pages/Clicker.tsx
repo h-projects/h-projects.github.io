@@ -13,6 +13,8 @@ interface ShopItem {
 		text?: string;
 		color?: string;
 		image?: string;
+		fontSize?: string;
+		width?: string;
 	};
 }
 
@@ -23,6 +25,8 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 	const previousText = localStorage.getItem('text');
 	const previousColor = localStorage.getItem('color');
 	const previousImage = localStorage.getItem('image');
+	const previousSize = localStorage.getItem('size');
+	const previousWidth = localStorage.getItem('width');
 
 	const [clickedCount, setClicked] = useState<number>(JSON.parse(previousCount ?? '0'));
 	const [purchasedItems, setPurchased] = useState<string[]>(
@@ -32,6 +36,8 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 	const [hText, setHText] = useState(previousText ?? 'h');
 	const [hColor, setHColor] = useState(previousColor ?? dark ? '#ffffff' : '#000000');
 	const [hImage, setHImage] = useState(previousImage ?? 'none');
+	const [hSize, setHSize] = useState(previousSize ?? '250px');
+	const [hWidth, setHWidth] = useState(previousWidth ?? '250px');
 
 	// this is only used on mobile, but also doesnt matter to save like the other ones.
 	const [shouldShowShopLayout, setShopLayoutShown] = useState(false);
@@ -47,7 +53,6 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 		}
 
 		setClicked(count => count - shopItem.price);
-		setPurchased(purchased => [...purchased, shopItem.internalName]);
 
 		if (shopItem.exec.color) {
 			localStorage.setItem('color', shopItem.exec.color);
@@ -57,17 +62,32 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 		if (shopItem.exec.text) {
 			localStorage.setItem('text', shopItem.exec.text);
 			setHText(shopItem.exec.text);
+
+			localStorage.setItem('image', 'none');
+			setHImage('none');
 		}
 
-		if (shopItem.exec.image) {
+		if (shopItem.exec.image && shopItem.exec.width) {
 			localStorage.setItem('image', shopItem.exec.image);
 			localStorage.setItem('color', 'transparent');
+			localStorage.setItem('width', shopItem.exec.width);
+
 			setHColor('transparent');
 			setHImage(shopItem.exec.image);
+			setHWidth(shopItem.exec.width);
+		}
+
+		if (shopItem.exec.fontSize) {
+			localStorage.setItem('size', shopItem.exec.fontSize);
+			setHSize(shopItem.exec.fontSize);
 		}
 
 		localStorage.setItem('count', JSON.stringify(clickedCount));
-		localStorage.setItem('purchased', JSON.stringify(purchasedItems));
+
+		if (!purchasedItems.includes(shopItem.internalName)) {
+			localStorage.setItem('purchased', JSON.stringify(purchasedItems));
+			setPurchased(purchased => [...purchased, shopItem.internalName]);
+		}
 	}
 
 	const shopItems: ShopItem[] = [
@@ -86,7 +106,19 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 			description: 'Simply just an h.',
 			price: 0,
 			exec: {
-				text: 'h'
+				text: 'h',
+				fontSize: '250px'
+			}
+		},
+		{
+			internalName: 'testImage',
+			displayName: 'image text',
+			description: 'advaith',
+			price: 0,
+			exec: {
+				image: 'url(https://cdn.discordapp.com/avatars/348591272476540928/4526f46506b05216d07002844e3628b3.png?size=1024)',
+				fontSize: '250px',
+				width: '600px'
 			}
 		}
 	];
@@ -97,7 +129,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 				<div className={styles.sidebar}>
 					<div className={styles.sidebarTextBox}>
 						<small className={styles.small}>H's clicked</small>
-						<h2>{clickedCount}</h2>
+						<h2 className={styles.counterHeader}>{clickedCount}</h2>
 					</div>
 				</div>
 
@@ -107,7 +139,10 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 						onClick={buttonClick}
 						style={{
 							color: hColor,
-							backgroundImage: hImage
+							backgroundImage: hImage,
+							fontSize: hSize,
+							width: hWidth,
+							height: hWidth
 						}}
 					>
 						{hText}
@@ -196,7 +231,9 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 								onClick={buttonClick}
 								style={{
 									color: hColor,
-									backgroundImage: hImage
+									backgroundImage: hImage,
+									fontSize: hSize,
+									width: hWidth
 								}}
 							>
 								{hText}
