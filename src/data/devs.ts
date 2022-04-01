@@ -14,7 +14,7 @@ const devs: Dev[] = [
 		picture: 'https://us-east-1.tixte.net/uploads/nightlake.tixte.co/sadie.png',
 		description: 'Techno..queen (idk?) of Aytch software',
 		links: {
-			github: '/night-lake',
+			github: 'night-lake',
 			twitter: '_nightlake'
 		}
 	}

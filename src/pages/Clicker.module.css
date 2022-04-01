@@ -1,0 +1,131 @@
+body {
+	overflow-y: hidden;
+	height: 100vh;
+}
+
+/* the h */
+.button {
+	background: none;
+	border: 0;
+	font-family: 'Poppins';
+	font-size: 250px;
+	outline: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	box-shadow: none !important;
+}
+
+/* sidebars */
+.small {
+	color: var(--brand-suited);
+	letter-spacing: calc(var(--increment) / 3);
+}
+
+.sidebar {
+	background-color: var(--slate);
+}
+
+.sidebarTextBox {
+	padding-left: calc(var(--increment) * 4);
+	padding-right: calc(var(--increment) * 4);
+	margin: calc(var(--increment) * 2);
+	margin-bottom: calc(var(--increment) * 3);
+}
+
+/* shop related */
+.shopItem {
+	padding: calc(var(--increment) * 4);
+	margin: calc(var(--increment) * 2);
+	background: var(--slate);
+	border-radius: calc(var(--increment) * 2);
+}
+
+.purchased,
+.notPurchased {
+	margin-top: calc(var(--increment) * 2);
+}
+
+.purchased {
+	color: var(--brand-suited);
+}
+
+/* layout helpers */
+.desktopGrid {
+	display: none;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.mobileGrid {
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden;
+	height: 100vh;
+}
+
+.buttonFlexer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+	.desktopGrid {
+		display: grid;
+	}
+
+	.mobileGrid {
+		display: none;
+	}
+
+	.buttonFlexer {
+		height: 100vh;
+	}
+
+	.shopItem {
+		background: var(--bg);
+	}
+}
+
+/* /// MOBILE LAYOUT STUFF /// */
+.link {
+	color: var(--text-color);
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.link:hover {
+	color: var(--brand-suited);
+}
+
+.sidebarBaseBox {
+	padding-left: calc(var(--increment) * 4);
+	padding-right: calc(var(--increment) * 4);
+}
+
+.mobileSidebar {
+	flex-grow: 1;
+	overflow-y: scroll;
+}
+
+/* this is for mobile links lo */
+.baseButton {
+	background: none;
+	border: 0;
+	outline: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	box-shadow: none !important;
+	color: var(--text-color);
+}

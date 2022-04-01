@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
+import Clicker from './pages/Clicker';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
@@ -43,6 +44,7 @@ const App: React.FC<{}> = () => {
 			{route(<Home />, '/')}
 			{route(<About />, '/about')}
 			{route(<NotFound />, '*')}
+			<Route path="/clicker" element={<Clicker dark={isDark} />} />
 		</Routes>
 	);
 };

@@ -32,7 +32,6 @@ const Header: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean
 		(!shouldBeShown.shown && shouldBeShown.message !== headerText);
 
 	const [showMessage, setShown] = useState(shouldShow);
-
 	const [openMenu, setOpenMenu] = useState(false);
 
 	useEffect(() => {
