@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import { hooks } from './model';
 import About from './pages/About';
 import Clicker from './pages/Clicker';
 import Home from './pages/Home';
@@ -9,19 +10,26 @@ import NotFound from './pages/NotFound';
 
 const App: React.FC<{}> = () => {
 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	const currentTheme = localStorage.getItem('theme');
 
-	const [isDark, setDarkState] = useState<boolean>(currentTheme ? JSON.parse(currentTheme) : prefersDarkScheme);
-	document.body.classList.add(isDark ? 'dark' : 'light');
+	const state = hooks.useStoreState(store => ({
+		currentTheme: store.currentTheme
+	}));
 
-	if (!currentTheme) {
-		localStorage.setItem('theme', JSON.stringify(prefersDarkScheme));
+	const actions = hooks.useStoreActions(state => {
+		return {
+			setTheme: state.setTheme
+		};
+	});
+
+	if (state.currentTheme === 'system') {
+		actions.setTheme(prefersDarkScheme ? 'dark' : 'light');
 	}
 
+	document.body.classList.add(state.currentTheme);
+
 	function setDark() {
-		localStorage.setItem('theme', JSON.stringify(!isDark));
-		setDarkState((dark: boolean) => !dark);
-		document.body.classList.toggle(isDark ? 'dark' : 'light');
+		actions.setTheme(state.currentTheme === 'dark' ? 'light' : 'dark');
+		document.body.classList.toggle(state.currentTheme);
 	}
 
 	function route(component: React.ReactNode, route: string) {
@@ -30,7 +38,7 @@ const App: React.FC<{}> = () => {
 				path={route}
 				element={
 					<>
-						<Header set={setDark} get={isDark} />
+						<Header />
 						{component}
 						<Footer />
 					</>
@@ -44,7 +52,7 @@ const App: React.FC<{}> = () => {
 			{route(<Home />, '/')}
 			{route(<About />, '/about')}
 			{route(<NotFound />, '*')}
-			<Route path="/clicker" element={<Clicker dark={isDark} />} />
+			{/* <Route path="/clicker" element={<Clicker />} /> */}
 		</Routes>
 	);
 };

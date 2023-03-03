@@ -1,8 +1,9 @@
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { FaMoon } from '@react-icons/all-files/fa/FaMoon';
 import { FaSun } from '@react-icons/all-files/fa/FaSun';
-import { MouseEventHandler, useEffect, useState } from 'react';
+import { MouseEventHandler, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { banner, hooks } from '../model';
 import buttonStyles from '../styles/Button.module.css';
 import transStyles from '../styles/Trans.module.css';
 import styles from './Header.module.css';
@@ -23,46 +24,41 @@ const links = [
 	}
 ];
 
-const headerText = 'Aytch Software stands in support of arrow function components.';
+const Header: React.FC = () => {
+	const state = hooks.useStoreState(store => ({
+		showBanner: store.showBanner,
+		currentBannerText: store.currentBannerText,
+		shouldShowBanner: store.shouldShowBanner,
+		currentTheme: store.currentTheme
+	}));
 
-const Header: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean }> = ({ set, get }) => {
-	const shouldBeShown = JSON.parse(localStorage.getItem('banner') ?? '{"shown": true}');
-	const shouldShow =
-		(shouldBeShown.shown && shouldBeShown.message === headerText) ||
-		(!shouldBeShown.shown && shouldBeShown.message !== headerText);
-
-	const [showMessage, setShown] = useState(shouldShow);
-	const [openMenu, setOpenMenu] = useState(false);
-
-	useEffect(() => {
-		if (!localStorage.getItem('banner')) {
-			localStorage.setItem(
-				'banner',
-				JSON.stringify({
-					shown: true,
-					message: headerText
-				})
-			);
-		}
+	const actions = hooks.useStoreActions(state => {
+		return {
+			setBannerShown: state.setBannerShown,
+			setUserBannerText: state.setUserBannerText,
+			setCurrentBannerText: state.setCurrentBannerText,
+			setTheme: state.setTheme
+		};
 	});
 
+	if (state.currentBannerText !== banner) {
+		// always make sure we have the latest current banner text
+		actions.setCurrentBannerText(banner);
+	}
+
+	const [openMenu, setOpenMenu] = useState(false);
+
 	function hideBanner() {
-		setShown(false);
-		localStorage.setItem(
-			'banner',
-			JSON.stringify({
-				shown: false,
-				message: headerText
-			})
-		);
+		actions.setUserBannerText(banner);
+		actions.setBannerShown();
 	}
 
 	return (
 		<header className={styles.header}>
-			{showMessage && (
+			{state.shouldShowBanner && (
 				<aside className={styles.banner}>
 					<div className={`${styles.bannerText} container`}>
-						<p>{headerText}</p>{' '}
+						<p>{banner}</p>
 						<button
 							className={`${buttonStyles.button} ${styles.bannerButton} ${transStyles.transitionable}`}
 							onClick={hideBanner}
@@ -87,8 +83,18 @@ const Header: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean
 				</ul>
 				<ul className={styles.ul}>
 					<li>
-						<button onClick={set} className={`${styles.link} ${transStyles.transitionable}`}>
-							{get ? <FaSun title="Light" size="1.5em" /> : <FaMoon title="Dark" size="1.5em" />}
+						<button
+							onClick={() => {
+								actions.setTheme(state.currentTheme === 'dark' ? 'light' : 'dark');
+								document.body.classList.toggle(state.currentTheme);
+							}}
+							className={`${styles.link} ${transStyles.transitionable}`}
+						>
+							{state.currentTheme === 'dark' ? (
+								<FaSun title="Light" size="1.5em" />
+							) : (
+								<FaMoon title="Dark" size="1.4em" />
+							)}
 						</button>
 					</li>
 					<li>
@@ -105,8 +111,18 @@ const Header: React.FC<{ set: MouseEventHandler<HTMLButtonElement>; get: boolean
 
 				<ul className={styles.mobileUlRow}>
 					<li>
-						<button onClick={set} className={`${styles.link} ${transStyles.transitionable}`}>
-							{get ? <FaSun title="Light" size="1.5em" /> : <FaMoon title="Dark" size="1.5em" />}
+						<button
+							onClick={() => {
+								actions.setTheme(state.currentTheme === 'dark' ? 'light' : 'dark');
+								document.body.classList.toggle(state.currentTheme);
+							}}
+							className={`${styles.link} ${transStyles.transitionable}`}
+						>
+							{state.currentTheme === 'dark' ? (
+								<FaSun title="Light" size="1.5em" />
+							) : (
+								<FaMoon title="Dark" size="1.5em" />
+							)}
 						</button>
 					</li>
 					<li>
