@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "format": "prettier --write .",
     "check": "prettier --check .",
     "lint": "next lint",

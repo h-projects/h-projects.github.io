@@ -10,7 +10,6 @@
 
 # production
 /.next
-/out
 
 # misc
 .DS_Store

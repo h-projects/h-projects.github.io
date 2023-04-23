@@ -17,7 +17,7 @@
     "project": ["./tsconfig.json"]
   },
   "plugins": ["@typescript-eslint"],
-  "ignorePatterns": ["node_modules", ".next", "out"],
+  "ignorePatterns": ["node_modules", ".next"],
   "rules": {
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-require-imports": "error",
