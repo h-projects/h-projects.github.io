@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --increment: 0.5rem;
+  --shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+
+  --brand-light: #00ff00;
+  --brand-dark: #00b900;
+
+  --dark-border: #27272a;
+  --light-border: #e5e5e5;
+}
+
+.light {
+  --slate: #f1f5f9;
+  --bg: #ffffff;
+  --hero: #e4e4e7;
+  --image-url: url('/liqht-h.png');
+  --border: var(--light-border);
+  --text-color: var(--dark-border);
+  --brand-suited: var(--brand-dark);
+  --brand-text-color: var(--light-border);
+}
+
+.dark {
+  --slate: #171717;
+  --bg: #1e1e1e;
+  --hero: #060606;
+  --image-url: url('/dark-h.png');
+  --text-color: var(--light-border);
+  --brand-suited: var(--brand-light);
+  --border: var(--dark-border);
+  --brand-text-color: var(--dark-border);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background: var(--bg);
+
+  transition-property: color background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+
+  min-width: 425px;
+}
+
+.container {
+  padding: calc(var(--increment) * 1.5);
+  padding-top: calc(var(--increment) * 2);
+  padding-bottom: calc(var(--increment) * 2);
+}
+
+section {
+  padding-bottom: calc(var(--increment) * 2);
+}
+
+/* bolder headings */
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75vw;
+    padding: 0;
+    padding-top: calc(var(--increment) * 2);
+    padding-bottom: calc(var(--increment) * 2);
+  }
+}

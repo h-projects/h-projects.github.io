@@ -1,12 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -16,11 +10,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "allowJs": true,
+    "incremental": true,
+    "isolatedModules": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
