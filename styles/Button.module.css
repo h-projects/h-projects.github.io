@@ -1,0 +1,10 @@
+.button {
+  padding: calc(var(--increment) + calc(var(--increment) / 2.5));
+  background: var(--brand-dark);
+  color: var(--brand-text-color);
+  font-weight: 500;
+  border-radius: var(--increment);
+  border: calc(var(--increment) / 4) var(--border) solid;
+  font-family: 'Montserrat';
+  color: white;
+}
