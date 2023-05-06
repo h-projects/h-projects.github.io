@@ -1,13 +1,15 @@
+'use client';
+
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
-import { FaMoon } from '@react-icons/all-files/fa/FaMoon';
-import { FaSun } from '@react-icons/all-files/fa/FaSun';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import buttonStyles from '../styles/Button.module.css';
-import transStyles from '../styles/Trans.module.css';
+import buttonStyles from '../styles/button.module.css';
+import transStyles from '../styles/trans.module.css';
 import styles from './Header.module.css';
+
 import Logo from './Logo';
+import { ThemeButton } from './ThemeButton';
 
 const links = [
   {
@@ -25,16 +27,10 @@ const links = [
 ];
 
 const Header = () => {
-  const { systemTheme, theme: _theme, setTheme } = useTheme();
+  const { systemTheme, theme: _theme } = useTheme();
   const theme = _theme === 'system' ? systemTheme : _theme;
 
-  const [mounted, setMounted] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
-
-  useEffect(() => setMounted(true), []);
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <header className={styles.header}>
@@ -68,14 +64,7 @@ const Header = () => {
         </ul>
         <ul className={styles.ul}>
           <li>
-            <button
-              onClick={() => {
-                theme === 'dark' ? setTheme('light') : setTheme('dark');
-              }}
-              className={`${styles.link} ${transStyles.transitionable}`}
-            >
-              {theme === 'dark' ? <FaSun title="Light" size="1.5em" /> : <FaMoon title="Dark" size="1.4em" />}
-            </button>
+            <ThemeButton className={`${styles.link} ${transStyles.transitionable}`} theme={theme} />
           </li>
           <li>
             <Link href="/projects" className={buttonStyles.button}>
@@ -91,14 +80,7 @@ const Header = () => {
 
         <ul className={styles.mobileUlRow}>
           <li>
-            <button
-              onClick={() => {
-                setTheme(theme === 'dark' ? 'light' : 'dark');
-              }}
-              className={`${styles.link} ${transStyles.transitionable}`}
-            >
-              {theme === 'dark' ? <FaSun title="Light" size="1.5em" /> : <FaMoon title="Dark" size="1.5em" />}
-            </button>
+            <ThemeButton className={`${styles.link} ${transStyles.transitionable}`} theme={theme} />
           </li>
           <li>
             <button className={styles.mobileMenuButton} onClick={() => setOpenMenu(mobileIsOpen => !mobileIsOpen)}>

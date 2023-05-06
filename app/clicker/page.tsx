@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import styles from './clicker.module.css';
+'use client';
+
 import { FaShoppingCart } from '@react-icons/all-files/fa/FaShoppingCart';
 import { FaHome } from '@react-icons/all-files/fa/FaHome';
 import Link from 'next/link';
+import { useState } from 'react';
+
+import styles from './clicker.module.css';
 
 interface ShopItem {
   internalName: string;
