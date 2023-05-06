@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 
 import { Providers } from './providers';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '#components/Header';
+import Footer from '#components/Footer';
 import './globals.css';
-import '../styles/normalize.css';
+import '#styles/normalize.css';
 
 export const metadata = {
   title: 'Aytch Software',

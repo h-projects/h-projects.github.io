@@ -4,8 +4,8 @@ import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import buttonStyles from '../styles/button.module.css';
-import transStyles from '../styles/trans.module.css';
+import buttonStyles from '#styles/button.module.css';
+import transStyles from '#styles/trans.module.css';
 import styles from './Header.module.css';
 
 import Logo from './Logo';
