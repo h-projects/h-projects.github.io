@@ -12,17 +12,17 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "next": "^13.4.5",
+    "next": "^13.4.7",
     "next-themes": "^0.2.1",
     "react": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
-    "@types/react": "^18.2.12",
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
-    "eslint": "^8.42.0",
-    "eslint-config-next": "^13.4.5",
+    "@types/react": "^18.2.13",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.7",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   },
