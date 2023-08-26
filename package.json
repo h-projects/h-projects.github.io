@@ -10,6 +10,9 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
+  "imports": {
+    "#*": "./*"
+  },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "next": "^13.4.19",
