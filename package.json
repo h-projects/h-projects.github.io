@@ -12,19 +12,19 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "next": "^13.4.10",
+    "next": "^13.4.19",
     "next-themes": "^0.2.1",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.2",
-    "@types/react": "^18.2.15",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "eslint": "^8.45.0",
-    "eslint-config-next": "^13.4.10",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "prettier": "^3.0.2",
+    "typescript": "^5.2.2"
   },
   "browserslist": {
     "production": [
