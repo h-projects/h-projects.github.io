@@ -16,7 +16,8 @@
     "noFallthroughCasesInSwitch": true,
     "strict": true,
     "paths": {
-      "#*": ["./*"]
+      "#components/*": ["./app/components/*"],
+      "#styles/*": ["./app/styles/*"]
     },
     "module": "esnext",
     "moduleResolution": "node"
