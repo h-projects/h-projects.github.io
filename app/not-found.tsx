@@ -1,7 +1,7 @@
 import type { FunctionComponent } from 'react';
 import Link from 'next/link';
 import styles from './not-found.module.css';
-import buttonStyles from '#styles/button.module.css';
+import buttonStyles from '../styles/button.module.css';
 
 const NotFound: FunctionComponent = () => (
   <main className="container">

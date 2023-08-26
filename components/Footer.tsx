@@ -1,6 +1,6 @@
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
-import transStyles from '#styles/trans.module.css';
+import transStyles from '../styles/trans.module.css';
 import Discord from './Discord';
 import styles from './Footer.module.css';
 
