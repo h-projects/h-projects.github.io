@@ -1,22 +1,27 @@
 {
   "compilerOptions": {
+    "plugins": [{ "name": "next" }],
     "lib": ["dom", "dom.iterable", "esnext"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "isolatedModules": true,
     "jsx": "preserve",
+    "noEmit": true,
     "allowJs": true,
     "incremental": true,
-    "isolatedModules": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "paths": {
+      "#components/*": ["./app/components/*"],
+      "#styles/*": ["./app/styles/*"]
+    },
+    "module": "esnext",
+    "moduleResolution": "node"
   },
-  "include": ["next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "include": [".next/types/**/*.ts", "next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", ".next", "out"]
 }
