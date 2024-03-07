@@ -1,9 +1,8 @@
 'use client';
 
-import { FaShoppingCart } from '@react-icons/all-files/fa/FaShoppingCart';
-import { FaHome } from '@react-icons/all-files/fa/FaHome';
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaHome, FaShoppingCart } from 'react-icons/fa';
 
 import styles from './clicker.module.css';
 
@@ -38,7 +37,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
   );
 
   const [hText, setHText] = useState(previousText ?? 'h');
-  const [hColor, setHColor] = useState(previousColor ?? dark ? '#ffffff' : '#000000');
+  const [hColor, setHColor] = useState(previousColor ?? dark ? '@/ffffff' : '@/000000');
   const [hImage, setHImage] = useState(previousImage ?? 'none');
   const [hSize, setHSize] = useState(previousSize ?? '250px');
   const [hWidth, setHWidth] = useState(previousWidth ?? '250px');
@@ -102,7 +101,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
       description: 'Simply just a colorless H.',
       price: 0,
       exec: {
-        color: dark ? '#ffffff' : '#000000'
+        color: dark ? '@/ffffff' : '@/000000'
       }
     },
     {

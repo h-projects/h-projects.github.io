@@ -1,19 +1,15 @@
+import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 
-import { Providers } from './providers';
-import Header from '#components/Header';
-import Footer from '#components/Footer';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import '@/styles/normalize.css';
 import './globals.css';
-import '#styles/normalize.css';
+import { Providers } from './providers';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Aytch Software',
   description: 'Software by H fans, for H Fans',
-  themeColor: '#00ff00',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1
-  },
   metadataBase: new URL('https://h-projects.pages.dev'),
   openGraph: {
     siteName: 'Aytch Software',
@@ -21,6 +17,10 @@ export const metadata = {
     url: '/',
     images: '/logo.png'
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: '#00ff00'
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -1,11 +1,11 @@
 'use client';
 
-import { FaBars } from '@react-icons/all-files/fa/FaBars';
-import { useState } from 'react';
-import Link from 'next/link';
+import buttonStyles from '@/styles/button.module.css';
+import transStyles from '@/styles/trans.module.css';
 import { useTheme } from 'next-themes';
-import buttonStyles from '#styles/button.module.css';
-import transStyles from '#styles/trans.module.css';
+import Link from 'next/link';
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
 import styles from './Header.module.css';
 
 import Logo from './Logo';

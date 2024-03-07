@@ -1,7 +1,6 @@
 'use client';
 
-import { FaMoon } from '@react-icons/all-files/fa/FaMoon';
-import { FaSun } from '@react-icons/all-files/fa/FaSun';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';

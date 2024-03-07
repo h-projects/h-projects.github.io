@@ -1,5 +1,5 @@
+import buttonStyles from '@/styles/button.module.css';
 import Link from 'next/link';
-import buttonStyles from '#styles/button.module.css';
 import styles from './home.module.css';
 
 const Home = () => (
