@@ -54,8 +54,8 @@ const Header = () => {
           <Logo />
         </Link>
         <ul className={styles.ul}>
-          {links.map((link, index) => (
-            <li key={index} className={styles.li}>
+          {links.map(link => (
+            <li key={link.name} className={styles.li}>
               <Link href={link.url} className={`${styles.link} ${transStyles.transitionable}`}>
                 {link.name}
               </Link>
@@ -83,7 +83,11 @@ const Header = () => {
             <ThemeButton className={`${styles.link} ${transStyles.transitionable}`} theme={theme} />
           </li>
           <li>
-            <button className={styles.mobileMenuButton} onClick={() => setOpenMenu(mobileIsOpen => !mobileIsOpen)}>
+            <button
+              type="button"
+              className={styles.mobileMenuButton}
+              onClick={() => setOpenMenu(mobileIsOpen => !mobileIsOpen)}
+            >
               <FaBars size="2em" />
             </button>
           </li>
@@ -92,8 +96,8 @@ const Header = () => {
       {openMenu && (
         <div className={styles.mobileMenu}>
           <ul className={styles.mobileUl}>
-            {links.map((link, index) => (
-              <li key={index} className={styles.li}>
+            {links.map(link => (
+              <li key={link.name} className={styles.li}>
                 <Link href={link.url} className={`${styles.link} ${transStyles.transitionable}`}>
                   {link.name}
                 </Link>

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { type FC, useState } from 'react';
 import { FaHome, FaShoppingCart } from 'react-icons/fa';
 
 import styles from './clicker.module.css';
@@ -20,7 +20,7 @@ interface ShopItem {
   };
 }
 
-const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
+const Clicker: FC<{ dark: boolean }> = ({ dark }) => {
   const hasLocalStorage = typeof localStorage !== 'undefined';
   const previousCount = hasLocalStorage ? localStorage.getItem('count') : null;
   const previousPurchases = hasLocalStorage ? localStorage.getItem('purchased') : null;
@@ -52,7 +52,6 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 
   function shopItemBuyInternals(shopItem: ShopItem) {
     if (shopItem.price > clickedCount) {
-      // eslint-disable-next-line no-alert
       return alert('You cannot buy that item.');
     }
 
@@ -140,6 +139,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 
         <div className={styles.buttonFlexer}>
           <button
+            type="button"
             className={styles.button}
             onClick={buttonClick}
             style={{
@@ -166,7 +166,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
             };
 
             return (
-              <div onClick={buyItem} key={shopItem.internalName} className={styles.shopItem}>
+              <div onClick={buyItem} onKeyDown={buyItem} key={shopItem.internalName} className={styles.shopItem}>
                 <small className={styles.small}>costs {shopItem.price} h</small>
                 <h2>{shopItem.displayName}</h2>
                 <p>{shopItem.description}</p>
@@ -195,7 +195,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
               };
 
               return (
-                <div onClick={buyItem} key={shopItem.internalName} className={styles.shopItem}>
+                <div onClick={buyItem} onKeyDown={buyItem} key={shopItem.internalName} className={styles.shopItem}>
                   <small className={styles.small}>costs {shopItem.price} h</small>
                   <h2>{shopItem.displayName}</h2>
                   <p>{shopItem.description}</p>
@@ -221,6 +221,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
 
             <div className={styles.buttonFlexer}>
               <button
+                type="button"
                 className={styles.button}
                 onClick={buttonClick}
                 style={{
@@ -240,7 +241,7 @@ const Clicker: React.FC<{ dark: boolean }> = ({ dark }) => {
           <Link href="/" className={styles.link}>
             <FaHome size="2em" />
           </Link>
-          <button className={styles.baseButton} onClick={() => setShopLayoutShown(current => !current)}>
+          <button type="button" className={styles.baseButton} onClick={() => setShopLayoutShown(current => !current)}>
             <FaShoppingCart size={'2em'} className={shouldShowShopLayout ? styles.purchased : ''} />
           </button>
         </div>

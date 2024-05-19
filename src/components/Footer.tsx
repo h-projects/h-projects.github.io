@@ -23,14 +23,14 @@ const links = [
 
 const Footer = () => (
   <footer className="container">
-    <div className={styles.hr}></div>
+    <div className={styles.hr} />
     <nav className={styles.nav}>
       <div>
         <p>&copy; Aytch Software {new Date().getFullYear()}.</p>
       </div>
       <ul className={styles.ul}>
-        {links.map((link, index) => (
-          <li key={index} className={styles.li}>
+        {links.map(link => (
+          <li key={link.name} className={styles.li}>
             <a href={link.url} className={`${styles.link} ${transStyles.transitionable}`}>
               <link.icon title={link.name} size="1.5em" />
             </a>

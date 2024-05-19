@@ -5,9 +5,10 @@ updates:
     schedule:
       interval: 'weekly'
     groups:
-      typescript-eslint:
+      react:
         patterns:
-          - '@typescript-eslint/*'
+          - 'react'
+          - 'react-dom'
 
   - package-ecosystem: 'github-actions'
     directory: '/'

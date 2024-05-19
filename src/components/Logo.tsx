@@ -1,5 +1,6 @@
 const Logo = () => (
   <svg width="64" height="64" viewBox="0 0 270.93333 270.93333" version="1.1">
+    <title>Aytch Software Logo</title>
     <g transform="translate(0,-26.066695)">
       <g transform="translate(0.6473347,-0.52925973)">
         <g>

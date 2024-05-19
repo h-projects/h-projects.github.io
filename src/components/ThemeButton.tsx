@@ -16,6 +16,7 @@ export const ThemeButton = (props: { className: string; theme: string | undefine
 
   return (
     <button
+      type="button"
       onClick={() => {
         props.theme === 'dark' ? setTheme('light') : setTheme('dark');
       }}

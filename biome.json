@@ -1,10 +1,13 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
     "defaultBranch": "main",
     "useIgnoreFile": true
+  },
+  "files": {
+    "ignore": ["package.json", "tsconfig.json"]
   },
   "formatter": {
     "indentStyle": "space",
@@ -20,7 +23,26 @@
     }
   },
   "linter": {
-    "enabled": false
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noNewSymbol": "error",
+        "noUndeclaredVariables": "error",
+        "noUnusedPrivateClassMembers": "error",
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noNegationElse": "error",
+        "useBlockStatements": "error",
+        "useConsistentArrayType": "error",
+        "useForOf": "error",
+        "useShorthandAssign": "error"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "useAwait": "error"
+      }
+    }
   },
   "organizeImports": {
     "enabled": true
